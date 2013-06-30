@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  font-size: 1.1em; }
+
+.container {
+  margin: 30px auto 50px;
+  width: 80%; }
+
+h1 {
+  font-family: Impact;
+  text-align: center;
+  font-size: 3em;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1em;
+  color: #ffa561;
+  font-weight: bold;
+  font-size: 109px;
+  text-shadow: 0px 0px 0 #e88e4a, 1px 1px 0 #db813d, 2px 2px 0 #cd732f, 3px 3px 0 #c06622, 4px 4px 0 #b35915, 5px 5px 0 #a64c08, 6px 6px 0 #983e00, 7px 7px 0 #8b3100, 8px 8px 0 #7e2400, 9px 9px 8px rgba(0, 0, 0, 0.6), 9px 9px 1px rgba(0, 0, 0, 0.5), 0px 0px 8px rgba(0, 0, 0, 0.2); }
+
+section > section {
+  margin: 0 0 3em 0; }
