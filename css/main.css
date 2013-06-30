@@ -8,15 +8,18 @@ body {
   background-color: #bfffb9;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bfffb9), color-stop(100%, #62c259));
   background-image: -webkit-linear-gradient(#bfffb9, #62c259);
-  background-image: linear-gradient(#bfffb9, #62c259);
-  padding: 30px auto 50px; }
+  background-image: linear-gradient(#bfffb9, #62c259); }
 
 .container {
   width: 80%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 30px 0 50px; }
 
 .clear {
   clear: both; }
+
+.right {
+  float: right; }
 
 a {
   color: #cc0000; }
@@ -39,5 +42,16 @@ a {
 section > section {
   margin: 0 0 3em 0; }
 
+section > section > h1 {
+  margin: 40px 0 10px; }
+
+p {
+  margin: 0 0 1em;
+  line-height: 1.35em; }
+
 img {
   width: 100%; }
+
+p.tagline {
+  margin: 2em 0 0 0;
+  font-size: 1.2em; }
