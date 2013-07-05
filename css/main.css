@@ -5,10 +5,10 @@ body {
 
 .outer_cont {
   width: 100%;
-  background-color: #bfffb9;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bfffb9), color-stop(100%, #62c259));
-  background-image: -webkit-linear-gradient(#bfffb9, #62c259);
-  background-image: linear-gradient(#bfffb9, #62c259); }
+  background-color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #bdcfda));
+  background-image: -webkit-linear-gradient(white, #bdcfda);
+  background-image: linear-gradient(white, #bdcfda); }
 
 .container {
   width: 80%;
@@ -34,10 +34,10 @@ a {
   font-size: 3em;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   line-height: 1em;
-  color: #ffa561;
+  color: #1a89c9;
   font-weight: bold;
   font-size: 109px;
-  text-shadow: 0px 0px 0 #e88e4a, 1px 1px 0 #db813d, 2px 2px 0 #cd732f, 3px 3px 0 #c06622, 4px 4px 0 #b35915, 5px 5px 0 #a64c08, 6px 6px 0 #983e00, 7px 7px 0 #8b3100, 8px 8px 0 #7e2400, 9px 9px 8px rgba(0, 0, 0, 0.6), 9px 9px 1px rgba(0, 0, 0, 0.5), 0px 0px 8px rgba(0, 0, 0, 0.2); }
+  text-shadow: 0px 0px 0 #4dbcfc, 1px 1px 0 #3cabeb, 2px 2px 0 #2b9ada, 3px 3px 0 #1a89c9, 4px 4px 0 #0978b8, 5px 5px 0 #0067a7, 6px 6px 0 #005696, 7px 7px 0 #004585, 8px 8px 0 #003474, 9px 9px 8px #002363, 9px 9px 1px #001252, 0px 0px 8px #000141; }
 
 section > section {
   margin: 0 0 3em 0; }
