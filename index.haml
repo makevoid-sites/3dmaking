@@ -1,3 +1,10 @@
+- # logic
+- DIR = "HAML_NAMESPACE"
+- def en?
+  - DIR == "en"
+- def t(en, it)
+  = en? ? en : it
+- # markup
 !!!
 %head
   %meta{:charset => "utf-8"}/
@@ -17,31 +24,37 @@
 %link{:href => "/css/main.css", :rel => "stylesheet"}/
 .outer_cont
 
-  - DIR = "HAML_NAMESPACE"
-  - def en?
-    - DIR == "en"
-  %h2 
-    - if en?
-      english
-    - else
-      ita
-  
-
   %section.container
+    .right
+      - if en?
+        %a{ href: "/" } Italian
+      - else
+        %a{ href: "/en/index.html" } English
+
     %h1 3D Making
+    
     %p.tagline
-      3DMaking offre
-      %strong servizi di stampa in 3D
-      a Firenze! Visita il nostro shop o inviaci un'email!
-      %br/
-      Saremmo felici di trasformare le tue idee in oggetti 3d!
-      %br/
-      Se ancora non hai un'idea di cosa stampare, puoi andare su
-      %a{:href => "http://thingiverse.com"} thingiverse
-      e scegliere un modello 3d gi&agrave; fatto.
-      /
-        3DMaking offers <strong>3D printing services</strong> in Firenze, visit our shop or send us an email.<br>
+      - if en?
+        3DMaking offers
+        %strong 3D printing services
+        in Florence, Italy! Visit our shop or send us an email.
+        %br/
         We will be happy to turn your three dimensional ideas in reality :)
+        %br/
+        If you still don't have an idea of what to 3d print, you can search in
+        %a{:href => "http://thingiverse.com"} thingiverse
+        and select an already made 3d model.
+      - else
+        3DMaking offre
+        %strong servizi di stampa in 3D
+        a Firenze! Visita il nostro shop o inviaci un'email!
+        %br/
+        Saremmo felici di trasformare le tue idee in oggetti 3d!
+        %br/
+        Se ancora non hai un'idea di cosa stampare, puoi andare su
+        %a{:href => "http://thingiverse.com"} thingiverse
+        e scegliere un modello 3d gi&agrave; fatto.
+
     %p.normal
       %a{:href => "https://www.facebook.com/3dmaking"}
         %img.icon{:src => "/img/fb_icon.png"}/
@@ -58,9 +71,9 @@
     %a.right{:href => "http://goo.gl/maps/mdwqC"} open in google maps
     %section.online_shop
       %h1 Online shop:
-      %p Upload your STL and have it printed! coming soon!
+      %p- t "Upload your STL and have it printed! coming soon!", "Carica il file del modello (STL) e ordina la stampa 3d dell'oggetto contenuto."
     %p.normal
-      We use RepRap based printers. We strongly believe in Open Source and Open Hardware, and we offer consultancy if you want to build your first 3D printer. Come and visit us or drop us a line.
+      - t "We use RepRap based printers. We strongly believe in Open Source (and Open Hardware), and we offer consultancy if you want to build your first 3D printer. Come and visit us or drop us a line.", "Usiamo stampanti basate sul progetto RepRap. Crediamo che l'Open Source (e l'Open Hardware) sia una soluzione, offriamo consulenza nell'assemblaggio della tua prima stampante 3D."
     %section.online_shop
       %h1 Contact us:
       %p
@@ -76,5 +89,5 @@
     %p.tagline
       %a{:href => "https://www.facebook.com/media/set/?set=a.359477507488706.1073741826.359476797488777&type=1"}
         %img.icon{:src => "/img/fb_icon.png"}/
-      %a{:href => "https://www.facebook.com/media/set/?set=a.359477507488706.1073741826.359476797488777&type=1"} see more photos on our facebook page!
+      %a{:href => "https://www.facebook.com/media/set/?set=a.359477507488706.1073741826.359476797488777&type=1"}- t "see more photos on our facebook page!", "guarda le altre foto!"
     .clear
