@@ -1,0 +1,6 @@
+gem "sinatra"
+
+gem "haml"
+
+gem "haml-contrib"
+gem "RedCloth"

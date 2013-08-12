@@ -1,0 +1,30 @@
+%a{ href: "/" } < go back
+    
+#renderArea
+
+%p.title id:
+%p= @slicing.id
+
+
+%p.title File:
+%p= @slicing.file
+
+%p.title Command:
+%p= @slicing.command
+
+%p.title Output:
+%p
+  :textile
+    #{@slicing.output}
+
+%script{ src: "/vendor/sugar.js" }
+%script{ src: "/vendor/jquery.js" }
+%script{ src: "/vendor/three.js" }
+%script{ src: "/vendor/gcode-model.js" }
+%script{ src: "/vendor/gcode-parser.js" }
+%script{ src: "/vendor/renderer.js" }
+%script{ src: "/vendor/ui.js" }
+
+:javascript
+  openGCodeFromPath("/gcodes/#{@slicing.file}.gcode")
+    

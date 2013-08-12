@@ -1,0 +1,5 @@
+%h1 Upload STL demo
+
+%form{ action: "/upload", method: "post",  enctype: "multipart/form-data" } 
+  %input{ name: "stl", type: "file" }
+  %input{ type: "submit", value: "Upload" }
