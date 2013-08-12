@@ -2,9 +2,32 @@
     
 #renderArea
 
+%p.title Printing cost:
+%p= @slicing.cost
+
+
+%p.title Ship to:
+
+%select
+  %option Italy
+  %option Europe
+  %option World
+
+%p.title Shipping Method:
+
+%select
+  %option Express courier (faster) 
+  %option Standard Priority Mail (cheaper)
+  
+
+%p.title Total cost:
+%p xx Euro
+
+
+%h2 Debug:
+
 %p.title id:
 %p= @slicing.id
-
 
 %p.title File:
 %p= @slicing.file

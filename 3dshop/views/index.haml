@@ -1,5 +1,17 @@
-%h1 Upload STL demo
+%h1 Order print
+
+%p Order a print by uploading an STL model file and following the instructions.
+
+%p Get it printed and shipped directly to you!
+
+%p 
+  If you don't have an STL model you can choose one from 
+  %a{ href: "http://thingiverse.com" } Thingiverse 
+  or model it yourself on 
+  %a{ href: "http://thinkercad.com" } Thinkercad
 
 %form{ action: "/upload", method: "post",  enctype: "multipart/form-data" } 
   %input{ name: "stl", type: "file" }
   %input{ type: "submit", value: "Upload" }
+  
+  
