@@ -39,34 +39,59 @@ describe "Slicer" do
     match[1].to_i if match
   end
 
-  def slicer
+  def slicer(settings)
     file   = "hollow_cylinder"
     #  -s extrusionWidth=500 # almost extruder size
-    settings = "-s layerThickness=500 -s filamentDiameter=3000 -s extrusionWidth=500 -s filamentFlow=100 -s printSpeed=100 -s infillSpeed=100 -s moveSpeed=100"
     out = Slicer.new(file, settings).slice
     out.should =~ /Filament/
     out
   end
   
-  let(:slice) do
-    @@slice ||= slicer
+  let(:slice_ideal) do
+    settings = "-s layerThickness=500 -s filamentDiameter=3000 -s extrusionWidth=500 -s filamentFlow=100 -s printSpeed=100 -s infillSpeed=100 -s moveSpeed=100"
+    @@slice_ideal ||= slicer(settings)
   end
 
   it "has the correct amount of layers" do
-    out = slice
+    out = slice_ideal
     match_property(out, :layer_count).should == 20
   end
   
   it "uses the right amount of filament" do
-    out = slice
+    out = slice_ideal
     match_property(out, :filament).should == 730 # mm
   end  
   
   it "prints in the right time" do
-    out = slice
+    out = slice_ideal
     match_property(out, :print_time).should == 120 # seconds
   end
     
+    
+  describe "[real]" do  
+    
+    let(:slice_real) do
+      settings = "-s layerThickness=300 -s filamentDiameter=3000 -s extrusionWidth=400 -s filamentFlow=50 -s printSpeed=50 -s infillSpeed=50 -s moveSpeed=50"
+      @@slice_real ||= slicer(settings)
+    end
+  
+    it "has the correct amount of layers" do
+      out = slice_real
+      match_property(out, :layer_count).should == 33
+    end
+  
+    it "uses the right amount of filament" do
+      out = slice_real
+      match_property(out, :filament).should == 530 # mm
+    end  
+  
+    it "prints in the right time" do
+      out = slice_real
+      match_property(out, :print_time).should == 720 # seconds
+    end
+    
+  end
+  
   
   # it "slices an STL model " do
   #   file   = "hollow_cylinder"
