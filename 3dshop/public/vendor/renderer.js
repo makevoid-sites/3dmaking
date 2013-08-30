@@ -22,20 +22,25 @@ function createScene(element) {
   });
 
   // Camera...
-  var fov    = 45,
+  var fov    = 50,
       aspect = element.width() / element.height(),
-      near   = 1,
+      near   = 100,
       far    = 10000,
       camera = new THREE.PerspectiveCamera(fov, aspect, near, far);
   //camera.rotationAutoUpdate = true;
-  //camera.position.x = 0;
-  //camera.position.y = 500;
-  camera.position.z = 300;
-  //camera.lookAt(scene.position);
+  camera.position.x = 250;
+  camera.position.y = 250;
+  camera.position.z = 100;
+  
+  camera.up = new THREE.Vector3(0,0,1);
+  
+  // camera.lookAt(scene.position);
   scene.add(camera);
+  
+  // BUG: I (makevoid) commented those lines because the select boxes weren't working anymore
   controls = new THREE.TrackballControls(camera);
   controls.noPan = true;
-  controls.dynamicDampingFactor = 0.15;
+  controls.dynamicDampingFactor = 0.20;
 
   // Action!
   function render() {
