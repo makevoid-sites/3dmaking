@@ -31,12 +31,6 @@
 require_relative "config/env"
 
 class Shop < Sinatra::Base
-  SLICINGS = []
-  
-  def add_slicing(slicing)
-    slicing.id = SLICINGS.length
-    SLICINGS << slicing
-  end
 
   post "/upload" do
     stl_name = File.basename params[:stl][:filename], ".stl"

@@ -2,8 +2,45 @@
     
 #renderArea
 
-%p.title Printing cost:
-%p= @slicing.cost
+%p Costs (to client) settings:
+
+%p printing_time: 1h = 4 euro
+%p filament cost: our cost * 15
+
+
+%p.title Filament lenght:
+%p
+  = @slicing.filament_meters
+  meters
+
+%p.title Filament cost (3dmaking):
+%p
+  = @slicing.filament_cost
+  euro
+
+%p.title Printing time:
+%p
+  = @slicing.printing_time.to_i
+  minutes
+
+%p.title Printing time cost (3dmaking):
+%p
+  = @slicing.printing_time_cost
+  euro
+  
+
+%p.title 3D Editing
+%form
+  %select{ name: "3d editing" }
+    %option{ value: "0" } none
+    %option{ value: "1" } 20 minutes (+10 euro)
+    %option{ value: "2" } 1h (+30 euro)
+    %option{ value: "3" } 3h (+80 euro)
+
+%p.title Total cost (client):
+%p
+  = @slicing.total_cost
+  euro
 
 
 %p.title Ship to:
@@ -19,9 +56,11 @@
   %option Express courier (faster) 
   %option Standard Priority Mail (cheaper)
   
+%p.title Shipping Cost:
+%p xx euro
 
-%p.title Total cost:
-%p xx Euro
+%p.title Total cost (to client, including shipping):
+%p xx euro
 
 
 %h2 Debug:
