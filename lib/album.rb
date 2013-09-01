@@ -5,4 +5,8 @@ class Album
 
   attr_accessor :photos, :cover
   FIELDS.map { |field| attr_accessor field }
+
+  def name_url
+    urlify name
+  end
 end

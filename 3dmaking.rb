@@ -16,6 +16,11 @@ class TDMaking < Sinatra::Base
     haml :index
   end
 
+  get "/albums/*" do |album|
+    @album = albums.find{ |alb| alb.name_url == album }
+    haml :album
+  end
+
   # datas
 
   def albums

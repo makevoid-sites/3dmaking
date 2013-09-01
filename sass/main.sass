@@ -4,6 +4,9 @@
   font-family: Aldo
   src: url('/fonts/aldo_the_apache.ttf')
 
+a
+  text-decoration: none
+
 body
   margin: 0
   font-size: 1.1em
@@ -30,6 +33,10 @@ a
   &:hover
     color: #F00
 
+h1
+  margin: 0
+  font-size: 1.2em
+
 .container > h1
   $main: #ffa561
   $main: #1A89C9
@@ -40,10 +47,13 @@ a
   // font-family: Impact
   font-family: Aldo
   line-height: 1em
-  color: $main
   font-weight: normal
   font-size: 90px
   text-shadow: 0px 0px 0 $main+#333, 1px 1px 0 $main+#222, 2px 2px 0 $main+#111, 3px 3px 0 $main, 4px 4px 0 $main -#111, 5px 5px 0 $main -#222, 6px 6px 0 $main -#333, 7px 7px 0 $main -#444, 8px 8px 0 $main -#555, 9px 9px 8px $main -#666, 9px 9px 1px $main -#777, 0px 0px 8px $main -#888
+  a
+    color: $main
+    &:hover
+      color: $main + #111
 
 section > section
   margin: 0 0 3em 0
@@ -66,6 +76,29 @@ img.icon
 
 .gallery img
   margin: 0 0 30px 0
+
+.gallery .album
+  float: left
+  margin: 0 1% 2% 0
+  width: 30%
+  white-space: nowrap
+  font-size: 0.8em
+  h1
+    overflow: hidden
+    margin: 0 0 3px 0
+  .img_box
+    height: 120px
+    background: white // todo: js zoom instead of this
+  img
+    width: 100%
+
+.album .album
+  img
+    width: 46%
+    margin: 0 2% 2% 0
+
+.img_box
+  overflow: hidden
 
 p.tagline
   margin: 2em 0 0 0

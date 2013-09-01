@@ -10,3 +10,6 @@ require "#{path}/lib/photo"
 require "#{path}/lib/album"
 require "#{path}/lib/albums"
 require "#{path}/lib/product"
+
+require "#{path}/lib/utils"
+include Utils

@@ -1,0 +1,9 @@
+-# todo: move album class in body class
+
+.album
+  %h1= @album.name
+
+  .album
+    - @album.photos.each do |photo|
+      - img = photo.images[4]
+      %img{ src: img["source"] }

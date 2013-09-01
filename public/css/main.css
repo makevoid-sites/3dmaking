@@ -2,6 +2,9 @@
   font-family: Aldo;
   src: url("/fonts/aldo_the_apache.ttf"); }
 
+a {
+  text-decoration: none; }
+
 body {
   margin: 0;
   font-size: 1.1em;
@@ -30,16 +33,23 @@ a {
   a:hover {
     color: red; }
 
+h1 {
+  margin: 0;
+  font-size: 1.2em; }
+
 .container > h1 {
   margin: 0;
   padding: 0;
   text-align: center;
   font-family: Aldo;
   line-height: 1em;
-  color: #1a89c9;
   font-weight: normal;
   font-size: 90px;
   text-shadow: 0px 0px 0 #4dbcfc, 1px 1px 0 #3cabeb, 2px 2px 0 #2b9ada, 3px 3px 0 #1a89c9, 4px 4px 0 #0978b8, 5px 5px 0 #0067a7, 6px 6px 0 #005696, 7px 7px 0 #004585, 8px 8px 0 #003474, 9px 9px 8px #002363, 9px 9px 1px #001252, 0px 0px 8px #000141; }
+  .container > h1 a {
+    color: #1a89c9; }
+    .container > h1 a:hover {
+      color: #2b9ada; }
 
 section > section {
   margin: 0 0 3em 0; }
@@ -61,6 +71,28 @@ img.icon {
 
 .gallery img {
   margin: 0 0 30px 0; }
+
+.gallery .album {
+  float: left;
+  margin: 0 1% 2% 0;
+  width: 30%;
+  white-space: nowrap;
+  font-size: 0.8em; }
+  .gallery .album h1 {
+    overflow: hidden;
+    margin: 0 0 3px 0; }
+  .gallery .album .img_box {
+    height: 120px;
+    background: white; }
+  .gallery .album img {
+    width: 100%; }
+
+.album .album img {
+  width: 46%;
+  margin: 0 2% 2% 0; }
+
+.img_box {
+  overflow: hidden; }
 
 p.tagline {
   margin: 2em 0 0 0;

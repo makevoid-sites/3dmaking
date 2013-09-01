@@ -1,0 +1,36 @@
+!!!
+%head
+  %meta{ charset: "utf-8" }/
+  %title 3DMaking.it - 3D Printing Firenze
+  %meta{ content: "width=device-width, initial-scale=1.0", name: "viewport" }/
+  %meta{ content: "3d making, 3d printing, makers, firenze, stampa 3d, stampanti 3d, 3d printer, florence, italy", name: "keywords" }/
+  %meta{ content: "Francesco 'makevoid' Canessa", name: "author" }/
+  %meta{ content: "1IuWAn47PLQ0AQpcJGeVQjqNMrfnnj-rFJOc7BawL3w", name: "google-site-verification" }/
+  %meta{ content: "3D Making", property: "og:site_name" }/
+  %meta{ content: "3D Making - #{t "make everything in 3D!", "stampa in 3D!"}", property: "og:title" }/
+  %meta{ content: "http://3dmaking.it/img/3dmaking_logo_square.png", property: "og:image" }/
+  %meta{ content: "http://3dmaking.it", property: "og:url" }/
+  %meta{ content: "website", property: "og:type" }/
+  %meta{ content: "makevoid", property: "fb:admins" }/
+  - description = t "3DMaking offers 3D printing services in Florence, Italy! Send us your 3D models in STL format, we will print them mainly in ecologic plastic material (PLA) wit a good level of detail.", "3D Making offre servizi stampa in 3d, inviaci i tuoi modelli 3d in formato STL e li stamperemo in 3d in materiale plastico ecologico (PLA) con un buon livello di dettaglio."
+  %meta{ content: description, property: "og:description" }/
+  %meta{ content: description, name: "description" }/
+%link{href: "/css/main.css", rel: "stylesheet" }/
+.outer_cont
+
+  %section.container
+    .right
+      - if en?
+        %a{ href: "/" } Italian
+      - else
+        %a{ href: "/en" } English
+
+    %h1
+      %a{ href: "/"} 3DMaking
+
+
+    .content
+      = yield
+
+    .clear
+  %script{ type: "text/javascript", src: "/js/vendor/flowtype.js" }
