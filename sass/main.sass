@@ -1,11 +1,15 @@
-@import "../bourbon/bourbon"
+@import "vendor/bourbon/bourbon"
+
+@font-face
+  font-family: Aldo
+  src: url('/fonts/aldo_the_apache.ttf')
 
 body
   margin: 0
   font-size: 1.1em
   width: 100%
-  
-.outer_cont  
+
+.outer_cont
   width: 100%
   // +linear-gradient(#BFFFB9, #62C259)
   +linear-gradient(#FFF, #BDCFDA)
@@ -15,7 +19,7 @@ body
   margin: 0 auto
   padding: 30px 0 50px
 
-.clear 
+.clear
   clear: both
 
 .right
@@ -31,43 +35,42 @@ a
   $main: #1A89C9
   margin: 0
   padding: 0
-  font-family: Impact
   text-align: center
-  font-size: 3em
-  //font-family: 'Helvetica Neue',Helvetica, sans-serif
-  font-family: Impact
+  //font-family: 'Helvetica Neue', Helvetica, sans-serif, Arial, Verdana
+  // font-family: Impact
+  font-family: Aldo
   line-height: 1em
   color: $main
-  font-weight: bold
-  font-size: 109px
+  font-weight: normal
+  font-size: 90px
   text-shadow: 0px 0px 0 $main+#333, 1px 1px 0 $main+#222, 2px 2px 0 $main+#111, 3px 3px 0 $main, 4px 4px 0 $main -#111, 5px 5px 0 $main -#222, 6px 6px 0 $main -#333, 7px 7px 0 $main -#444, 8px 8px 0 $main -#555, 9px 9px 8px $main -#666, 9px 9px 1px $main -#777, 0px 0px 8px $main -#888
 
 section > section
   margin: 0 0 3em 0
-  
+
 section > section > h1
   margin: 40px 0 10px
 
 p
-  margin: 0 0 1em 
+  margin: 0 0 1em
   line-height: 1.35em
 
 
 img
   width: 100%
-  
+
 img.icon
   width: auto
   position: relative
   top: 12px
-  
+
 .gallery img
   margin: 0 0 30px 0
 
 p.tagline
   margin: 2em 0 0 0
   font-size: 1.2em
-  
+
 p.normal
   font-size: 1.1em
-  
+
