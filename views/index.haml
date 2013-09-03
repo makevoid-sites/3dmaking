@@ -23,7 +23,7 @@
 
 %section.gallery
 
-  %h1 Albums
+  %h1= t "Photos of some 3D object we printed", "Foto di alcuni oggetti stampati in 3D da noi"
 
   - albums.each do |album|
 
@@ -37,6 +37,7 @@
         -#   #{album.cover.images[4]["source"]}
         -# %img{ src: "https://graph.facebook.com/#{album.cover_photo}/picture?type=album" }
 
+  .clear
 
 %section.online_shop
   %h1 Online shop:

@@ -18,6 +18,9 @@ class FbAlbums
       cover = blizz_photo cover
       album.cover  = cover
       album.photos = photos album.id
+      # TODO:
+      # album.products
+      # product.photos
     end
   end
 
