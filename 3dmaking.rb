@@ -4,7 +4,15 @@ require "#{path}/config/env"
 class TDMaking < Sinatra::Base
 
   before do
-    @lang = "it"
+    env = request.env
+    @host = env["REMOTE_HOST"]
+    if ENV["RACK_ENV"] == "development"
+      @host = "#{@host}:#{env["SERVER_PORT"]}"
+    end
+    
+    host = env["SERVER_NAME"]
+    en = host.split(".")[0] == "en"
+    @lang = en ? "en" : "it"
   end
 
   get "/" do
@@ -12,7 +20,6 @@ class TDMaking < Sinatra::Base
   end
 
   get "/en" do
-    @lang = "en"
     haml :index
   end
 

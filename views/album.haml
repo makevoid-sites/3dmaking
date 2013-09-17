@@ -1,11 +1,15 @@
 -# todo: move album class in body class
 
-%a.btn{ href: "/" }= t "< back", "< indietro"
+%a.btn{ href: "/" }
+  <
+  = t "back", "indietro"
 
 .album
   %h1= @album.name
 
   .album
     - @album.photos.each do |photo|
+      -# TODO: choose photo sizes for display and lightbox, not sure wich is wich, developed offline
       - img = photo.images[4]
-      %img{ src: img["source"] }
+      - big = photo.images[3]
+      %img{ src: img["source"], :"data-big" => big }

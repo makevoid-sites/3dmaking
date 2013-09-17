@@ -3,6 +3,7 @@ PATH = path
 
 require 'bundler/setup'
 Bundler.require :default
+require 'yaml'
 
 
 require "#{path}/lib/fb_albums"
