@@ -8,7 +8,8 @@ a {
 body {
   margin: 0;
   font-size: 1.1em;
-  width: 100%; }
+  width: 100%;
+  background: #bdcfda; }
 
 .outer_cont {
   width: 100%;
@@ -16,6 +17,9 @@ body {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, white), color-stop(100%, #bdcfda));
   background-image: -webkit-linear-gradient(white, #bdcfda);
   background-image: linear-gradient(white, #bdcfda); }
+
+html, body, .outer_cont {
+  height: 100%; }
 
 .container {
   width: 80%;
@@ -126,11 +130,11 @@ p.normal {
   background: rgba(90, 90, 90, 0.4);
   display: none;
   text-align: center;
-  z-index: 40; }
+  z-index: 10; }
   .lightbox img {
     cursor: pointer;
-    width: 80%;
+    width: 83%;
     margin: 63px auto;
     position: absolute;
-    padding: 10px 1%;
+    padding: 1%;
     background: white; }

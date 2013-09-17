@@ -12,7 +12,6 @@ lightbox = ->
 
   $(window).on "resize", ->
     lightbox.resize()
-    console.log "asd"
 
 lightbox.show = (url) ->
   $(".lightbox").on "click", ->

@@ -13,8 +13,7 @@
       }, time);
     }
     return $(window).on("resize", function() {
-      lightbox.resize();
-      return console.log("asd");
+      return lightbox.resize();
     });
   };
 
