@@ -11,5 +11,5 @@
     - @album.photos.each do |photo|
       -# TODO: choose photo sizes for display and lightbox, not sure wich is wich, developed offline
       - img = photo.images[4]
-      - big = photo.images[3]
-      %img{ src: img["source"], :"data-big" => big }
+      - big = photo.images[1]
+      %img{ src: img["source"], :"data-big" => big["source"] }

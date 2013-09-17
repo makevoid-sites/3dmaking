@@ -98,6 +98,7 @@ img.icon {
     width: 100%; }
 
 .album .album img {
+  cursor: pointer;
   width: 46%;
   margin: 0 2% 2% 0; }
 
