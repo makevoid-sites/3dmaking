@@ -9,7 +9,7 @@ class TDMaking < Sinatra::Base
     if ENV["RACK_ENV"] == "development"
       @host = "#{@host}:#{env["SERVER_PORT"]}"
     end
-    
+
     host = env["SERVER_NAME"]
     en = host.split(".")[0] == "en"
     @lang = en ? "en" : "it"
@@ -19,13 +19,13 @@ class TDMaking < Sinatra::Base
     haml :index
   end
 
-  get "/en" do
-    haml :index
-  end
-
   get "/albums/*" do |album|
     @album = albums.find{ |alb| alb.name_url == album }
     haml :album
+  end
+
+  get "/press" do
+    haml :press
   end
 
   # datas
