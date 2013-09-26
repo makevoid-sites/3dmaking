@@ -14,5 +14,6 @@ group :development do
   # gem "guard-haml", path: "/Users/makevoid/Sites/guard-haml"
   gem "guard-sass"
   gem "guard-livereload"
+  gem "guard-coffeescript"
   # gem "guard-livereload", git: ""
 end
