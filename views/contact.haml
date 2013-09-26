@@ -1,0 +1,15 @@
+%h1= t "Find us here:", "Ci trovi qui:"
+
+- unless ENV['RACK_ENV'] == "development"
+  %iframe{frameborder: "0", height: "300", marginheight: "0", marginwidth: "0", scrolling: "no", src: "http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=via%2BFerruccio%2BBusoni%2B2%2C%2Bfirenze&ie=UTF8&z=16&t=m&iwloc=near&output=embed", width: "100%"}
+- else
+  %p [map]
+
+%a.right{href: "http://goo.gl/maps/mdwqC"} open in google maps
+%section.shop
+  %h1 Shop:
+  %p
+    %strong Firenze
+    \- via F. Busoni 2/r
+    \- presso
+    %a{ href: "http://ltestudio.it" } LTE Studio

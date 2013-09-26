@@ -1,0 +1,75 @@
+%h1
+  =t "Get our 3DM1 - desktop 3d printer", "Stampante 3d: 3DM1"
+  %span= t "RepRap project", "Progetto RepRap"
+
+
+- if en?
+  :textile
+    We are revolutionizing the awesome RepRap Wallace 3d printer project: http://reprap.org/mediawiki/images/c/c7/Wallace.jpg
+    We found it awesomely simple, the scad is light and easy to edit and it's easy to modify it by configuration. A big thank to it's creator: https://github.com/Whosawhatsis
+
+    our 3d printer will have this major changes:
+    - two main formats:
+    ---- big: bigger printing area, 0.5mm nozzle or higher)
+    ---- small: smaller size, more precise, 0.35mm nozzle)
+    - X carriage that fits jhead / budashnozzle or other short extruder head
+    - plexiglass bed and underbed
+    - aluminium Z couplers
+
+    and our kit/assembled printer will come with:
+    - aluminium pulleys
+    - set of hex keys
+    - tweezers for extruder/filament
+
+    we will probably make these as a separate kit:
+    - spool holder
+    - caliber (to measure filament diameter)
+
+    future:
+    - redesigned belt holders
+    - sd card module
+    - wifi sd card software integration (wifi autoprint)
+    - 3.2" touchscreen lcd?
+    - rasp pi integration?
+- else
+  :textile
+    Stiamo rivoluzionando il modello di stampante 3d RepRap Wallace visto che lo troviamo assolutamente semplice: http://reprap.org/mediawiki/images/c/c7/Wallace.jpg
+    Lo troviamo facilmente modificabile e per questo ringraziamo il suo creatore: https://github.com/Whosawhatsis
+
+    la nostra stampante 3d:
+    - due formati:
+    ---- big: area stampabile maggiore, larghezza ugello estrusore 0.5mm o superiore)
+    ---- small: dimensioni ridotte, piu' precisa, ugello 0.35mm)
+    - carrello X compatibile jhead / budashnozzle o altre teste d'estrusione corte
+    - piatto e sottopiatto in plexiglass
+    - coupler dell'asse Z in alluminio
+
+    il nostro kit e la nostra stampante assemblata includera':
+    - pignoni carrelli X e Y in alluminio
+    - set di brugole
+    - pinzette per rimuovere la plastica rimasta attaccata all'estrusore
+
+    probabilmente includeremo questi altri pezzi in un kit separato:
+    - porta bobina
+    - calibro
+
+    futuro:
+    - blocca cinghia ridisegnati redesigned belt holders
+    - modulo lcd / sd card
+    - integrazione scheda sd wifi (wifi autoprint - stampa automatica wifi)
+    - touchscreen da 3.2 pollici
+    - integrazione raspberry pi
+
+%h2
+  = t "Order now your RepRap 3d printer!", "Ordina adesso la tua stampante 3d reprap!"
+%p
+  via mail:
+  %a{ href: "mailto:print@3dmaking.it" } print@3dmaking.it
+%p
+  via facebook (message):
+  %a{ href: "https://www.facebook.com/3dmaking" } 3D Making
+
+
+%h2 Wallace (original model):
+
+%img{ src: "/img/reprap_wallace_small.jpg" }

@@ -26,15 +26,22 @@
         %a{ href: "http://en.#{@host}" } English
 
     %h1
-      %a{ href: "/"} 3DMaking
+      %a{ href: "/"}
+        %img{ src: "/img/3dm_logo_site.png"}
+      %a.site_name{ href: "/"} 3DMaking
 
+    %nav
+      %a{ href: "/printer_3dm1" } Get a 3D Printer
+      %a{ href: "/team" } Team
+      %a{ href: "/press" }= t "Press", "Stampa"
+      %a{ href: "/contact" }= t "Contact", "Contatti"
 
     .content
       = yield
 
     .clear
-  %script{ type: "text/javascript", src: "/js/vendor/jquery.js" }    
-  %script{ type: "text/javascript", src: "/js/vendor/jimagesloaded.js" }      
+  %script{ type: "text/javascript", src: "/js/vendor/jquery.js" }
+  %script{ type: "text/javascript", src: "/js/vendor/jimagesloaded.js" }
   -# %script{ type: "text/javascript", src: "/js/vendor/zepto.js" }
   -# %script{ type: "text/javascript", src: "/js/vendor/flowtype.js" }
   %script{ type: "text/javascript", src: "/js/app.js" }

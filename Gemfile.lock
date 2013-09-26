@@ -1,6 +1,7 @@
 GEM
   remote: http://rubygems.org/
   specs:
+    RedCloth (4.2.9)
     blizz (0.2)
     coderay (1.0.9)
     em-websocket (0.5.0)
@@ -24,6 +25,8 @@ GEM
       sass (>= 3.1)
     haml (4.0.3)
       tilt
+    haml-contrib (1.0.0.1)
+      haml (>= 3.2.0.alpha.13)
     http_parser.rb (0.5.3)
     listen (1.2.2)
       rb-fsevent (>= 0.9.3)
@@ -57,8 +60,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  RedCloth
   blizz
   guard-livereload
   guard-sass
   haml
+  haml-contrib
   sinatra

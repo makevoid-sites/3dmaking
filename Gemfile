@@ -3,6 +3,10 @@ source "http://rubygems.org"
 gem "sinatra"
 gem "haml"
 
+# for textile
+gem "haml-contrib"
+gem "RedCloth"
+
 gem "blizz"#, path: "~/Sites/blizz"
 
 group :development do

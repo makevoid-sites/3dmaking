@@ -19,13 +19,29 @@ class TDMaking < Sinatra::Base
     haml :index
   end
 
+  get "/printer_3dm1" do
+    haml :printer_3dm1
+  end
+
   get "/albums/*" do |album|
     @album = albums.find{ |alb| alb.name_url == album }
     haml :album
   end
 
+  get "/team" do
+    haml :team
+  end
+
   get "/press" do
     haml :press
+  end
+
+  get "/reprap_project" do
+    haml :reprap_project
+  end
+
+  get "/contact" do
+    haml :contact
   end
 
   # datas
@@ -41,7 +57,9 @@ class TDMaking < Sinatra::Base
       albums
     end
 
-     albums
+    filtered = ["profile_pictures", "cover_photos"]
+    albums.reject!{ |a| filtered.include? a.name_url }
+    albums
   end
 
   # lang helpers
