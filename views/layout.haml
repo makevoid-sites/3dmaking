@@ -20,6 +20,7 @@
 
   %section.container
     .right
+      - @host = "3dmaking.it" if ENV["RACK_ENV"] == "production"
       - if en?
         %a{ href: "http://#{@host}" }    Italian
       - else
