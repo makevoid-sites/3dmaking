@@ -78,9 +78,10 @@ h1 {
       background: #999999; }
 
 .content {
-  margin: 20px 0 0 0; }
+  margin: 40px 0 0 0; }
   .content > h1 {
-    font-size: 2em; }
+    font-size: 2em;
+    margin: 0 0 20px 0; }
 
 section > section {
   margin: 0 0 3em 0; }
