@@ -44,6 +44,10 @@ class TDMaking < Sinatra::Base
     haml :contact
   end
 
+  get "/photos" do
+    haml :photos
+  end
+
   # datas
 
   def albums

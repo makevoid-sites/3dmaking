@@ -9,7 +9,8 @@ body {
   margin: 0;
   font-size: 1.2em;
   width: 100%;
-  background: #bbbbbb; }
+  background: #bbbbbb;
+  font-family: "Helvetica Neue", Helvetica, sans-serif, Arial, Verdana; }
 
 .outer_cont {
   width: 100%;
@@ -73,7 +74,8 @@ h1 {
     color: white;
     font-weight: bold;
     border-radius: 10px;
-    margin: 0 1.3% 0 0; }
+    margin: 0 1.3% 0 0;
+    line-height: 43px; }
     .container > nav a:hover {
       background: #999999; }
 
