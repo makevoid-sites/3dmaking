@@ -75,7 +75,7 @@ h1 {
     font-weight: bold;
     border-radius: 10px;
     margin: 0 1.3% 0 0;
-    line-height: 43px; }
+    line-height: 58px; }
     .container > nav a:hover {
       background: #999999; }
 
@@ -102,6 +102,9 @@ img.icon {
   width: auto;
   position: relative;
   top: 12px; }
+
+.contacts {
+  margin: 20px 0 0 0; }
 
 .gallery {
   margin: 20px 0 20px; }

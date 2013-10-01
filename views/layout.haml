@@ -13,7 +13,8 @@
     %meta{ content: "http://3dmaking.it", property: "og:url" }/
     %meta{ content: "website", property: "og:type" }/
     %meta{ content: "makevoid", property: "fb:admins" }/
-    - description = t "3DMaking offers 3D printing services in Florence, Italy! Send us your 3D models in STL format, we will print them mainly in ecologic plastic material (PLA) wit a good level of detail.", "3D Making offre servizi stampa in 3d, inviaci i tuoi modelli 3d in formato STL e li stamperemo in 3d in materiale plastico ecologico (PLA) con un buon livello di dettaglio."
+    - description = t "3DMaking, based in Firenze, Italy, is the team behind the 3d printer RepRap 3DM1.", "3DMaking e' il team che lavora al progetto della stampante 3d Reprap 3DM1"
+
     %meta{ content: description, property: "og:description" }/
     %meta{ content: description, name: "description" }/
   %link{href: "/css/main.css", rel: "stylesheet" }/
@@ -33,12 +34,12 @@
         %a.site_name{ href: "/"} 3DMaking
 
       %nav
-        %a{ href: "/printer_3dm1" } Get a 3D Printer
+        %a{ href: "/printer_3dm1" }= t "3DM1 - Our 3D Printer", "3DM1 - Stampante 3D"
+        %a{ href: "/printing_service" }= t "Get things printed", "Stampa 3D di oggetti"
         %a{ href: "/photos" }= t "Photos", "Foto"
         %a{ href: "/team" } Team
-        %a{ href: "/press" }= t "Press", "Stampa"
+        %a{ href: "/press" } Press
         %a{ href: "/contact" }= t "Contact", "Contatti"
-
       .content
         = yield
 

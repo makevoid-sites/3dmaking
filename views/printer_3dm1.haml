@@ -3,21 +3,24 @@
   %span= t "RepRap project", "Progetto RepRap"
 
 
+%img{ src: "/img/3dm1_alpha.jpg", style: "float: left; width: 40%; margin-right: 2%" }
+
+
+
 - if en?
   :textile
-    We are revolutionizing the awesome RepRap Wallace 3d printer project: http://reprap.org/mediawiki/images/c/c7/Wallace.jpg
-    We found it awesomely simple, the scad is light and easy to edit and it's easy to modify it by configuration. A big thank to it's creator: https://github.com/Whosawhatsis
+    We are revolutionizing the awesome "RepRap Wallace":http://reprap.org/wiki/Wallace 3d printer project.
+    We found it awesomely simple, the scad is light and easy to edit and it's easy to modify it by configuration. A big thank to it's creator: "Whosawhatsis":https://github.com/Whosawhatsis
 
     our 3d printer will have this major changes:
-    - two main formats:
+    - *two main formats*:
     ---- big: bigger printing area, 0.5mm nozzle or higher)
     ---- small: smaller size, more precise, 0.35mm nozzle)
-    - X carriage that fits jhead / budashnozzle or other short extruder head
-    - plexiglass bed and underbed
-    - aluminium Z couplers
+    - *X carriage* that fits jhead / budashnozzle or other *short extruder* head
+    - *acrylic*/plexiglass *bed and underbed*
+    - aluminium Z couplers and pulleys
 
     and our kit/assembled printer will come with:
-    - aluminium pulleys
     - set of hex keys
     - tweezers for extruder/filament
 
@@ -37,7 +40,7 @@
     Lo troviamo facilmente modificabile e per questo ringraziamo il suo creatore: https://github.com/Whosawhatsis
 
     la nostra stampante 3d:
-    - due formati:
+    - *due formati*:
     ---- big: area stampabile maggiore, larghezza ugello estrusore 0.5mm o superiore)
     ---- small: dimensioni ridotte, piu' precisa, ugello 0.35mm)
     - carrello X compatibile jhead / budashnozzle o altre teste d'estrusione corte
@@ -60,6 +63,11 @@
     - touchscreen da 3.2 pollici
     - integrazione raspberry pi
 
+
+
+
+.clear
+
 %h2
   = t "Order now your RepRap 3d printer!", "Ordina adesso la tua stampante 3d reprap!"
 %p
@@ -69,7 +77,14 @@
   via facebook (message):
   %a{ href: "https://www.facebook.com/3dmaking" } 3D Making
 
+%h2 3DM1 OpenSCAD project:
+
+%a{ href: "https://github.com/makevoid/RepRap_3DM1" }
+  %img{ src: "/img/3dm1_scad.png", style: "width: 60%" }
+  .clear
+  Open source on GitHub
+
 
 %h2 Wallace (original model):
 
-%img{ src: "/img/reprap_wallace_small.jpg" }
+%img{ src: "/img/reprap_wallace_small.jpg", style: "width: 40%" }

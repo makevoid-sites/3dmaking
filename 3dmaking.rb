@@ -48,6 +48,10 @@ class TDMaking < Sinatra::Base
     haml :photos
   end
 
+  get "/printing_service" do
+    haml :printing_service
+  end
+
   # datas
 
   def albums
@@ -74,6 +78,21 @@ class TDMaking < Sinatra::Base
 
   def t(en, it)
     en? ? en : it
+  end
+
+  # partial helpers (taken from sinatrize: https://gist.github.com/makevoid/2385559)
+
+  # partial :comment, { comment: "blah" }
+  # partial :comment, comment
+
+  def partial(name, value={})
+    locals = if value.is_a? Hash
+      value
+    else
+      hash = {}; hash[name] = value
+      hash
+    end
+    haml "_#{name}".to_sym, locals: locals
   end
 
 end
