@@ -8,7 +8,8 @@
       %a{ href: "/albums/#{album.name_url}" }
         %h1= album.name
         .img_box
-          %img{ src: img["source"] }
+          - vertical = img["width"] < img["height"]
+          %img{ src: img["source"], class: "#{"vert" if vertical}" }
         -# :escaped
         -#   #{album.cover.images[4]["source"]}
         -# %img{ src: "https://graph.facebook.com/#{album.cover_photo}/picture?type=album" }

@@ -40,9 +40,7 @@
       %a{ href: "/albums/#{album.name_url}" }
         %h1= album.name
         .img_box
-          - raise img.inspect
-          - dimensions = []
-          - vertical = dimensions[0] < dimensions[1]
+          - vertical = img["width"] < img["height"]
           %img{ src: img["source"], class: "#{"vert" if vertical}" }
         -# :escaped
         -#   #{album.cover.images[4]["source"]}

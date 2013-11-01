@@ -10,7 +10,6 @@ gem "RedCloth"
 gem "blizz"#, path: "~/Sites/blizz"
 
 
-gem "dimensions"
 
 group :development do
   # gem "guard-haml", git: "git@"
