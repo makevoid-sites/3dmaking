@@ -2,7 +2,7 @@
 
 .gallery
   - albums.each do |album|
-
+    - next unless album.cover.images
     .album
       - img = album.cover.images[5]
       %a{ href: "/albums/#{album.name_url}" }

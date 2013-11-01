@@ -155,12 +155,20 @@ img.icon
   font-size: 0.8em
   h1
     overflow: hidden
-    margin: 0 0 3px 0
+    margin: 0px 0 3px 0
   .img_box
     height: 120px
     background: white // todo: js zoom instead of this
   img
     width: 100%
+  img.vert
+    margin-top: -50px
+
+
+@media (min-width: 1000px)
+  .gallery .album .img_box
+    height: 250px
+
 
 .album .album img
   cursor: pointer

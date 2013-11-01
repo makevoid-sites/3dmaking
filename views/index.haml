@@ -34,13 +34,16 @@
   %h1= t "Photos of some 3D object we printed", "Foto di alcuni oggetti stampati in 3D da noi"
 
   - albums.each do |album|
-
+    - next unless album.cover.images
     .album
       - img = album.cover.images[5]
       %a{ href: "/albums/#{album.name_url}" }
         %h1= album.name
         .img_box
-          %img{ src: img["source"] }
+          - raise img.inspect
+          - dimensions = []
+          - vertical = dimensions[0] < dimensions[1]
+          %img{ src: img["source"], class: "#{"vert" if vertical}" }
         -# :escaped
         -#   #{album.cover.images[4]["source"]}
         -# %img{ src: "https://graph.facebook.com/#{album.cover_photo}/picture?type=album" }
