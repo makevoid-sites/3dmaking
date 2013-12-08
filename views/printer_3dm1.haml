@@ -32,7 +32,7 @@
     - redesigned belt holders
     - sd card module
     - wifi sd card software integration (wifi autoprint)
-    - 3.2" touchscreen lcd?
+    - 3.2in touchscreen lcd?
     - rasp pi integration?
 - else
   :textile
@@ -61,7 +61,7 @@
     - integrazione scheda sd wifi (wifi autoprint - stampa automatica wifi)
     - touchscreen da 3.2 pollici
     - integrazione raspberry pi
-
+    '
 
 
 
@@ -83,6 +83,16 @@
   .clear
   Open source on GitHub
 
+
+%h2 Pictures:
+
+- dir = "img/3dm1_printer"
+- Dir.glob("public/#{dir}/*.jpg").each do |pic|
+  - name = File.basename pic, "*.jpg"
+	
+  %img{ src: "#{dir}/#{name}" }
+
+%img{ src: "/img/3dm1_alpha.jpg" }
 
 %h2 Wallace (original model):
 
