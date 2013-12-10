@@ -2,14 +2,13 @@
   =t "Get our 3DM1 - desktop 3d printer", "Stampante 3d: 3DM1"
   %span= t "RepRap project", "Progetto RepRap"
 
-
-%img{ src: "/img/3dm1_alpha.jpg", style: "float: left; width: 40%; margin-right: 2%" }
+%img{ src: "/img/3dm1_printer_objects.jpg", style: "float: left; width: 40%; margin-right: 2%" }
 
 
 
 - if en?
   :textile
-    We are revolutionizing the awesome "RepRap Wallace":http://reprap.org/wiki/Wallace 3d printer project.
+    We revolutionized the awesome "RepRap Wallace":http://reprap.org/wiki/Wallace 3d printer project.
     We found it awesomely simple, the scad is light and easy to edit and it's easy to modify it by configuration. A big thank to it's creator: "Whosawhatsis":https://github.com/Whosawhatsis
 
     our 3d printer will have this major changes:
@@ -24,20 +23,13 @@
     - set of hex keys
     - tweezers for extruder/filament
 
-    we will probably make these as a separate kit:
-    - spool holder
-    - caliber (to measure filament diameter)
+    see the follwing photos that show the printer details and the kit contents!
 
-    future:
-    - redesigned belt holders
-    - sd card module
-    - wifi sd card software integration (wifi autoprint)
-    - 3.2in touchscreen lcd?
-    - rasp pi integration?
+
 - else
   :textile
-    Stiamo rivoluzionando il modello di stampante 3d RepRap Wallace visto che lo troviamo assolutamente semplice: http://reprap.org/mediawiki/images/c/c7/Wallace.jpg
-    Lo troviamo facilmente modificabile e per questo ringraziamo il suo creatore: https://github.com/Whosawhatsis
+    Abbiamo rivoluzionato il modello di stampante 3d RepRap Wallace visto che lo troviamo assolutamente semplice: http://reprap.org/mediawiki/images/c/c7/Wallace.jpg
+    Lo abbiamo trovato facilmente modificabile e per questo ringraziamo il suo creatore: https://github.com/Whosawhatsis
 
     la nostra stampante 3d:
     - *due formati*:
@@ -51,17 +43,25 @@
     - set di brugole
     - pinzette per rimuovere la plastica rimasta attaccata all'estrusore
 
-    probabilmente includeremo questi altri pezzi in un kit separato:
-    - porta bobina
-    - calibro
+    scorrete per vedere le foto che mostrano i dettagli della stampante e il contenuto del kit di assemblaggio!
 
-    futuro:
-    - blocca cinghia ridisegnati redesigned belt holders
-    - modulo lcd / sd card
-    - integrazione scheda sd wifi (wifi autoprint - stampa automatica wifi)
-    - touchscreen da 3.2 pollici
-    - integrazione raspberry pi
-    '
+
+
+-#  future:
+-#  - redesigned belt holders
+-#  - sd card module
+-#  - wifi sd card software integration (wifi autoprint)
+-#  - 3.2in touchscreen lcd?
+-#  - rasp pi integration?
+-#
+-#
+-#  futuro:
+-#  - blocca cinghia ridisegnati redesigned belt holders
+-#  - modulo lcd / sd card
+-#  - integrazione scheda sd wifi (wifi autoprint - stampa -#automatica wifi)
+-#  - touchscreen da 3.2 pollici
+-#  - integrazione raspberry pi
+
 
 
 
@@ -86,14 +86,44 @@
 
 %h2 Pictures:
 
+%h3 Final version:
+%img{ src: "/img/3dm1_printer_objects.jpg" }
+
 - dir = "img/3dm1_printer"
 - Dir.glob("public/#{dir}/*.jpg").each do |pic|
   - name = File.basename pic, "*.jpg"
-	
+
   %img{ src: "#{dir}/#{name}" }
 
+%h3 Alpha version:
 %img{ src: "/img/3dm1_alpha.jpg" }
 
 %h2 Wallace (original model):
 
 %img{ src: "/img/reprap_wallace_small.jpg", style: "width: 40%" }
+
+
+
+%img{ src: "/img/3dm1_printer_objects.jpg", style: "float: right; width: 40%; margin-left: 2%" }
+
+
+%h4
+  - if en?
+    To order a 3DM1 send us a mail to
+    %a{ href: "mailto:print@3dmaking.it" } print@3dmaking.it
+    or contact us via
+    %a{ href: "http://facebook.com/3dmaking" } facebook
+
+    Launch price 700 EUR + 22% VAT (only applied in europe, not applied for companies) + shipping costs (20-40 EUR)
+    Kit: 500 EUR + VAT + shipping
+
+  - else
+    Per ordinare una stampante 3DM1 inviaci un'email a:
+    %a{ href: "mailto:print@3dmaking.it" } print@3dmaking.it
+    oppure un
+    %a{ href: "http://facebook.com/3dmaking" } messaggio su facebook
+
+    Prezzo lancio: 700 EUR + iva per una stampante assemblata e calibrata!
+    500 EUR + iva per il kit! Che aspetti!
+    %a{ href: "mailto:print@3dmaking.it" } Ordina ora!
+
