@@ -65,7 +65,7 @@ class TDMaking < Sinatra::Base
       albums
     end
 
-    filtered = ["profile_pictures", "cover_photos"]
+    filtered = ["profile_pictures", "cover_photos", "timeline_photos"]
     albums.reject!{ |a| filtered.include? a.name_url }
     albums
   end

@@ -1,0 +1,1 @@
+# delete albums.yaml and visit http://localhost:3000/db/albums.yaml
