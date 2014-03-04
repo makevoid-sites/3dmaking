@@ -64,6 +64,7 @@ GEM
     slop (3.4.6)
     thor (0.18.1)
     tilt (1.4.1)
+    voidtools (0.2.9)
 
 PLATFORMS
   ruby
@@ -77,3 +78,4 @@ DEPENDENCIES
   haml
   haml-contrib
   sinatra
+  voidtools

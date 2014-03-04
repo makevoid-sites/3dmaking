@@ -1,33 +1,33 @@
+%section.welcome
+  %p.tagline
+    - if en?
+      %a{ href: "/printer_3dm1"} 3DM1 printer
+      is out! Simple, precise and open source! Check the specifications and get it at an unbeatable price!
+      %br/
+      3DMaking also offers
+      %strong 3D printing services
+      in Florence, Italy! Visit our shop or send us an email.
+      %br/
+      We will be happy to turn your three dimensional ideas in reality :)
+      %br/
+      If you still don't have an idea of what to 3d print, you can search in
+      %a{href: "http://thingiverse.com"} thingiverse
+      and select an already made 3d model.
+    - else
+      E' uscita la nostra
+      %a{ href: "/printer_3dm1"} stampante 3d 3DM1
+      \! Semplice, precisa e open source! Guarda le foto e le specifiche e ordinala a un prezzo imbattibile!
+      %br/
+      3DMaking inoltre, offre
+      %strong servizi di stampa in 3D
+      a Firenze! Visita il nostro shop o inviaci un'email!
+      %br/
+      Saremmo felici di trasformare le tue idee in oggetti 3d!
+      %br/
 
-%p.tagline
-  - if en?
-    %a{ href: "/printer_3dm1"} 3DM1 printer
-    is out! Simple, precise and open source! Check the specifications and get it at an unbeatable price!
-    %br/
-    3DMaking also offers
-    %strong 3D printing services
-    in Florence, Italy! Visit our shop or send us an email.
-    %br/
-    We will be happy to turn your three dimensional ideas in reality :)
-    %br/
-    If you still don't have an idea of what to 3d print, you can search in
-    %a{href: "http://thingiverse.com"} thingiverse
-    and select an already made 3d model.
-  - else
-    E' uscita la nostra
-    %a{ href: "/printer_3dm1"} stampante 3d 3DM1
-    \! Semplice, precisa e open source! Guarda le foto e le specifiche e ordinala a un prezzo imbattibile!
-    %br/
-    3DMaking inoltre, offre
-    %strong servizi di stampa in 3D
-    a Firenze! Visita il nostro shop o inviaci un'email!
-    %br/
-    Saremmo felici di trasformare le tue idee in oggetti 3d!
-    %br/
-
-    Se ancora non hai un'idea di cosa stampare, puoi andare su
-    %a{href: "http://thingiverse.com"} thingiverse
-    e scegliere un modello 3d gi&agrave; fatto.
+      Se ancora non hai un'idea di cosa stampare, puoi andare su
+      %a{href: "http://thingiverse.com"} thingiverse
+      e scegliere un modello 3d gi&agrave; fatto.
 
 %section.contacts
   %h1
@@ -35,35 +35,35 @@
   %p
     %a{href: "mailto:print@3dmaking.it"} print@3dmaking.it
 
+/
+  %section.gallery
 
-%section.gallery
+    %h1= t "Photos of some 3D object we printed", "Foto di alcuni oggetti stampati in 3D da noi"
 
-  %h1= t "Photos of some 3D object we printed", "Foto di alcuni oggetti stampati in 3D da noi"
-
-  - albums.each do |album|
-    - next unless album.cover.images
-    .album
-      - img = album.cover.images[5]
-      %a{ href: "/albums/#{album.name_url}" }
-        %h1= album.name
-        .img_box
-          - vertical = img["width"] < img["height"]
-          %img{ src: img["source"], class: "#{"vert" if vertical}" }
-        -# :escaped
-        -#   #{album.cover.images[4]["source"]}
-        -# %img{ src: "https://graph.facebook.com/#{album.cover_photo}/picture?type=album" }
+    - albums.each do |album|
+      - next unless album.cover.images
+      .album
+        - img = album.cover.images[5]
+        %a{ href: "/albums/#{album.name_url}" }
+          %h1= album.name
+          .img_box
+            - vertical = img["width"] < img["height"]
+            %img{ src: img["source"], class: "#{"vert" if vertical}" }
+          -# :escaped
+          -#   #{album.cover.images[4]["source"]}
+          -# %img{ src: "https://graph.facebook.com/#{album.cover_photo}/picture?type=album" }
 
   .clear
 
-%section.online_shop
-  %h1 Online shop:
-  /
-    %p
-      = t "Upload your STL and have it printed! coming soon!", "Carica il file del modello (STL) e ordina la stampa 3d dell'oggetto contenuto."
-  %p= t "We are building the online shop, in the meantime, to order a 3D printed object just send us an email or a FB message!", "Stiamo lavorando sullo shop online, nel frattempo per ordinare un oggetto stampato in 3D, mandaci una mail o scrivici un messaggio su FB!"
+/
+  %section.online_shop
+    %h1 Online shop:
+    %p= t "Upload your STL and have it printed! coming soon!", "Carica il file del modello (STL) e ordina la stampa 3d dell'oggetto contenuto."
+    %p= t "We are building the online shop, in the meantime, to order a 3D printed object just send us an email or a FB message!", "Stiamo lavorando sullo shop online, nel frattempo per ordinare un oggetto stampato in 3D, mandaci una mail o scrivici un messaggio su FB!"
 
 %p.normal
   = t "We use RepRap based printers. We strongly believe in Open Source (and Open Hardware), and we offer consultancy if you want to build your first 3D printer. Come and visit us or drop us a line.", "Usiamo stampanti basate sul progetto RepRap. Crediamo che l'Open Source (e l'Open Hardware) sia una soluzione, offriamo consulenza nell'assemblaggio della tua prima stampante 3D."
+
 %section.contacts
   %h1
     = t("Contact us:", "Contattaci:")

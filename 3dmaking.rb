@@ -3,6 +3,8 @@ require "#{path}/config/env"
 
 class TDMaking < Sinatra::Base
 
+  include Voidtools::Sinatra::ViewHelpers
+
   before do
     env = request.env
     @host = env["REMOTE_HOST"]
