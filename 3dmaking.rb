@@ -54,6 +54,10 @@ class TDMaking < Sinatra::Base
     haml :printing_service
   end
 
+  get "/shop" do
+    haml :shop
+  end
+
   # datas
 
   def albums
