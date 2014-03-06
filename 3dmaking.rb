@@ -81,6 +81,10 @@ class TDMaking < Sinatra::Base
   def en?
     @lang == "en"
   end
+  
+  def it?
+    !en?
+  end
 
   def t(en, it)
     en? ? en : it

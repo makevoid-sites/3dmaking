@@ -1,5 +1,5 @@
 (function() {
-  var bind_lightbox, lightbox;
+  var bind_lightbox, lightbox, load_headroom, load_slidejs;
 
   lightbox = function() {
     var time, _i, _len, _ref;
@@ -63,6 +63,34 @@
     return height * ratio;
   };
 
+  load_slidejs = function() {
+    return $("#slides").slidesjs({
+      width: 940,
+      height: 528,
+      play: {
+        auto: true,
+        active: true,
+        interval: 4500
+      },
+      effect: {
+        slide: {
+          speed: 1000
+        }
+      }
+    });
+  };
+
+  load_headroom = function() {
+    var elem, headroom, options;
+    elem = document.querySelector("header");
+    options = {
+      offset: 90
+    };
+    headroom = new Headroom(elem, options);
+    headroom.init();
+    return $("header").css("width", "100%");
+  };
+
   bind_lightbox = function() {
     return $(".album .album img").on("click", function() {
       var url;
@@ -73,6 +101,8 @@
   };
 
   $(function() {
+    load_slidejs();
+    load_headroom();
     return bind_lightbox();
   });
 

@@ -1,3 +1,10 @@
+%section.gallery
+  #slides
+    %img{ src: "/img/3dm1_printer/plate_view.jpg" }
+    %img{ src: "/img/3dm1_printer/nema17_high_torque_skidproof_and_buda_nozzle.jpg" }
+    %img{ src: "/img/3dm1_printer/printed_parts.jpg" }
+
+
 %section.welcome
   %p.tagline
     - if en?
@@ -67,6 +74,13 @@
   %p
     %a{href: "mailto:print@3dmaking.it"} print@3dmaking.it
 
+  - if it?
+    %p.small
+      3DMaking e' un progetto di
+      %a{ href: "http://makevoid.com" } Makevoid
+      e
+      %a{ href: "http://ltestudio.it"  } LTE Studio
+    
   %p.normal
     %a{href: "https://www.facebook.com/3dmaking"}
       %img.icon{src: "/img/fb_icon.png"}/
@@ -76,9 +90,4 @@
         %strong pagina Facebook
 
 
-  %p.small
-    3DMaking e' un progetto di
-    %a{ href: "http://makevoid.com" } Makevoid
-    e
-    %a{ href: "http://ltestudio.it"  } LTE Studio
 

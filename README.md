@@ -26,3 +26,6 @@ sorry for the mess but look into 3dshop project (and 3dshop/Readme.md)
 if you like any of these: Cura (CuraEngine), ruby slicing on the fly, gcode visualization with threejs (integrated a vendored lib)
 
 
+### Credits
+
+Flag icons: FamFamFam: http://famfamfam.com

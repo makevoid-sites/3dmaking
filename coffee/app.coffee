@@ -43,7 +43,33 @@ lightbox.image_width = ->
   ratio = width / height
   height = Math.min page_height, height
   height * ratio
-  
+
+# slidejs3 gallery
+
+load_slidejs = ->
+  $("#slides").slidesjs 
+    width: 940,
+    height: 528,
+    play:
+      auto: true,
+      active: true,
+      interval: 4500,
+    effect:
+      slide: 
+        speed: 1000
+        
+# headroom
+
+load_headroom = ->
+  elem = document.querySelector "header"
+  options = {
+    offset: 90
+  }
+  headroom = new Headroom(elem, options)
+  headroom.init()
+  $("header").css("width", "100%")
+  #$("header").headroom()
+
 # app code
 
 bind_lightbox = ->
@@ -55,4 +81,7 @@ bind_lightbox = ->
 # main
 
 $ ->
+  load_slidejs()
+  load_headroom()
   bind_lightbox()
+  

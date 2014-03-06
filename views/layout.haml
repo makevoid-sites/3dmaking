@@ -19,39 +19,47 @@
     %meta{ content: description, name: "description" }/
   %link{href: "/css/main.css", rel: "stylesheet" }/
   %body{ class: body_class }
-    .outer_cont
-
-      %section.container
-        .header
-          .lang.right
+    %section.container
+      %header.header
+        .bg
+          .lang
             - @host = "3dmaking.it" if ENV["RACK_ENV"] == "production"
             - if en?
-              %a{ href: "http://#{@host}" }    Italian
+              %a{ href: "http://#{@host}" }  
+                %img{ src: "/img/icons/flag_it.png" }
+                /Italian
             - else
-              %a{ href: "http://en.#{@host}" } English
+              %a{ href: "http://en.#{@host}" } 
+                %img{ src: "/img/icons/flag_en.png" }
+                /English
 
           %h1
             %a{ href: "/"}
-              %img{ src: "/img/3dm_logo_site.png"}
-            %a.site_name{ href: "/"}
-              %span.tred 3D
-              %span.making Making
+              %img{ src: "/img/3dm_logo_site_white.png"}
+            /
+              %a.site_name{ href: "/"}
+                %span.tred 3D
+                %span.making Making
 
           %nav
             %a{ href: "/printer_3dm1" }= t "3D Printer", "Stampante 3D"
-            %a{ href: "/printing_service" }= t "Get things printed", "Stampa 3D di oggetti"
+            %a{ href: "/printing_service" }= t "Get things printed", "Stampa 3D"
             %a{ href: "/shop" } Shop
             -#%a{ href: "/photos" }= t "Photos", "Foto"
             -#%a{ href: "/team" } Team
             %a{ href: "/press" } Press
             %a{ href: "/contact" }= t "Contact", "Contatti"
+ 
           .clear
+        .belt 
 
-        .content
-          = yield
+      .content
+        = yield
 
-        .clear
+      .clear
     %script{ type: "text/javascript", src: "/js/vendor/jquery.js" }
+    %script{ type: "text/javascript", src: "/js/vendor/slidejs3.js" }  
+    %script{ type: "text/javascript", src: "/js/vendor/headroom.js" }     
     %script{ type: "text/javascript", src: "/js/vendor/jimagesloaded.js" }
     -# %script{ type: "text/javascript", src: "/js/vendor/zepto.js" }
     -# %script{ type: "text/javascript", src: "/js/vendor/flowtype.js" }
