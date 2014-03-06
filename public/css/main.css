@@ -1,6 +1,6 @@
 @font-face {
   font-family: Myriad;
-  src: url("/fonts/myriad_pro.ttf"); }
+  src: url("/fonts/myriad_pro_regular.otf"); }
 
 a {
   text-decoration: none; }
@@ -23,7 +23,7 @@ html, body, .outer_cont {
   height: 100%; }
 
 .container {
-  width: 80%;
+  width: 85%;
   margin: 0 auto;
   padding: 30px 0 50px;
   max-width: 1400px; }
@@ -43,40 +43,52 @@ h1 {
   margin: 0;
   font-size: 1.2em; }
 
-.container > h1 {
+.header > h1 {
+  width: 20%;
   font-family: Myriad;
   line-height: 1em;
   font-weight: normal;
   text-transform: uppercase;
   font-size: 20px;
-  text-align: center; }
-  .container > h1 a {
+  text-align: center;
+  letter-spacing: 0.4em;
+  display: inline-block;
+  float: left; }
+  .header > h1 a {
     color: #333333; }
-    .container > h1 a:hover {
+    .header > h1 a:hover {
       color: #444444; }
-  .container > h1 img {
+    .header > h1 a span.tred {
+      color: #056839;
+      position: relative;
+      right: -8px; }
+  .header > h1 img {
     width: 80px;
     margin: 0 auto;
     display: block; }
-  .container > h1 a.site_name {
+  .header > h1 a.site_name {
     margin: 20px auto 40px;
     display: block;
     position: relative;
     left: -0.73em; }
-  .container > h1:hover {
+  .header > h1:hover {
     opacity: 0.9; }
 
-.container > nav {
+.header > nav {
+  width: 80%;
+  display: inline-block;
+  float: left;
   margin: 20px 0 0 0; }
-  .container > nav a {
+  .header > nav a {
     background: #777777;
-    padding: 0.6em 1em;
+    padding: 0.3em 0.6em;
     color: white;
     font-weight: bold;
     border-radius: 10px;
-    margin: 0 1.3% 0 0;
-    line-height: 58px; }
-    .container > nav a:hover {
+    font-size: 0.9em;
+    line-height: 2.2em;
+    margin: 0 1.3% 0 0; }
+    .header > nav a:hover {
       background: #999999; }
 
 .content {
@@ -101,7 +113,8 @@ img {
 img.icon {
   width: auto;
   position: relative;
-  top: 12px; }
+  top: 32px;
+  margin-right: 4px; }
 
 .contacts {
   margin: 20px 0 0 0; }
@@ -161,6 +174,10 @@ p.tagline {
 
 p.normal {
   font-size: 1.1em; }
+
+.home .content img {
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 .lightbox {
   position: absolute;

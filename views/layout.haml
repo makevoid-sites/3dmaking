@@ -22,22 +22,35 @@
     .outer_cont
 
       %section.container
-        .right
-          - @host = "3dmaking.it" if ENV["RACK_ENV"] == "production"
-          - if en?
-            %a{ href: "http://#{@host}" }    Italian
-          - else
-            %a{ href: "http://en.#{@host}" } English
+        .header
+          .lang.right
+            - @host = "3dmaking.it" if ENV["RACK_ENV"] == "production"
+            - if en?
+              %a{ href: "http://#{@host}" }    Italian
+            - else
+              %a{ href: "http://en.#{@host}" } English
 
-        %h1
-          %a{ href: "/"}
-            %img{ src: "/img/3dm_logo_site.png"}
-          %a.site_name{ href: "/"} 3DMaking
+          %h1
+            %a{ href: "/"}
+              %img{ src: "/img/3dm_logo_site.png"}
+            %a.site_name{ href: "/"}
+              %span.tred 3D
+              %span.making Making
+
+          %nav
+            %a{ href: "/printer_3dm1" }= t "3D Printer", "Stampante 3D"
+            %a{ href: "/printing_service" }= t "Get things printed", "Stampa 3D di oggetti"
+            %a{ href: "/shop" } Shop
+            %a{ href: "/photos" }= t "Photos", "Foto"
+            %a{ href: "/team" } Team
+            %a{ href: "/press" } Press
+            %a{ href: "/contact" }= t "Contact", "Contatti"
+          .clear
 
         %nav
           %a{ href: "/printer_3dm1" }= t "3DM1 - Our 3D Printer", "3DM1 - Stampante 3D"
           %a{ href: "/printing_service" }= t "Get things printed", "Stampa 3D di oggetti"
-          %a{ href: "/photos" }= t "Photos", "Foto"
+          -#%a{ href: "/photos" }= t "Photos", "Foto"
           -#%a{ href: "/team" } Team
           %a{ href: "/press" } Press
           %a{ href: "/contact" }= t "Contact", "Contatti"
