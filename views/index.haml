@@ -6,32 +6,32 @@
 
 
 %section.welcome
-  %p.tagline
-    - if en?
+  - if en?
+    %p
       %a{ href: "/printer_3dm1"} 3DM1 printer
       is out! Simple, precise and open source, check the specifications and get it at an unbeatable price!
-      %br/
+    %p
       3DMaking also offers
       %strong 3D printing services
       in Florence, Italy! Visit our shop or send us an email.
-      %br/
+    %p
       We will be happy to turn your three dimensional ideas in reality :)
-      %br/
+    %p
       If you still don't have an idea of what to 3d print, you can search in
       %a{href: "http://thingiverse.com"} thingiverse
       and select an already made 3d model.
-    - else
+  - else
+    %p
       E' uscita la nostra
       %a{ href: "/printer_3dm1"} stampante 3d 3DM1
       \! Semplice, precisa e open source! Guarda le foto e le specifiche e ordinala a un prezzo imbattibile!
-      %br/
+    %p
       3DMaking inoltre, offre
       %strong servizi di stampa in 3D
       a Firenze! Visita il nostro shop o inviaci un'email!
-      %br/
+    %p
       Saremmo felici di trasformare le tue idee in oggetti 3d!
-      %br/
-
+    %p
       Se ancora non hai un'idea di cosa stampare, puoi andare su
       %a{href: "http://thingiverse.com"} thingiverse
       e scegliere un modello 3d gi&agrave; fatto.
@@ -64,8 +64,8 @@
     %p= t "We are building the online shop, in the meantime, to order a 3D printed object just send us an email or a FB message!", "Stiamo lavorando sullo shop online, nel frattempo per ordinare un oggetto stampato in 3D, mandaci una mail o scrivici un messaggio su FB!"
 
 %section.info
-  %img{ src: "/img/3dm1_printer/plate_view.jpg" }
-  %p.normal
+  /%img{ src: "/img/3dm1_printer/plate_view.jpg" }
+  %p
     = t "We use RepRap based printers. We strongly believe in Open Source (and Open Hardware), and we offer consultancy if you want to build your first 3D printer. Come and visit us or drop us a line.", "Usiamo stampanti basate sul progetto RepRap. Crediamo che l'Open Source (e l'Open Hardware) sia una soluzione, offriamo consulenza nell'assemblaggio della tua prima stampante 3D."
 
 %section.contacts
@@ -81,7 +81,7 @@
       e
       %a{ href: "http://ltestudio.it"  } LTE Studio
     
-  %p.normal
+  %p
     %a{href: "https://www.facebook.com/3dmaking"}
       %img.icon{src: "/img/fb_icon.png"}/
     %a{href: "https://www.facebook.com/3dmaking"}

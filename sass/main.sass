@@ -88,12 +88,15 @@ h1
   
   
 .header 
-  width: 100%
   font-family: Bazar
   text-transform: uppercase
   .bg
-    padding: 10px 6% 0
+    padding: 10px 0 0 0
     background: #333
+  .inner  
+    width: 94%
+    margin: 0 auto
+    max-width: 1000px
 
 .header h1
   $main: #ffa561
@@ -147,7 +150,9 @@ h1
   height: 20px    
 
 .content
-  margin: 100px 6% 0 
+  margin: 100px auto 0
+  max-width: 1000px
+  width: 94%
   & > h1
     font-size: 2em
     margin: 0 0 20px 0
@@ -236,12 +241,13 @@ p
 .img_box
   overflow: hidden
 
+p
+  margin-bottom: 0.6em
+  font-size: 1.1em
+
 p.tagline
-  margin: 2em 0 0 0
   font-size: 1.2em
 
-p.normal
-  font-size: 1.1em
 
 
 // sections - home
