@@ -4,33 +4,22 @@
     %img{ src: "/img/3dm1_printer/nema17_high_torque_skidproof_and_buda_nozzle.jpg" }
     %img{ src: "/img/3dm1_printer/printed_parts.jpg" }
 
-
+%section.tagline
+  %p Trasforma le tue idee in oggetti
+  
 %section.welcome
   - if en?
-    %p
-      %a{ href: "/printer_3dm1"} 3DM1 printer
-      is out! Simple, precise and open source, check the specifications and get it at an unbeatable price!
-    %p
-      3DMaking also offers
-      %strong 3D printing services
-      in Florence, Italy! Visit our shop or send us an email.
-    %p
-      We will be happy to turn your three dimensional ideas in reality :)
+    :textile
+      3DMaking is a lab specialized in 3D print. Rapid prototyping, customizable objects, "3D printers manufacturing":/printer_3dm1, tech assistance hardware and software are some of our services.
     %p
       If you still don't have an idea of what to 3d print, you can search in
       %a{href: "http://thingiverse.com"} thingiverse
       and select an already made 3d model.
   - else
-    %p
-      E' uscita la nostra
-      %a{ href: "/printer_3dm1"} stampante 3d 3DM1
-      \! Semplice, precisa e open source! Guarda le foto e le specifiche e ordinala a un prezzo imbattibile!
-    %p
-      3DMaking inoltre, offre
-      %strong servizi di stampa in 3D
-      a Firenze! Visita il nostro shop o inviaci un'email!
-    %p
-      Saremmo felici di trasformare le tue idee in oggetti 3d!
+    :textile
+      3DMaking è un laboratorio specializzato nella stampa 3D. Prototipazione rapida, realizzazione di oggetti personalizzati, "produzione di stampanti 3D":/printer_3dm1, assistenza tecnica hardware e software sono alcuni dei servizi che offriamo. 
+   
+  
     %p
       Se ancora non hai un'idea di cosa stampare, puoi andare su
       %a{href: "http://thingiverse.com"} thingiverse
@@ -68,26 +57,6 @@
   %p
     = t "We use RepRap based printers. We strongly believe in Open Source (and Open Hardware), and we offer consultancy if you want to build your first 3D printer. Come and visit us or drop us a line.", "Usiamo stampanti basate sul progetto RepRap. Crediamo che l'Open Source (e l'Open Hardware) sia una soluzione, offriamo consulenza nell'assemblaggio della tua prima stampante 3D."
 
-%section.contacts
-  %h1
-    = t("Contact us:", "Contattaci:")
-  %p
-    %a{href: "mailto:print@3dmaking.it"} print@3dmaking.it
-
-  - if it?
-    %p.small
-      3DMaking e' un progetto di
-      %a{ href: "http://makevoid.com" } Makevoid
-      e
-      %a{ href: "http://ltestudio.it"  } LTE Studio
-    
-  %p
-    %a{href: "https://www.facebook.com/3dmaking"}
-      %img.icon{src: "/img/fb_icon.png"}/
-    %a{href: "https://www.facebook.com/3dmaking"}
-      Visita la nostra
-      = succeed "!" do
-        %strong pagina Facebook
-
-
+%br
+%hr
 

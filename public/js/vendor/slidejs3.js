@@ -118,13 +118,13 @@
           "class": "slidesjs-previous slidesjs-navigation",
           href: "#",
           title: "Previous",
-          text: "<"
+          text: "⇜"
         }).appendTo($element);
         nextButton = $("<a>", {
           "class": "slidesjs-next slidesjs-navigation",
           href: "#",
           title: "Next",
-          text: ">"
+          text: "⇝"
         }).appendTo($element);
       }
       $(".slidesjs-next", $element).click(function(e) {
@@ -148,7 +148,7 @@
           "class": "slidesjs-stop slidesjs-navigation",
           href: "#",
           title: "Stop",
-          text: "■"
+          text: "▣"
         }).appendTo($element);
         playButton.click(function(e) {
           e.preventDefault();

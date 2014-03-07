@@ -23,7 +23,7 @@ $photo_margin: 10px solid #333
   font-weight: bold
   border-radius: 4px
   font-size: 1.1em
-  line-height: 2.2em
+  line-height: 2em
   &:hover
     background: #eee
     color: #444
@@ -40,6 +40,10 @@ $photo_margin: 10px solid #333
   font-family: Bazar
   src: url('/fonts/bazar.ttf')
 
+@font-face
+  font-family: Gafeta
+  src: url('/fonts/gafeta.woff')  
+
 *
   box-sizing: border-box
 
@@ -51,7 +55,7 @@ body
   font-size: 1em
   width: 100%
   background: $bg
-  font-family: 'Helvetica Neue', Helvetica, sans-serif, Arial, Verdana
+  font-family: Gafeta, 'Helvetica Neue', Helvetica, sans-serif, Arial, Verdana
 
 
 
@@ -137,11 +141,13 @@ h1
 .header nav
   display: inline-block
   float: left
-  margin: 11px 0 0 6%
+  margin: 11px 0 0 3%
   width: 80%
+  text-align: center
   a
     +button()
     margin: 0 1.3% 0 0
+    display: inline-block
 
 
 .belt
@@ -169,6 +175,9 @@ section > section > h1
 p
   margin: 0 0 1em
   line-height: 1.35em
+  font-size: 1.15em
+  margin-bottom: 0.6em
+
 
 .home .content, .printer_3dm1 .content
   img
@@ -186,7 +195,7 @@ p
   margin: 20px 0 0 0
 
 .gallery
-  margin: 20px 0 20px
+  margin: 20px 0 0
   h1
     margin: 0 0 10px 0
 
@@ -241,12 +250,6 @@ p
 .img_box
   overflow: hidden
 
-p
-  margin-bottom: 0.6em
-  font-size: 1.1em
-
-p.tagline
-  font-size: 1.2em
 
 
 
@@ -256,8 +259,19 @@ p.tagline
   img
     margin-top: 20px
     margin-bottom: 20px
+  .tagline
+    p
+      text-align: center
+      font-size: 3em
+      font-family: Bazar
+      text-transform: uppercase
+      color: #333
+      border-bottom: 1px solid #333
+      border-top: 1px solid #333
+  
 
 
+  
 
 // lightbox
 
@@ -282,8 +296,11 @@ p.tagline
 
 #slides
   display:none
+  font-size: 1.5em
   .slidesjs-navigation
     margin-right: 7px
+    color: #333
+    
   .slidesjs-container
     border-bottom: $photo_margin
   img
@@ -291,9 +308,10 @@ p.tagline
   .slidesjs-pagination
     float: right
     position: relative
-    top: -20px
+    top: -30px
     a
       margin-right: 7px
+      color: #333
       &.active
         color: white
 
