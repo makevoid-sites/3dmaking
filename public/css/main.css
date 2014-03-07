@@ -12,7 +12,7 @@ body {
   margin: 0;
   font-size: 1em;
   width: 100%;
-  background: #bbbbbb;
+  background: #eeeeee;
   font-family: "Helvetica Neue", Helvetica, sans-serif, Arial, Verdana; }
 
 html, body, .outer_cont {
@@ -122,7 +122,7 @@ p {
   margin: 0 0 1em;
   line-height: 1.35em; }
 
-.home .content img {
+.home .content img, .printer_3dm1 .content img {
   width: 100%;
   border: 10px solid #333333; }
 
