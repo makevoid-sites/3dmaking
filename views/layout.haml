@@ -8,7 +8,7 @@
     %meta{ content: "Francesco 'makevoid' Canessa", name: "author" }/
     %meta{ content: "1IuWAn47PLQ0AQpcJGeVQjqNMrfnnj-rFJOc7BawL3w", name: "google-site-verification" }/
     %meta{ content: "3DMaking", property: "og:site_name" }/
-    %meta{ content: "3DMaking - #{t "make everything in 3D!", "stampa in 3D!"}", property: "og:title" }/
+    %meta{ content: "3DMaking - #{t "Make ideas into objects", "Trasforma le tue idee in oggetti"}", property: "og:title" }/
     %meta{ content: "http://3dmaking.it/img/3dmaking_logo_square.png", property: "og:image" }/
     %meta{ content: "http://3dmaking.it", property: "og:url" }/
     %meta{ content: "website", property: "og:type" }/
@@ -26,11 +26,11 @@
             .lang
               - @host = "3dmaking.it" if ENV["RACK_ENV"] == "production"
               - if en?
-                %a{ href: "http://#{@host}" }  
+                %a{ href: "http://#{@host}" }
                   %img{ src: "/img/icons/flag_it.png" }
                   /Italian
               - else
-                %a{ href: "http://en.#{@host}" } 
+                %a{ href: "http://en.#{@host}" }
                   %img{ src: "/img/icons/flag_en.png" }
                   /English
 
@@ -50,17 +50,17 @@
               -#%a{ href: "/team" } Team
               %a{ href: "/press" } Press
               %a{ href: "/contact" }= t "Contact", "Contatti"
- 
+
             .clear
-        .belt 
+        .belt
 
       .content
         = yield
 
       .clear
     %script{ type: "text/javascript", src: "/js/vendor/jquery.js" }
-    %script{ type: "text/javascript", src: "/js/vendor/slidejs3.js" }  
-    %script{ type: "text/javascript", src: "/js/vendor/headroom.js" }     
+    %script{ type: "text/javascript", src: "/js/vendor/slidejs3.js" }
+    %script{ type: "text/javascript", src: "/js/vendor/headroom.js" }
     %script{ type: "text/javascript", src: "/js/vendor/jimagesloaded.js" }
     -# %script{ type: "text/javascript", src: "/js/vendor/zepto.js" }
     -# %script{ type: "text/javascript", src: "/js/vendor/flowtype.js" }
