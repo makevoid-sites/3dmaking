@@ -19,4 +19,6 @@ group :development do
   gem "guard-livereload"
   gem "guard-coffeescript"
   # gem "guard-livereload", git: ""
+
+  gem "thin"
 end

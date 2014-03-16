@@ -28,39 +28,82 @@
 
 - else
   :textile
-    Abbiamo rivoluzionato il modello di stampante 3d RepRap Wallace visto che lo troviamo assolutamente semplice: http://reprap.org/mediawiki/images/c/c7/Wallace.jpg
-    Lo abbiamo trovato facilmente modificabile e per questo ringraziamo il suo creatore: https://github.com/Whosawhatsis
+    h4. Punti di forza:
 
-    la nostra stampante 3d:
-    - *due formati principali*:
-    ---- big: area stampabile di circa 40x40cm, larghezza ugello estrusore 0.5mm o superiore)
-    ---- standard: dimensioni ridotte (20x20cm), piu' precisa, ugello 0.35mm) - consigliata!
-    - *carrello X* compatibile jhead / budashnozzle o altre *teste d'estrusione corte*
-    - *piatto e sottopiatto in plexiglass/acrilico*
-    - coupler dell'asse Z e pignoni X,Y in alluminio
-
-    il nostro kit e la nostra stampante assemblata includera':
-    - set di brugole
-    - pinzette per rimuovere la plastica rimasta attaccata all'estrusore
-
-    scorrete per vedere le foto che mostrano i dettagli della stampante e il contenuto del kit di assemblaggio!
+    - Semplicita' della struttura
+    - Montaggio veloce rispetto alle altre RepRap
+    - Accelerazione da firmware adatta per buon rapporto qualita / velocita' e controllo vibrazioni
+    - Scalabile nelle dimensioni (specialmente Y e Z)
+    - Costo contenuto
+    - Disponibile sia in versione assemblata che in kit di montaggio
 
 
+    h4. Caratteristiche tecniche:
 
--#  future:
--#  - redesigned belt holders
--#  - sd card module
--#  - wifi sd card software integration (wifi autoprint)
--#  - 3.2in touchscreen lcd?
--#  - rasp pi integration?
--#
--#
--#  futuro:
--#  - blocca cinghia ridisegnati redesigned belt holders
--#  - modulo lcd / sd card
--#  - integrazione scheda sd wifi (wifi autoprint - stampa -#automatica wifi)
--#  - touchscreen da 3.2 pollici
--#  - integrazione raspberry pi
+    - Estrusore 0.35mm, filamento da 1.75mm, PLA, ABS (stampe piccole), PVA, Nylon, etc..
+    - Dimensioni di stampa di default: 19x22x19cm (estendibili se necessario)
+    - Piatto e sottopiatto in acrilico (plexiglass)
+    - Motori NEMA17 high torque, skidproof
+    - Z Coupler e puleggie in alluminio
+    - Estrusore Greg3
+    - Firmware preinstallato e preconfigurato
+    - Realmente Open Source (pezzi: "RepRap_3DM1":https://github.com/makevoid/RepRap_3DM1 , firmware: "3DM_Marlin_firmware":https://github.com/makevoid/3DM_Marlin_firmware )
+    - Scheda Minitronics (disponibili anche Azteeg e Sanguinololu)
+    - Barre M8, viteria M3
+    - Alimentatore 12V 10A stabilizzato
+    - Estrusore JHead
+    - Resistore a "cartuccia" alta potenza
+    - Opzionali: Piano riscaldato e/o LCD con SD card reader per stampa autonoma estendibile.
+
+
+    h4. Software d'utilizzo consigliati (free & open source):
+
+    Ultimaker Cura per lo slicing e per la stampa
+
+    Profilo Cura: fornito un di profilo (.ini) customizzato per le tue esigenze di stampa
+
+    Progetto RepRap, derivata dal prototipo Wallace, completata e customizzata da noi di 3DMaking.
+
+
+    h3. Prezzo:
+
+    *Assemblata: &nbsp;699 &euro;* (assistenza in negozio o via skype compresa) !
+    *Kit standard: 499 &euro;*
+
+    prezzi IVA esclusa
+
+
+
+  -# La nostra stampante 3d:
+  -# - *due formati principali*:
+  -# ---- big: area stampabile di circa 40x40cm, larghezza# ugello estrusore 0.5mm o superiore)
+  -# ---- standard: dimensioni ridotte (20x20cm), piuprecisa, -# ugello 0.35mm) - consigliata!
+  -# - *carrello X* compatibile jhead / budashnozzle o altr-# *teste d'estrusione corte*
+  -# - *piatto e sottopiatto in plexiglass/acrilico*
+  -# - coupler dell'asse Z e pignoni X,Y in alluminio
+
+  -# il nostro kit e la nostra stampante assemblatincludera':
+  -# - set di brugole
+  -# - pinzette per rimuovere la plastica rimasta attaccatall'-# estrusore
+
+  -# scorrete per vedere le foto che mostrano i dettagldella -# stampante e il contenuto del kit di assemblaggio!
+
+
+
+  -# -#  future:
+  -# -#  - redesigned belt holders
+  -# -#  - sd card module
+  -# -#  - wifi sd card software integration (wifi autoprint)
+  -# -#  - 3.2in touchscreen lcd?
+  -# -#  - rasp pi integration?
+  -# -#
+  -# -#
+  -# -#  futuro:
+  -# -#  - blocca cinghia ridisegnati redesigned belt holders
+  -# -#  - modulo lcd / sd card
+  -# -#  - integrazione scheda sd wifi (wifi autoprint stampa -# -#automatica wifi)
+  -# -#  - touchscreen da 3.2 pollici
+  -# -#  - integrazione raspberry pi
 
 
 
@@ -84,27 +127,24 @@
   Open source on GitHub
 
 
-%h2 Pictures:
+%h2= t "Pictures:", "Foto:"
 
-%h3 Final version:
 %img{ src: "/img/3dm1_printer_objects.jpg" }
 
 - dir = "img/3dm1_printer"
-- Dir.glob("public/#{dir}/*.jpg").each do |pic|
+- Dir.glob("public/#{dir}/*.jpg")[0..0].each do |pic|
   - name = File.basename pic, "*.jpg"
 
   %img{ src: "#{dir}/#{name}" }
 
-%h3 Alpha version:
-%img{ src: "/img/3dm1_alpha.jpg" }
+-#%h3 Alpha version:
+-#%img{ src: "/img/3dm1_alpha.jpg" }
+-#
+-#%h2 Wallace (original model):
+-#
+-#%img{ src: "/img/reprap_wallace_small.jpg", style: "width: 40%"-# }
 
-%h2 Wallace (original model):
 
-%img{ src: "/img/reprap_wallace_small.jpg", style: "width: 40%" }
-
-
-
-%img{ src: "/img/3dm1_printer_objects.jpg", style: "float: right; width: 40%; margin-left: 2%" }
 
 
 %h4

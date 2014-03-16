@@ -27,31 +27,31 @@
       e scegliere un modello 3d gi&agrave; fatto.
 
 
-/
-  %section.gallery
+-#
+-#  %section.gallery
 
-    %h1= t "Photos of some 3D object we printed", "Foto di alcuni oggetti stampati in 3D da noi"
+-#    %h1= t "Photos of some 3D object we printed", "Foto di alcuni oggetti stampati in 3D da noi"
 
-    - albums.each do |album|
-      - next unless album.cover.images
-      .album
-        - img = album.cover.images[5]
-        %a{ href: "/albums/#{album.name_url}" }
-          %h1= album.name
-          .img_box
-            - vertical = img["width"] < img["height"]
-            %img{ src: img["source"], class: "#{"vert" if vertical}" }
-          -# :escaped
-          -#   #{album.cover.images[4]["source"]}
-          -# %img{ src: "https://graph.facebook.com/#{album.cover_photo}/picture?type=album" }
+-#    - albums.each do |album|
+-#      - next unless album.cover.images
+-#      .album
+-#        - img = album.cover.images[5]
+-#        %a{ href: "/albums/#{album.name_url}" }
+-#          %h1= album.name
+-#          .img_box
+-#            - vertical = img["width"] < img["height"]
+-#            %img{ src: img["source"], class: "#{"vert" if vertical}" }
+-#          -# :escaped
+-#          -#   #{album.cover.images[4]["source"]}
+-#          -# %img{ src: "https://graph.facebook.com/#{album.cover_photo}/picture?type=album" }
 
-  .clear
+-#  .clear
 
-/
-  %section.online_shop
-    %h1 Online shop:
-    %p= t "Upload your STL and have it printed! coming soon!", "Carica il file del modello (STL) e ordina la stampa 3d dell'oggetto contenuto."
-    %p= t "We are building the online shop, in the meantime, to order a 3D printed object just send us an email or a FB message!", "Stiamo lavorando sullo shop online, nel frattempo per ordinare un oggetto stampato in 3D, mandaci una mail o scrivici un messaggio su FB!"
+-#
+-#  %section.online_shop
+-#    %h1 Online shop:
+-#    %p= t "Upload your STL and have it printed! coming soon!", "Carica il file del modello (STL) e ordina la stampa 3d dell'oggetto contenuto."
+-#    %p= t "We are building the online shop, in the meantime, to order a 3D printed object just send us an email or a FB message!", "Stiamo lavorando sullo shop online, nel frattempo per ordinare un oggetto stampato in 3D, mandaci una mail o scrivici un messaggio su FB!"
 
 %section.info
   /%img{ src: "/img/3dm1_printer/plate_view.jpg" }
