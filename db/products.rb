@@ -28,8 +28,8 @@ PRODUCTS = [
   { cat: :linear_motion, name: :"3dm1_x_kit", title: "", title_it: "", original_price: 0, price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
   { cat: :linear_motion, name: :"3dm1_y_kit", title: "", title_it: "", original_price: 0, price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
   { cat: :linear_motion, name: :axis_kit, title: "", title_it: "", original_price: 0, price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
-  { cat: :linear_motion, name: :, title: "", title_it: "", original_price: 0, price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
-  { cat: :linear_motion, name: :, title: "", title_it: "", original_price: 0, price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
+  { cat: :linear_motion, name: :lm8uu_linear_bearings, title: "", title_it: "Cuscinetti lineari diametro 8mm", original_price: 0.40, price: 1.50, image: 0, specs: "",  specs_it: "diametro: 8mm", description: "", description_it: "Cuscinetti lineari LM8UU 8mm usati nella maggior parte delle stampanti open source/hardware." },
+  { cat: :linear_motion, name: :smooth_roads_8mm, title: "", title_it: "Barre rettificate 8mm", original_price: 3, price: 4, image: 0, specs: "",  specs_it: "spessore 8mm lunghezza 1m", description: "", description_it: "Barra rettificata lunga 1m, spessore 8mm, usata per comporre gli assi di movimento" },
   #{ cat: :linear_motion, name: :, title: "", title_it: "", original_price: 0, price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
   
   
@@ -37,7 +37,7 @@ PRODUCTS = [
   { cat: :vslot, name: :vslot, title: "Vslot 20x20", title_it: "Vslot 20x20",  specs: "1mt black vslot 20x20", original_price: 8, price: 13, description: "Vslot profiles", description_it: "Profili a V in alluminio anodizzato nero", image: 1 },
   
   # motors
-  { cat: :motors, name: :, title: "", title_it: "", original_price: 0, price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
+  { cat: :motors, name: :small_nema17_stepper_motor, title: "", title_it: "nema 17 mini stepper motor", original_price: 10, price: 14, image: 0, specs: "",  specs_it: "nema 17 mini stepper motor peso 285g", description: "", description_it: "mini stepper motor per estrusore ma anche per motorizzare gli assi di movimento" },
   { cat: :motors, name: :, title: "", title_it: "", original_price: 0, price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
   { cat: :motors, name: :, title: "", title_it: "", original_price: 0, price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
   { cat: :motors, name: :, title: "", title_it: "", original_price: 0, price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
