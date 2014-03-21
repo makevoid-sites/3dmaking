@@ -1,1 +1,37 @@
-= t "Coming soon!", "Presto online!"
+%section.gallery
+  #slides
+    %img{ src: "/img/3dm1_printer/plate_view.jpg" }
+    %img{ src: "/img/3dm1_printer/nema17_high_torque_skidproof_and_buda_nozzle.jpg" }
+    %img{ src: "/img/3dm1_printer/printed_parts.jpg" }
+
+
+%section
+
+
+  
+  .left
+    .box  
+      %h1 Categorie
+      %nav
+        - for category in CATEGORIES
+          %a{ href: "/categories/#{category}/products" }= category.capitalize
+
+
+
+  .right
+  
+    .box
+      %h1 3DMaking shop
+      .text    
+        :textile
+          Benvenuti nella sezione shop di 3d making...offerte incredibili bomba mano vola tutto dhaaneaeee ljknoiuhj pij oij  oi oih oiuh ouhkbi ugiug iug iug iyg ig 
+      
+      
+    .box
+      %h1 Prodotti in evidenza
+    
+      %section
+        - for product in PRODUCTS
+          %a{ href: "/products/#{product[:name]}" }= product[:title_it]
+      
+.clear      

@@ -1,0 +1,17 @@
+:ruby
+  title = @product[:name].to_s.split("_").join(" ")
+  title = @product[:title_it] if @product[:title_it]
+
+%h1= title
+
+%a.btn{ href: "/categories/#{@product[:cat]}/products" } < #{t("back", "indietro")}
+
+:textile
+  descrizione prodotto ....
+  
+%h2 Specs
+%p= @product[:specs_it]
+  
+.description
+  %p= @product[:description_it]
+  

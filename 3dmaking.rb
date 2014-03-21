@@ -10,6 +10,7 @@ class TDMaking < Sinatra::Base
     @host = env["REMOTE_HOST"]
     if ENV["RACK_ENV"] == "development"
       @host = "#{@host}:#{env["SERVER_PORT"]}"
+      load "db/products.rb"
     end
 
     host = env["SERVER_NAME"]
@@ -57,6 +58,16 @@ class TDMaking < Sinatra::Base
   get "/shop" do
     haml :shop
   end
+  
+  get "/products/*" do |name|
+    @product = PRODUCTS.find{ |prod| prod[:name] == name.to_sym }
+    haml :product
+  end
+  
+  get "/categories/*/products" do |category|
+    @category = category
+    haml :products
+  end  
 
   # datas
 

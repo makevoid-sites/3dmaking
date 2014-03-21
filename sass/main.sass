@@ -69,6 +69,9 @@ html, body, .outer_cont
 
 .right
   float: right
+  
+.left
+  float: left  
 
 // a
 //   color: #C00
@@ -85,11 +88,28 @@ header, .dark
     &:hover
       color: #9BFF92
 
+nav a 
+  display: block
 
 h1
   margin: 0
   font-size: 1.2em
 
+
+a.btn // structure
+  display: inline-block
+  border-radius: 5px
+  padding: 4px 10px
+  margin-bottom: 20px
+  
+a.btn  
+  background: lightGrey
+  color: $green
+  border: 1px solid $green
+
+a.btn:hover  
+  background: $green
+  color: white
 
 .header
   font-family: Bazar
@@ -269,7 +289,47 @@ p
       border-bottom: 1px solid #333
       border-top: 1px solid #333
   
+//sections shop
+.shop 
+  .gallery
+    heigth: 20px
+    padding: 0 100px
+  .left
+    width: 20%
+  .right
+    width: 80% 
 
+.box
+  border: 1px solid black 
+  padding: 0 0 5px
+  border-radius: 10px  
+  margin: 0 0 20px 0
+  h1
+    color: white
+    background: black
+    border-radius: 10px
+    border-bottom-left-radius: 0px
+    border-bottom-right-radius: 0px
+    padding: 5px 2% 5px 
+  nav
+    margin: 10px 5% 
+    display: block
+    a
+      display: block 
+
+.left
+  padding-right: 2%
+  h1
+    padding: 5px 5% 5px
+  .box
+     
+  
+.left, .right
+  .text, section
+    padding: 10px 2% 5px
+  
+      
+  
 
   
 

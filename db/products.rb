@@ -1,13 +1,11 @@
 
-3dm1_infos = {
-  specs: "extruder 0.35mm - max speed: 90mm/s - travel speed: 100mm/s",  specs_it: "estrusore: 0.35mm - velocità standard: 55mm/s - velocità max: 90mm/s - travel speed: 100mm/s", description: "", description_it: ""
-}
+THREEDM1_INFOS = { specs: "extruder 0.35mm - max speed: 90mm/s - travel speed: 100mm/s",  specs_it: "estrusore: 0.35mm - velocità standard: 55mm/s - velocità max: 90mm/s - travel speed: 100mm/s", description: "", description_it: "" }
 
 PRODUCTS = [
   # 3DM1 printer - 3dm1_printer
-  { cat: :"3dm1_printer", name: :"3dm1_printer_assembled", title: "3D Printer - 3DM1 fully assembled", title_it: "Stampante 3D - 3DM1 assemblata", original_price: 699, image: 0, price: 205 }.merge(3dm1_infos),
-  { cat: :"3dm1_printer", name: :"3dm1_printer_kit", title: "3D Printer - 3DM1 kit", title_it: "Stampante 3D - 3DM1 kit di assemblaggio", original_price: 499, price: 205, image: 0 }.merge(3dm1_infos),
-  { cat: :"3dm1_printer", name: :"3dm1_printer_plastic_parts", title: "3D Printer - 3DM1 plastic parts", title_it: "Stampante 3D - 3DM1 parti stampate", original_price: 49, price: 10, image: 2 }.merge(3dm1_infos),
+  { cat: :"3dm1_printer", name: :"3dm1_printer_assembled", title: "3D Printer - 3DM1 fully assembled", title_it: "Stampante 3D - 3DM1 assemblata", original_price: 699, image: 0, price: 205 }.merge(THREEDM1_INFOS),
+  { cat: :"3dm1_printer", name: :"3dm1_printer_kit", title: "3D Printer - 3DM1 kit", title_it: "Stampante 3D - 3DM1 kit di assemblaggio", original_price: 499, price: 205, image: 0 }.merge(THREEDM1_INFOS),
+  { cat: :"3dm1_printer", name: :"3dm1_printer_plastic_parts", title: "3D Printer - 3DM1 plastic parts", title_it: "Stampante 3D - 3DM1 parti stampate", original_price: 49, price: 10, image: 2 }.merge(THREEDM1_INFOS),
   
   
   # prusa i3DM   - prusa_i3dm
@@ -37,20 +35,15 @@ PRODUCTS = [
   { cat: :vslot, name: :vslot, title: "Vslot 20x20", title_it: "Vslot 20x20",  specs: "1mt black vslot 20x20", original_price: 8, price: 13, description: "Vslot profiles", description_it: "Profili a V in alluminio anodizzato nero", image: 1 },
   
   # motors
-  { cat: :motors, name: :small_nema17_stepper_motor, title: "", title_it: "nema 17 mini stepper motor", original_price: 10, price: 14, image: 0, specs: "",  specs_it: "nema 17 mini stepper motor peso 285g", description: "", description_it: "mini stepper motor per estrusore ma anche per motorizzare gli assi di movimento" },
-  { cat: :motors, name: :, title: "", title_it: "", original_price: 0, price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
-  { cat: :motors, name: :, title: "", title_it: "", original_price: 0, price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
-  { cat: :motors, name: :, title: "", title_it: "", original_price: 0, price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
+  { cat: :motors, name: :small_nema17_stepper_motor, title: "NEMA17 mini stepper motor", title_it: "Motori stepper NEMA17 piccoli", original_price: 10, price: 14, image: 0, specs: "",  specs_it: "nema 17 mini stepper motor peso 285g", description: "", description_it: "mini stepper motor per estrusore ma anche per motorizzare gli assi di movimento" },
+
   #{ cat: :motors, name: :, title: "", title_it: "", original_price: 0, price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
   
   
   # printed parts
-  { cat: :printed_parts, name: :, title: "", title_it: "", original_price: 0, price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
-  { cat: :printed_parts, name: :, title: "", title_it: "", original_price: 0, price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
   #{ cat: :printed_parts, name: :, title: "", title_it: "", original_price: 0, price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
   
   # filament
-  { cat: :filament, name: :, title: "", title_it: "", original_price: 0, price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
   #{ cat: :filament, name: :, title: "", title_it: "", original_price: 0, price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
   
   
@@ -59,33 +52,21 @@ PRODUCTS = [
   
   
   # photography
-  { cat: :photography, name: :wires_kit, title: "", title_it: "", original_price: 0, price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
-  #{ cat: :photography, name: :wires_kit, title: "", title_it: "", original_price: 0, price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
+  #{ cat: :photography, name: :, title: "", title_it: "", original_price: 0, price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
   
   # - spallaccio
   # - slider manuale
   # - slider motorizzato
   
   
-  { name: :, title: "", title_it: "",  specs: "", original_price: 0, price: 0, description: "", description_it: "", image: 2 },
-  { name: :, title: "", title_it: "",  specs: "", original_price: 0, price: 0, description: "", description_it: "", image: 2 },
-  { name: :, title: "", title_it: "",  specs: "", original_price: 0, price: 0, description: "", description_it: "", image: 2 },
-  { name: :, title: "", title_it: "",  specs: "", original_price: 0, price: 0, description: "", description_it: "", image: 2 },
-  { name: :, title: "", title_it: "",  specs: "", original_price: 0, price: 0, description: "", description_it: "", image: 2 },
-  { name: :, title: "", title_it: "",  specs: "", original_price: 0, price: 0, description: "", description_it: "", image: 2 },
-  { name: :, title: "", title_it: "",  specs: "", original_price: 0, price: 0, description: "", description_it: "", image: 2 },
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+  # { name: :, title: "", title_it: "",  specs: "", original_price: 0, price: 0, description: "", description_it: "", image: 2 },
+  # { name: :, title: "", title_it: "",  specs: "", original_price: 0, price: 0, description: "", description_it: "", image: 2 },
+  # { name: :, title: "", title_it: "",  specs: "", original_price: 0, price: 0, description: "", description_it: "", image: 2 },
+  # { name: :, title: "", title_it: "",  specs: "", original_price: 0, price: 0, description: "", description_it: "", image: 2 },
+  # { name: :, title: "", title_it: "",  specs: "", original_price: 0, price: 0, description: "", description_it: "", image: 2 },
+  # { name: :, title: "", title_it: "",  specs: "", original_price: 0, price: 0, description: "", description_it: "", image: 2 },
+  # { name: :, title: "", title_it: "",  specs: "", original_price: 0, price: 0, description: "", description_it: "", image: 2 },
+  # 
   
   
   
@@ -103,6 +84,6 @@ PRODUCTS = [
 ]
 
 
-# get "/shop" do
-#   haml :products
-# end
+
+CATEGORIES = PRODUCTS.map{ |prod| prod[:cat] }.compact.uniq
+

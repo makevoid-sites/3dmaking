@@ -14,3 +14,5 @@ require "#{path}/lib/product"
 
 require "#{path}/lib/utils"
 include Utils
+
+eval File.read "db/products.rb"
