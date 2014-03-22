@@ -226,12 +226,12 @@ p {
   border-bottom: 1px solid #333333;
   border-top: 1px solid #333333; }
 
-.shop .gallery {
+.shop .gallery, .categories .gallery {
   heigth: 20px;
   padding: 0 100px; }
-.shop .left {
+.shop .left, .categories .left {
   width: 20%; }
-.shop .right {
+.shop .right, .categories .right {
   width: 80%; }
 
 .box {
@@ -252,13 +252,13 @@ p {
     .box nav a {
       display: block; }
 
-.product a {
+body .products a {
   display: inline-block;
   width: 30%;
   padding: 10px 2%; }
-  .product a img {
+  body .products a img {
     width: 100%; }
-  .product a span {
+  body .products a span {
     display: block;
     white-space: nowrap;
     overflow: hidden;

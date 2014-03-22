@@ -1,8 +1,18 @@
-%h1 #{ t "Products in:",  "Prodotti nella categoria:" } #{@category}
+
 
 %a.btn{ href: "/shop" } < indietro
 
-//= params[:category]
-%nav
-  - for product in PRODUCTS
-    %a{ href: "/products/#{product[:name]}" }= product[:title_it]
+%section
+  .right
+    .box
+      %h1 #{ t "Products in:",  "Prodotti nella categoria:" } #{@category.humanize.upcase}
+      %section.products
+        %nav
+          - for product in PRODUCTS
+            %a{ href: "/products/#{product[:name]}" }
+              %img{ src: "/img/thumbnail.png" }
+              %span= product[:title_it]
+          
+  .left
+    = haml :"_categories"
+  

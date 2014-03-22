@@ -1,0 +1,6 @@
+.box  
+  %h1 Categorie
+  %nav
+    - for category in CATEGORIES
+      %a{ href: "/categories/#{category}/products" }= category.capitalize.to_s.humanize.upcase
+

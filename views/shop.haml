@@ -7,16 +7,8 @@
 
 %section
 
-
-  
   .left
-    .box  
-      %h1 Categorie
-      %nav
-        - for category in CATEGORIES
-          %a{ href: "/categories/#{category}/products" }= category.capitalize
-
-
+    = haml :"_categories"
 
   .right
   
@@ -30,7 +22,7 @@
     .box
       %h1 Prodotti in evidenza
     
-      %section.product
+      %section.products
         - for product in PRODUCTS
           %a{ href: "/products/#{product[:name]}" }
             %img{ src: "/img/thumbnail.png" }
