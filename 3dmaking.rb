@@ -58,16 +58,16 @@ class TDMaking < Sinatra::Base
   get "/shop" do
     haml :shop
   end
-  
+
   get "/products/*" do |name|
     @product = PRODUCTS.find{ |prod| prod[:name] == name.to_sym }
     haml :product
   end
-  
+
   get "/categories/*/products" do |category|
     @category = category
     haml :products
-  end  
+  end
 
   # datas
 
@@ -82,7 +82,7 @@ class TDMaking < Sinatra::Base
       albums
     end
 
-    filtered = ["profile_pictures", "cover_photos", "timeline_photos"]
+    filtered = ["profile_pictures", "cover_photos", "timeline_photos",  "mobile_uploads"]
     albums.reject!{ |a| filtered.include? a.name_url }
     albums
   end
@@ -92,7 +92,7 @@ class TDMaking < Sinatra::Base
   def en?
     @lang == "en"
   end
-  
+
   def it?
     !en?
   end

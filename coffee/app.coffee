@@ -24,7 +24,8 @@ lightbox.show = (url) ->
     width = lightbox.image_width()
     img = $(".lightbox img")
     img.css({ width: width }).css({ top: $(document).scrollTop() })
-    marginLeft = ( $("body").width() / 2 - img.width() / 2 ) / 2
+    body_width = $("body").width()
+    marginLeft = ( $("body").width() / 2 - img.width() / 2 ) / 0.8#/ 2
     img.css( marginLeft: -marginLeft )
 
 lightbox.resize = ->
@@ -47,7 +48,7 @@ lightbox.image_width = ->
 # slidejs3 gallery
 
 load_slidejs = ->
-  $("#slides").slidesjs 
+  $("#slides").slidesjs
     width: 940,
     height: 528,
     play:
@@ -55,9 +56,9 @@ load_slidejs = ->
       active: true,
       interval: 4500,
     effect:
-      slide: 
+      slide:
         speed: 1000
-        
+
 # headroom
 
 load_headroom = ->
@@ -77,11 +78,10 @@ bind_lightbox = ->
     url = $(this).data "big"
     lightbox()
     lightbox.show(url)
-    
+
 # main
 
 $ ->
   load_slidejs()
   load_headroom()
   bind_lightbox()
-  

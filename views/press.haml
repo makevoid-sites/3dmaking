@@ -1,14 +1,19 @@
 %h1 Press
 
-
 - link = "http://www.makerfairerome.eu/2013/10/08/3d-print-exhibition-and-the-winner-is/"
 %section
-  %h1 1st place at Maker Faire Rome - print quality
+  %h1= t "1st place at Maker Faire Rome 2013 - print quality", "1° posto alla Maker Faire di Roma 2013 - categoria Qualita' di Stampa"
 
-  %p
-    3DMaking with 3DM1 RepRap 3d printer won the
-    %a{ href: link } Maker Faire Rome 3d printing contest
-    or print quality & techniques category!
+  - if en?
+    %p
+      3DMaking with 3DM1 RepRap 3d printer won the
+      %a{ href: link } Maker Faire Rome 2013 3d printing contest
+      or print quality & techniques category.
+  - else
+    %p
+      3DMaking con la RepRap 3DM1 ha vinto il 1° posto nel
+      %a{ href: link } concorso di stampa 3D della Maker Faire Rome 2013
+      nella categoria Qualita' e Tecniche di stampa.
 
   %a{ href: link }
     %img{ style: "width: 63%", src: "http://www.makerfairerome.eu/wp-content/uploads/2013/10/2595-Copia_di_IMG_3490AA-1024x682.jpg" }
@@ -19,11 +24,12 @@
 
 
 %section
-  %h1 Interview by Tiscali Notizie (italian)
+  %h1= t "Interview by Tiscali Notizie (italian)", "Intervista: Tiscali Notizie"
   %object
     %embed{ width: "600px", height: "400px", src: "http://video.tiscali.it/inc/TiscaliVideo.swf", flashvars: 'vURL=http://video.tiscali.it/asx/179680.asx', allowFullScreen: 'true' }
 
 
 %section
   %h1
-    %a{ href: "http://notizie.tiscali.it/regioni/toscana/articoli/13/09/11/stampante_3d.html?ultimora" } Visualizza l'articolo su notizie.tiscali.it
+    %a{ href: "http://notizie.tiscali.it/regioni/toscana/articoli/13/09/11/stampante_3d.html?ultimora" }
+      = t "Article (italian)", "Visualizza l'articolo su notizie.tiscali.it"

@@ -23,7 +23,7 @@
     });
     $(".lightbox").append("<img src='" + url + "' />");
     return $(".lightbox img").imagesLoaded(function() {
-      var img, marginLeft, width;
+      var body_width, img, marginLeft, width;
       $(".lightbox").css({
         display: "block"
       });
@@ -34,7 +34,8 @@
       }).css({
         top: $(document).scrollTop()
       });
-      marginLeft = ($("body").width() / 2 - img.width() / 2) / 2;
+      body_width = $("body").width();
+      marginLeft = ($("body").width() / 2 - img.width() / 2) / 0.8;
       return img.css({
         marginLeft: -marginLeft
       });

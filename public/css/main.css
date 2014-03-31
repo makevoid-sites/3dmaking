@@ -192,7 +192,7 @@ p {
 
 @media (min-width: 1000px) {
   .gallery .album .img_box {
-    height: 250px; } }
+    height: 200px; } }
 .album .album img {
   cursor: pointer;
   width: 46%;
@@ -281,8 +281,8 @@ body .products a {
   z-index: 10; }
   .lightbox img {
     cursor: pointer;
-    width: 83%;
-    margin: 63px auto;
+    width: 63%;
+    margin: 163px auto;
     position: absolute;
     padding: 1%;
     background: white; }
