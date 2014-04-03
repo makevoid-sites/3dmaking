@@ -21,6 +21,8 @@ PRODUCTS = [
   { cat: :extruders, name: :jhead_unassembled, title: "JHead kit", title_it: "JHead kit", price: 40, original_price: 32, image: 0, description: "", description_it: "" }.merge(JHEAD_INFOS),
   { cat: :extruders, name: :thermistor, title: "Thermistor 100k", title_it: "Termistore 100k", price: 3.50, original_price: 0.50, image: 0, specs: "100k",  specs_it: "100k", description: "100k thermistor for jhead and compatibles", description_it: "Termistore 100k per jhead e compatibili" },
   { cat: :extruders, name: :resistor_cartridge, title: "Cartridge resistor", title_it: "Resistore a cartuccia", price: 3.50, original_price: 0.50, image: 0, specs: "12v",  specs_it: "12v", description: "Cartridge resistor for jhead and compatibles", description_it: "Resistore a cartuccia per jhead e compatibili" },
+  { cat: :extruders, name: :ptfe_tubing, title: "Ptfe tubing, 2mm inner/6mm outer(10cm)", title_it: "PTFE-tubicino, 2mm IN/6mm OUT(10cm)", price: 3, original_price: 1, image: 0, specs: "2mm IN/6mm OUT (10cm)",  specs_it: "2mm IN/6mm OUT (10cm)", description: "PTFE tube for Jhead", description_it: "Tubicino di PTFE per Jhead" },
+  { cat: :extruders, name: :nozzle, title: "Nozzle 0.35mm for 1.75mm filament", title_it: "Nozzle 0.35mm per filamento da 1.75mm", price: 0, original_price: 0, image: 0, specs: "hole 0.35mm / filament 1.75mm",  specs_it: "foro 0.35mm / filamento 1.75mm", description: "", description_it: "Nozzle per estrusore Jhead e compatibili, con foro di uscita da 0.35mm per filamento da 1.75mm" },
   #{ cat: :extruders, name: :, title: "", title_it: "", price: 0, original_price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
   
   
