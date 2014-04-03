@@ -176,8 +176,8 @@ p {
 
 .gallery .album {
   float: left;
-  margin: 0 1% 2% 0;
-  width: 30%;
+  padding: 0 1% 2% 0;
+  width: 33.33%;
   white-space: nowrap;
   font-size: 0.8em; }
   .gallery .album h1 {
