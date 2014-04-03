@@ -181,6 +181,7 @@ a.btn:hover
   width: 94%
   & > h1
     font-size: 2em
+    position: relative
     margin: 0 0 20px 0
 
 .lang
@@ -288,16 +289,42 @@ p
       color: #333
       border-bottom: 1px solid #333
       border-top: 1px solid #333
+      
+// sections - printing service
+
+.printing_service .content
+  h1.title
+    text-align: center
+    font-size: 3em
+    font-family: Bazar
+    text-transform: uppercase
+    color: #333
+    border-bottom: 1px solid #333
+    border-top: 1px solid #333
+    margin: 120px 0 20px 0
+    
+      
 
 //sections shop
-.shop, .categories
+.shop, .categories, .products
   .gallery
     heigth: 20px
     padding: 0 100px
   .left
     width: 20%
+    nav a
+      line-height: 1.5em
   .right
     width: 80%
+
+.products
+  .right 
+    .box h1
+      margin-bottom: 20px
+    .boxed  
+      margin: 0 2% 40px
+    
+
 
 .box
   border: 1px solid black

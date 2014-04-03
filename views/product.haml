@@ -2,19 +2,27 @@
   title = @product[:name].to_s.split("_").join(" ")
   title = @product[:title_it] if @product[:title_it]
 
-%h1= title
-
+  
 %a.btn{ href: "/categories/#{@product[:cat]}/products" } < #{t("back", "indietro")}
-
-%img{ src: "/img/products/1.jpg" }
-
-
-%h2 Specs
-%p= @product[:specs_it]
-
-.description
-  %p= @product[:description_it]
-
-
-= partial :button
-
+    
+%section
+  .right
+    .box
+      %h1= title
+      .boxed
+        
+        %img{ src: "/img/products/1.jpg" }
+        
+        
+        %h2 Specs
+        %p= @product[:specs_it]
+        
+        .description
+          %p= @product[:description_it]
+        
+        
+        = partial :button
+        
+     
+  .left
+    = haml :"_categories"

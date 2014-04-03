@@ -1,4 +1,5 @@
-
+:ruby
+  products = PRODUCTS.select{ |p| p[:cat] == @category.to_sym }
 
 %a.btn{ href: "/shop" } < indietro
 
@@ -8,7 +9,7 @@
       %h1 #{ t "Products in:",  "Prodotti nella categoria:" } #{@category.humanize.upcase}
       %section.products
         %nav
-          - for product in PRODUCTS
+          - for product in products
             %a{ href: "/products/#{product[:name]}" }
               %img{ src: "/img/thumbnail.png" }
               %span= product[:title_it]

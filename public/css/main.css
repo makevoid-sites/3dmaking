@@ -134,6 +134,7 @@ a.btn:hover {
   width: 94%; }
   .content > h1 {
     font-size: 2em;
+    position: relative;
     margin: 0 0 20px 0; }
 
 .lang {
@@ -226,13 +227,30 @@ p {
   border-bottom: 1px solid #333333;
   border-top: 1px solid #333333; }
 
-.shop .gallery, .categories .gallery {
+.printing_service .content h1.title {
+  text-align: center;
+  font-size: 3em;
+  font-family: Bazar;
+  text-transform: uppercase;
+  color: #333333;
+  border-bottom: 1px solid #333333;
+  border-top: 1px solid #333333;
+  margin: 120px 0 20px 0; }
+
+.shop .gallery, .categories .gallery, .products .gallery {
   heigth: 20px;
   padding: 0 100px; }
-.shop .left, .categories .left {
+.shop .left, .categories .left, .products .left {
   width: 20%; }
-.shop .right, .categories .right {
+  .shop .left nav a, .categories .left nav a, .products .left nav a {
+    line-height: 1.5em; }
+.shop .right, .categories .right, .products .right {
   width: 80%; }
+
+.products .right .box h1 {
+  margin-bottom: 20px; }
+.products .right .boxed {
+  margin: 0 2% 40px; }
 
 .box {
   border: 1px solid black;
