@@ -1,0 +1,113 @@
+
+/
+  %h4
+    - if en?
+      To order a 3DM1 send us a mail to
+      %a{ href: "mailto:print@3dmaking.it" } print@3dmaking.it
+      or contact us via
+      %a{ href: "http://facebook.com/3dmaking" } facebook
+
+      :textile
+        Launch price 700 EUR + 22% VAT (only applied in europe, not applied for companies) + shipping costs (20-40 EUR)
+        Kit: 500 EUR + VAT + shipping
+
+    - else
+      Per ordinare una stampante 3DM1 inviaci un'email a:
+      %a{ href: "mailto:print@3dmaking.it" } print@3dmaking.it
+      oppure un
+      %a{ href: "http://facebook.com/3dmaking" } messaggio su facebook
+
+      :textile
+        Prezzo lancio: 700 EUR + iva per una stampante 3DM1 assemblata e calibrata!
+        500 EUR + iva per il kit! Che aspetti!
+      %a{ href: "mailto:print@3dmaking.it" } Ordina ora!
+
+
+
+
+
+
+-----------------
+
+-# La nostra stampante 3d:
+-# - *due formati principali*:
+-# ---- big: area stampabile di circa 40x40cm, larghezza# ugello estrusore 0.5mm o superiore)
+-# ---- standard: dimensioni ridotte (20x20cm), piuprecisa, -# ugello 0.35mm) - consigliata!
+-# - *carrello X* compatibile jhead / budashnozzle o altr-# *teste d'estrusione corte*
+-# - *piatto e sottopiatto in plexiglass/acrilico*
+-# - coupler dell'asse Z e pignoni X,Y in alluminio
+
+-# il nostro kit e la nostra stampante assemblatincludera':
+-# - set di brugole
+-# - pinzette per rimuovere la plastica rimasta attaccatall'-# estrusore
+
+-# scorrete per vedere le foto che mostrano i dettagldella -# stampante e il contenuto del kit di assemblaggio!
+
+
+
+-# -#  future:
+-# -#  - redesigned belt holders
+-# -#  - sd card module
+-# -#  - wifi sd card software integration (wifi autoprint)
+-# -#  - 3.2in touchscreen lcd?
+-# -#  - rasp pi integration?
+-# -#
+-# -#
+-# -#  futuro:
+-# -#  - blocca cinghia ridisegnati redesigned belt holders
+-# -#  - modulo lcd / sd card
+-# -#  - integrazione scheda sd wifi (wifi autoprint stampa -# -#automatica wifi)
+-# -#  - touchscreen da 3.2 pollici
+-# -#  - integrazione raspberry pi
+
+
+
+
+inglese
+---------------
+
+
+- if en?
+  :textile
+    We revolutionized the awesome "RepRap Wallace":http://reprap.org/wiki/Wallace 3d printer project.
+    We found it awesomely simple, the scad is light and easy to edit and it's easy to modify it by configuration. A big thank to it's creator: "Whosawhatsis":https://github.com/Whosawhatsis
+
+    our 3d printer will have this major changes:
+    - *two main formats*:
+    ---- big: bigger printing area (40x40cm), 0.5mm nozzle or higher)
+    ---- standard: smaller size (20x20cm), more precise, 0.35mm nozzle) - suggested!
+    - *X carriage* that fits jhead / budashnozzle or other *short extruder* head
+    - *acrylic*/plexiglass *bed and underbed*
+    - aluminium Z couplers and pulleys
+
+    and our kit/assembled printer will come with:
+    - set of hex keys
+    - tweezers for extruder/filament
+
+    see the follwing photos that show the printer details and the kit contents!
+
+
+------------
+
+-#%h3 Alpha version:
+-#%img{ src: "/img/3dm1_alpha.jpg" }
+-#
+-#%h2 Wallace (original model):
+-#
+-#%img{ src: "/img/reprap_wallace_small.jpg", style: "width: 40%"-# }
+
+
+
+
+---------------
+
+%h2= t "Pictures:", "Foto:"
+
+%img{ src: "/img/3dm1_printer_objects.jpg" }
+
+- dir = "img/3dm1_printer"
+- Dir.glob("public/#{dir}/*.jpg")[0..0].each do |pic|
+  - name = File.basename pic, "*.jpg"
+
+  %img{ src: "#{dir}/#{name}" }
+

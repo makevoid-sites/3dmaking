@@ -1,171 +1,74 @@
-%h1
-  =t "Get our 3DM1 - desktop 3d printer", "STAMPANTE 3D - MODELLO 3DM1"
+%h1.title
+  =t "Get our 3DM1 - desktop 3d printer", "STAMPANTE 3DM1"
   -#%span= t "RepRap project", ""
 
-%img{ src: "/img/3dm1_printer_objects.jpg", style: "float: left; width: 40%; margin-right: 2%" }
+%h2
+  = t "Order now your RepRap 3d printer".upcase, "ORDINA ADESSO LA TUA STAMPANTE 3D"
+  
+%section.gallery
+  #slides
+    %img{ src: "/img/3dm1_printer/plate_view.jpg" }
+    %img{ src: "/img/3dm1_printer/nema17_high_torque_skidproof_and_buda_nozzle.jpg" }
+    %img{ src: "/img/3dm1_printer/printed_parts.jpg" }  
+
+//%img{ src: "/img/3dm1_printer_objects.jpg", style: "float: left; width: 40%; margin-right: 2%" }
+
+.box.right
+  %h1= t "Tech specs", "Caratteristiche tecniche"
+  .boxed
+    :textile
+      - Estrusore 0.35mm, filamento da 1.75mm, PLA, ABS (stampe piccole), PVA, Nylon, etc..
+      - Dimensioni di stampa di default: 19x22x19cm (estendibili se necessario)
+      - Piatto e sottopiatto in acrilico (plexiglass)
+      - Motori NEMA17 high torque, skidproof
+      - Z Coupler e puleggie in alluminio
+      - Estrusore Greg3
+      - Firmware preinstallato e preconfigurato
+      - Realmente Open Source (pezzi: "RepRap_3DM1":https://github.com/makevoid/RepRap_3DM1 , firmware: "3DM_Marlin_firmware":https://github.com/makevoid/3DM_Marlin_firmware )
+      - Scheda Minitronics (disponibili anche Azteeg e Sanguinololu)
+      - Barre M8, viteria M3
+      - Alimentatore 12V 10A stabilizzato
+      - Estrusore JHead
+      - Resistore a "cartuccia" alta potenza
+      - Opzionali: Piano riscaldato e/o LCD con SD card reader per stampa autonoma estendibile.
+      
+      <a class="btn" href="/open_source_3dm1">Open source</a>
 
 
+.box.first
+  %h1= t "Pros", "Punti di forza"
+  .boxed
+    :textile
+      - Semplicita' della struttura
+      - Montaggio veloce rispetto alle altre RepRap
+      - Accelerazione da firmware adatta per buon rapporto qualita / velocita' e controllo vibrazioni
+      - Scalabile nelle dimensioni (specialmente X e Z)
+      - Costo contenuto
+      - Disponibile sia in versione assemblata che in kit di montaggio
+    
+    
 
-- if en?
-  :textile
-    We revolutionized the awesome "RepRap Wallace":http://reprap.org/wiki/Wallace 3d printer project.
-    We found it awesomely simple, the scad is light and easy to edit and it's easy to modify it by configuration. A big thank to it's creator: "Whosawhatsis":https://github.com/Whosawhatsis
-
-    our 3d printer will have this major changes:
-    - *two main formats*:
-    ---- big: bigger printing area (40x40cm), 0.5mm nozzle or higher)
-    ---- standard: smaller size (20x20cm), more precise, 0.35mm nozzle) - suggested!
-    - *X carriage* that fits jhead / budashnozzle or other *short extruder* head
-    - *acrylic*/plexiglass *bed and underbed*
-    - aluminium Z couplers and pulleys
-
-    and our kit/assembled printer will come with:
-    - set of hex keys
-    - tweezers for extruder/filament
-
-    see the follwing photos that show the printer details and the kit contents!
-
-
-- else
-  :textile
-    h4. Punti di forza:
-
-    - Semplicita' della struttura
-    - Montaggio veloce rispetto alle altre RepRap
-    - Accelerazione da firmware adatta per buon rapporto qualita / velocita' e controllo vibrazioni
-    - Scalabile nelle dimensioni (specialmente Y e Z)
-    - Costo contenuto
-    - Disponibile sia in versione assemblata che in kit di montaggio
-
-
-    h4. Caratteristiche tecniche:
-
-    - Estrusore 0.35mm, filamento da 1.75mm, PLA, ABS (stampe piccole), PVA, Nylon, etc..
-    - Dimensioni di stampa di default: 19x22x19cm (estendibili se necessario)
-    - Piatto e sottopiatto in acrilico (plexiglass)
-    - Motori NEMA17 high torque, skidproof
-    - Z Coupler e puleggie in alluminio
-    - Estrusore Greg3
-    - Firmware preinstallato e preconfigurato
-    - Realmente Open Source (pezzi: "RepRap_3DM1":https://github.com/makevoid/RepRap_3DM1 , firmware: "3DM_Marlin_firmware":https://github.com/makevoid/3DM_Marlin_firmware )
-    - Scheda Minitronics (disponibili anche Azteeg e Sanguinololu)
-    - Barre M8, viteria M3
-    - Alimentatore 12V 10A stabilizzato
-    - Estrusore JHead
-    - Resistore a "cartuccia" alta potenza
-    - Opzionali: Piano riscaldato e/o LCD con SD card reader per stampa autonoma estendibile.
-
-
-    h4. Software d'utilizzo consigliati (free & open source):
-
-    Ultimaker Cura per lo slicing e per la stampa
-
-    Profilo Cura: fornito un di profilo (.ini) customizzato per le tue esigenze di stampa
-
-    Progetto RepRap, derivata dal prototipo Wallace, completata e customizzata da noi di 3DMaking.
-
-
-    h3. Prezzo:
-
-    *Assemblata: &nbsp;699 &euro;* (assistenza in negozio o via skype compresa) !
-    *Kit standard: 499 &euro;*
-
-    prezzi IVA esclusa
-
-
-
-  -# La nostra stampante 3d:
-  -# - *due formati principali*:
-  -# ---- big: area stampabile di circa 40x40cm, larghezza# ugello estrusore 0.5mm o superiore)
-  -# ---- standard: dimensioni ridotte (20x20cm), piuprecisa, -# ugello 0.35mm) - consigliata!
-  -# - *carrello X* compatibile jhead / budashnozzle o altr-# *teste d'estrusione corte*
-  -# - *piatto e sottopiatto in plexiglass/acrilico*
-  -# - coupler dell'asse Z e pignoni X,Y in alluminio
-
-  -# il nostro kit e la nostra stampante assemblatincludera':
-  -# - set di brugole
-  -# - pinzette per rimuovere la plastica rimasta attaccatall'-# estrusore
-
-  -# scorrete per vedere le foto che mostrano i dettagldella -# stampante e il contenuto del kit di assemblaggio!
-
-
-
-  -# -#  future:
-  -# -#  - redesigned belt holders
-  -# -#  - sd card module
-  -# -#  - wifi sd card software integration (wifi autoprint)
-  -# -#  - 3.2in touchscreen lcd?
-  -# -#  - rasp pi integration?
-  -# -#
-  -# -#
-  -# -#  futuro:
-  -# -#  - blocca cinghia ridisegnati redesigned belt holders
-  -# -#  - modulo lcd / sd card
-  -# -#  - integrazione scheda sd wifi (wifi autoprint stampa -# -#automatica wifi)
-  -# -#  - touchscreen da 3.2 pollici
-  -# -#  - integrazione raspberry pi
-
-
-
+.box
+  %h1= t "Get it", "Acquista"
+  .boxed
+    / 
+    :textile
+      Acquista ora la tua stampante 3Dm1 disponibile nelle versioni kit e assemblata direttamente via PayPal.
+    
+    = haml :"_button"
+    
+    :textile
+      Oppure contattaci
+      via mail: "print@3dmaking.it":mailto:print@3dmaking.it
+      via facebook: "3D Making":https://www.facebook.com/3dmaking  (#{t "message", "messaggio"})
 
 .clear
 
-%h2
-  = t "Order now your RepRap 3d printer!", "Ordina adesso la tua stampante 3d reprap!"
-%p
-  via mail:
-  %a{ href: "mailto:print@3dmaking.it" } print@3dmaking.it
-%p
-  via facebook (message):
-  %a{ href: "https://www.facebook.com/3dmaking" } 3D Making
-
-%h2 3DM1 OpenSCAD project:
-
-%a{ href: "https://github.com/makevoid/RepRap_3DM1" }
-  %img{ src: "/img/3dm1_scad.png", style: "width: 60%" }
-  .clear
-  Open source on GitHub
-
-
-%h2= t "Pictures:", "Foto:"
-
-%img{ src: "/img/3dm1_printer_objects.jpg" }
-
-- dir = "img/3dm1_printer"
-- Dir.glob("public/#{dir}/*.jpg")[0..0].each do |pic|
-  - name = File.basename pic, "*.jpg"
-
-  %img{ src: "#{dir}/#{name}" }
-
--#%h3 Alpha version:
--#%img{ src: "/img/3dm1_alpha.jpg" }
--#
--#%h2 Wallace (original model):
--#
--#%img{ src: "/img/reprap_wallace_small.jpg", style: "width: 40%"-# }
 
 
 
 
-%h4
-  - if en?
-    To order a 3DM1 send us a mail to
-    %a{ href: "mailto:print@3dmaking.it" } print@3dmaking.it
-    or contact us via
-    %a{ href: "http://facebook.com/3dmaking" } facebook
 
-    :textile
-      Launch price 700 EUR + 22% VAT (only applied in europe, not applied for companies) + shipping costs (20-40 EUR)
-      Kit: 500 EUR + VAT + shipping
 
-  - else
-    Per ordinare una stampante 3DM1 inviaci un'email a:
-    %a{ href: "mailto:print@3dmaking.it" } print@3dmaking.it
-    oppure un
-    %a{ href: "http://facebook.com/3dmaking" } messaggio su facebook
 
-    :textile
-      Prezzo lancio: 700 EUR + iva per una stampante 3DM1 assemblata e calibrata!
-      500 EUR + iva per il kit! Che aspetti!
-    %a{ href: "mailto:print@3dmaking.it" } Ordina ora!
 

@@ -153,8 +153,7 @@ p {
   margin-bottom: 0.6em; }
 
 .home .content img, .printer_3dm1 .content img {
-  width: 100%;
-  border: 10px solid #333333; }
+  width: 100%; }
 
 .content img.icon {
   width: auto;
@@ -215,6 +214,16 @@ p {
 .img_box {
   overflow: hidden; }
 
+.content > h1:first-child {
+  text-align: center;
+  font-size: 3em;
+  font-family: Bazar;
+  text-transform: uppercase;
+  color: #333333;
+  border-bottom: 1px solid #333333;
+  border-top: 1px solid #333333;
+  margin: 120px 0 20px 0; }
+
 .home .content img {
   margin-top: 20px;
   margin-bottom: 20px; }
@@ -227,15 +236,20 @@ p {
   border-bottom: 1px solid #333333;
   border-top: 1px solid #333333; }
 
-.printing_service .content h1.title {
+.printer_3dm1 .box {
+  width: 48.5%;
+  display: inline-block;
+  float: left; }
+.printer_3dm1 .box.first {
+  margin-right: 3%; }
+.printer_3dm1 .box.right {
+  float: right; }
+
+h2 {
   text-align: center;
-  font-size: 3em;
-  font-family: Bazar;
-  text-transform: uppercase;
-  color: #333333;
-  border-bottom: 1px solid #333333;
-  border-top: 1px solid #333333;
-  margin: 120px 0 20px 0; }
+  font-family: bazar;
+  font-size: 120%;
+  margin: -15px 0 20px 0; }
 
 .shop .gallery, .categories .gallery, .products .gallery {
   heigth: 20px;
@@ -247,16 +261,16 @@ p {
 .shop .right, .categories .right, .products .right {
   width: 80%; }
 
-.products .right .box h1 {
-  margin-bottom: 20px; }
 .products .right .boxed {
-  margin: 0 2% 40px; }
+  margin-top: 20px; }
 
 .box {
   border: 1px solid black;
   padding: 0 0 5px;
   border-radius: 10px;
   margin: 0 0 20px 0; }
+  .box .boxed {
+    margin: 15px 2% 40px; }
   .box h1 {
     color: white;
     background: black;

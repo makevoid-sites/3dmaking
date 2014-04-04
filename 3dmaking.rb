@@ -58,6 +58,10 @@ class TDMaking < Sinatra::Base
   get "/shop" do
     haml :shop
   end
+    
+  get "/open_source_3dm1" do
+    haml :open_source_3dm1
+  end
 
   get "/products/*" do |name|
     @product = PRODUCTS.find{ |prod| prod[:name] == name.to_sym }

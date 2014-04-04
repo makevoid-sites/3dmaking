@@ -78,6 +78,22 @@ bind_lightbox = ->
     url = $(this).data "big"
     lightbox()
     lightbox.show(url)
+    
+#resize_boxes = ->
+#  box_right = $(".box.right")
+#  box_left = $(".box.left").last()
+#  box_left_height = $(".superbox")
+#  boxes = [box_left, box_right]
+#  max_box_height = _( [box_left_height.height(), box_right.height()] ).max()
+#  console.log max_box_height
+#  $(box_left).height(max_box_height+ 200)
+#  $(box_right).height(max_box_height+ 200)
+#    
+#    
+#bind_resize_boxes = ->
+#  resize_boxes()
+#  $(window).on "resize", resize_boxes
+  
 
 # main
 
@@ -85,3 +101,5 @@ $ ->
   load_slidejs()
   load_headroom()
   bind_lightbox()
+  
+  #bind_resize_boxes()
