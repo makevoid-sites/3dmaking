@@ -265,7 +265,7 @@ h2 {
   margin-top: 20px; }
 
 .box {
-  border: 1px solid black;
+  border: 1px solid #333333;
   padding: 0 0 5px;
   border-radius: 10px;
   margin: 0 0 20px 0; }
@@ -273,7 +273,7 @@ h2 {
     margin: 15px 2% 40px; }
   .box h1 {
     color: white;
-    background: black;
+    background: #333333;
     border-radius: 10px;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -284,17 +284,36 @@ h2 {
     .box nav a {
       display: block; }
 
+body .products nav {
+  margin: 0; }
 body .products a {
   display: inline-block;
-  width: 30%;
-  padding: 10px 2%; }
+  width: 24%;
+  padding: 0px 2%;
+  font-size: 0.9em; }
   body .products a img {
+    padding: 10px 1%;
     width: 100%; }
   body .products a span {
     display: block;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; }
+
+.content .product.box {
+  width: 24%;
+  display: inline-block; }
+  .content .product.box a {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #eeeeee; }
+    .content .product.box a:hover {
+      color: white; }
+
+.product.box:hover a {
+  color: white; }
 
 .left {
   padding-right: 2%; }

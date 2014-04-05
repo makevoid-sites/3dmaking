@@ -10,9 +10,9 @@
       %section.products
         %nav
           - for product in products
-            %a{ href: "/products/#{product[:name]}" }
-              %img{ src: "/img/thumbnail.png" }
-              %span= product[:title_it]
+            - @product = product
+            = haml :"_product"
+            
           
   .left
     = haml :"_categories"

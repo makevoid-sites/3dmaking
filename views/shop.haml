@@ -28,9 +28,7 @@
         %h1 Prodotti in evidenza
 
         %section.products
-          - for product in PRODUCTS
-            %a{ href: "/products/#{product[:name]}" }
-              %img{ src: "/img/thumbnail.png" }
-              %span= product[:title_it]
-
+          - for product in PRODUCTS[0..11]
+            - @product = product
+            = haml :"_product"
   .clear

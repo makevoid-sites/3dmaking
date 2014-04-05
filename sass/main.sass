@@ -10,8 +10,18 @@ $bg: #EEE
 $green: #056839
 $main1: #cb6c3c // shade 8e4c2a
 
+$black: #333
+
 $photo_margin: 10px solid #333
 
+
+
+// utilities
+
+=ellipsis
+  white-space: nowrap
+  overflow: hidden
+  text-overflow: ellipsis
 
 // mixins
 
@@ -123,8 +133,8 @@ a.btn:hover
     max-width: 1000px
 
 .header h1
-  $main: #ffa561
-  $main: #333
+  //$main: #ffa561
+  $main: $black
   //font-family: 'Helvetica Neue', Helvetica, sans-serif, Arial, Verdana
   // font-family: Impact
   font-family: Myriad
@@ -345,7 +355,7 @@ h2
 
 
 .box
-  border: 1px solid black
+  border: 1px solid $black
   padding: 0 0 5px
   border-radius: 10px
   margin: 0 0 20px 0
@@ -353,7 +363,7 @@ h2
     margin: 15px 2% 40px
   h1
     color: white
-    background: black
+    background: $black
     border-radius: 10px
     border-bottom-left-radius: 0px
     border-bottom-right-radius: 0px
@@ -365,22 +375,38 @@ h2
       display: block
 
 
+
+
 body .products
+  nav 
+    margin: 0
   a
     display: inline-block
-    width: 30%
-    padding: 10px 2%
-
+    width: 24%
+    padding: 0px 2%
+    font-size: 0.9em
     img
+      padding: 10px 1%
       width: 100%
     span
       display: block
-      white-space: nowrap
-      overflow: hidden
-      text-overflow: ellipsis
+      +ellipsis
 
 
 
+.content .product.box  
+  width: 24%
+  display: inline-block
+  a
+    width: 100%
+    +ellipsis
+    color: #eee
+    &:hover
+      color: #fff
+
+.product.box:hover a
+  color: #fff
+  
 
 
 
@@ -388,7 +414,7 @@ body .products
   padding-right: 2%
   h1
     padding: 5px 5% 5px
-  .box
+  .box  
 
 
 .left, .right
