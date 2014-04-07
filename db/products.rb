@@ -1,13 +1,13 @@
 
 THREEDM1_INFOS = { specs: "extruder 0.35mm - max speed: 90mm/s - travel speed: 100mm/s",  specs_it: "estrusore: 0.35mm - velocità standard: 55mm/s - velocità max: 90mm/s - travel speed: 100mm/s", description: "", description_it: "" }
 
-JHEAD_INFOS = { specs: "0.35mm nozzle - 1.75mm filament / 0.5mm nozzle - 3mm filament",  specs_it: "foro di estrusione 0.35mm - filamento 1.75mm / foro di estrusione 0.5mm - filamento 3mm" }
+JHEAD_INFOS = { specs: "0.35mm nozzle - 1.75mm filament / 0.5mm nozzle - 3mm filament",  specs_it: "foro di estrusione 0.35mm - filamento 1.75mm - parti plastiche - j-head " }
 
 PRODUCTS = [
   # 3DM1 printer - 3dm1_printer
   { cat: :"3dm1_printer", name: :"3dm1_printer_assembled", title: "3DM1 assembled", title_it: "3DM1 assemblata", original_price: 205, image: 0, price: 699 }.merge(THREEDM1_INFOS),
   { cat: :"3dm1_printer", name: :"3dm1_printer_kit", title: "3D Printer - 3DM1 kit", title_it: "3DM1 kit di assemblaggio", price: 499, original_price: 205, image: 0 }.merge(THREEDM1_INFOS),
-  { cat: :"3dm1_printer", name: :"3dm1_printer_plastic_parts", title: "3D Printer - 3DM1 plastic parts", title_it: "3DM1 parti stampate", price: 49, original_price: 10, image: 2 }.merge(THREEDM1_INFOS),
+  { cat: :"3dm1_printer", name: :"3dm1_printer_plastic_parts", title: "3D Printer - 3DM1 plastic parts", title_it: "3DM1 parti stampate", price: 49, original_price: 10, image: 2 },
   
   
   # prusa i3DM   - prusa_i3dm
@@ -16,37 +16,52 @@ PRODUCTS = [
   { cat: :"prusa_i3", name: :prusa_i3dm_plastic_parts, title: "Prusa i3DM plastic parts", title_it: "Prusa i3DM parti stampate", price: 49, original_price: 8, image: 0 },  
   
   # extruders
-  { cat: :extruders, name: :greg_extruder_assembled_175, title: "Extruder Greg  1.75mm assembled", title_it: "Estrusore Greg  1.75mm assemblato", price: 70, original_price: 32, image: 0, description: "", description_it: "" }.merge(JHEAD_INFOS),
-  { cat: :extruders, name: :jhead_assembled, title: "JHead assembled", title_it: "JHead assemblata", price: 50, original_price: 32, image: 0, description: "", description_it: "" }.merge(JHEAD_INFOS),
-  { cat: :extruders, name: :jhead_unassembled, title: "JHead kit", title_it: "JHead kit", price: 40, original_price: 32, image: 0, description: "", description_it: "" }.merge(JHEAD_INFOS),
+  { cat: :extruders, name: :greg_extruder_assembled_175, title: "Extruder Greg  1.75mm assembled", title_it: "Estrusore Greg  1.75mm assemblato", price: 70, original_price: 32, image: 0, description: "Extruder Greg fully assembled. Plastic parts, stepper motor Nema17 small, j-head filament 1.75mm and nozzle size 0.35mm", description_it: "Estrusore modello Greg assemblato. Completo delle parti plastiche, motore Nema17 small, con j-head per filamento da 1.75mm e foro di estrusione da 0.35mm.  " }.merge(JHEAD_INFOS),
+  { cat: :extruders, name: :greg_extruder_assembled_3, title: "Extruder Greg  3mm assembled", title_it: "Estrusore Greg  3mm assemblato", price: 70, original_price: 32, image: 0, specs: "nozzle size 0.5mm - filament 3mm",  specs_it: "foro di estrusione 0.5mm - filamento 3mm", description: "Extruder Greg fully assembled. Plastic parts, stepper motor Nema17 small, j-head filament 3mm and nozzle size 0.5mm", description_it: "Estrusore modello Greg assemblato. Completo delle parti plastiche, motore Nema17 small, con j-head per filamento da 3mm e foro di estrusione da 0.5mm.  " },  
+  { cat: :extruders, name: :jhead_assembled175, title: "JHead assembled 1.75mm", title_it: "JHead assemblata 1.75mm", price: 50, original_price: 32, image: 0, specs: "nozzle size 0.35mm - filament 1.75mm",  specs_it: "foro di estrusione 0.35mm - filamento 1.75mm", description: "J-head fully assembled with peek, ptfe, thermistor and termocouple", description_it: "J-head assemblata completa di peek, ptfe, termistore e termocoppia." },
+  { cat: :extruders, name: :jhead_assembled3, title: "JHead assembled 3mm", title_it: "JHead assemblata 3mm", price: 50, original_price: 32, image: 0, specs: "nozzle size 0.5mm - filament 3mm ",  specs_it: "foro di estrusione 0.5mm - filamento 3mm", description: "J-head fully assembled with peek, ptfe, thermistor and termocouple", description_it: "J-head assemblata completa di peek, ptfe, termistore e termocoppia." },  
+  { cat: :extruders, name: :jhead_unassembled175, title: "JHead kit 1.75mm", title_it: "JHead kit 1.75mm", price: 40, original_price: 32, image: 0, specs: "nozzle size 0.35mm - filament 1.75mm",  specs_it: "foro di estrusione 0.35mm - filamento 1.75mm", description: "Kit j-head, with peek, ptfe, thermistor and termocouple", description_it: "J-head in kit, completa di tutti i componenti, peek, ptfe, termistore e termocoppia da assemblare." },
+  { cat: :extruders, name: :jhead_unassembled3, title: "JHead kit 3mm", title_it: "JHead kit 3mm", price: 40, original_price: 32, image: 0, specs: "nozzle size 0.5mm - filament 3mm",  specs_it: "foro di estrusione 0.5mm - filamento 3mm", description: "", description_it: "J-head in kit, completa di tutti i componenti, peek, ptfe, termistore e termocoppia da assemblare." },
   { cat: :extruders, name: :thermistor, title: "Thermistor 100k", title_it: "Termistore 100k", price: 3.50, original_price: 0.50, image: 0, specs: "100k",  specs_it: "100k", description: "100k thermistor for jhead and compatibles", description_it: "Termistore 100k per jhead e compatibili" },
   { cat: :extruders, name: :resistor_cartridge, title: "Cartridge resistor", title_it: "Resistore a cartuccia", price: 3.50, original_price: 0.50, image: 0, specs: "12v",  specs_it: "12v", description: "Cartridge resistor for jhead and compatibles", description_it: "Resistore a cartuccia per jhead e compatibili" },
-  { cat: :extruders, name: :ptfe_tubing, title: "Ptfe tubing, 2mm inner/6mm outer(10cm)", title_it: "PTFE-tubicino, 2mm IN/6mm OUT(10cm)", price: 3, original_price: 1, image: 0, specs: "2mm IN/6mm OUT (10cm)",  specs_it: "2mm IN/6mm OUT (10cm)", description: "PTFE tube for Jhead", description_it: "Tubicino di PTFE per Jhead" },
-  { cat: :extruders, name: :nozzle, title: "Nozzle 0.35mm for 1.75mm filament", title_it: "Nozzle 0.35mm per filamento da 1.75mm", price: 0, original_price: 0, image: 0, specs: "hole 0.35mm / filament 1.75mm",  specs_it: "foro 0.35mm / filamento 1.75mm", description: "", description_it: "Nozzle per estrusore Jhead e compatibili, con foro di uscita da 0.35mm per filamento da 1.75mm" },
+  { cat: :extruders, name: :ptfe_tubing175, title: "Ptfe tubing, 2mm inner/6mm outer(10cm)", title_it: "PTFE-tubicino, 2mm IN/6mm OUT(10cm)", price: 3, original_price: 1, image: 0, specs: "2mm IN/6mm OUT (10cm)",  specs_it: "2mm IN/6mm OUT (10cm)", description: "PTFE tube for Jhead", description_it: "Tubicino di PTFE per Jhead" },
+  { cat: :extruders, name: :ptfe_tubing3, title: "Ptfe tubing, 3.18mm inner/6mm outer(10cm)", title_it: "PTFE-tubicino, 3.18mm IN/6mm OUT(10cm)", price: 3, original_price: 1, image: 0, specs: "3.18mm IN/6mm OUT (10cm)",  specs_it: "3.18mm IN/6mm OUT (10cm)", description: "PTFE tube for Jhead", description_it: "Tubicino di PTFE per Jhead" },
+  { cat: :extruders, name: :nozzle175, title: "Nozzle 0.35mm for 1.75mm filament", title_it: "Nozzle 0.35mm per filamento da 1.75mm", price: 15, original_price: 0, image: 0, specs: "nozzle size 0.35mm - filament 1.75mm",  specs_it: "foro di estrusione 0.35mm - filamento 1.75mm", description: "Nozzle for j-head extruder, nozzle size 0.35mm filament 1.75mm", description_it: "Nozzle per estrusore Jhead e compatibili, con foro di uscita da 0.35mm per filamento da 1.75mm" },
+  { cat: :extruders, name: :nozzle3, title: "Nozzle 0.5mm for 3mm filament", title_it: "Nozzle 0.5mm per filamento da 3mm", price: 15, original_price: 0, image: 0, specs: "nozzle size 0.5mm - filament 3mm",  specs_it: "foro di estrusione 0.5mm - filamento 3mm", description: "Nozzle for j-head extruder, nozzle size 0.5mm filament 3mm", description_it: "Nozzle per estrusore Jhead e compatibili, con foro di estrusione da 0.5mm per filamento da 3mm" },
   #{ cat: :extruders, name: :, title: "", title_it: "", price: 0, original_price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
   
   
   # linear motion
-  { cat: :linear_motion, name: :"3dm1_x_assembled", title: "", title_it: "", price: 0, original_price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
-  { cat: :linear_motion, name: :lm8uu_linear_bearings, title: "", title_it: "Cuscinetti lineari diametro 8mm", original_price: 0.40, price: 1.50, image: 0, specs: "",  specs_it: "diametro: 8mm", description: "", description_it: "Cuscinetti lineari LM8UU 8mm usati nella maggior parte delle stampanti open source/hardware." },
-  { cat: :linear_motion, name: :smooth_roads_8mm, title: "", title_it: "Barre rettificate 8mm", price: 3, original_price: 4, image: 0, specs: "",  specs_it: "spessore 8mm lunghezza 1m", description: "", description_it: "Barra rettificata lunga 1m, spessore 8mm, usata per comporre gli assi di movimento" },
+  { cat: :linear_motion, name: :"aluminium_pulley_gt2", title: "Aluminium pulley GT2", title_it: "Puleggia in alluminio GT2", price: 4, original_price: 0, image: 0, specs: "GT2 - aluminium - set screw",  specs_it: "GT2 - Alluminio - Grano in acciaio", description: "", description_it: "Puleggia in alluminio per cinghia GT2 con grano in acciaio per bloccarlo all'asse del motore." },
+  { cat: :linear_motion, name: :lm8uu_linear_bearings, title: "Linear bearing 8mm", title_it: "Cuscinetti lineari diametro 8mm", original_price: 0.40, price: 1.50, image: 0, specs: "8mm diameter",  specs_it: "diametro: 8mm", description: "Linear bearing LM8UU 8mm used in the largest part of the open source/hardware 3d printers", description_it: "Cuscinetti lineari LM8UU 8mm usati nella maggior parte delle stampanti open source/hardware." },
+  { cat: :linear_motion, name: :smooth_roads_8mm, title: "Smooth roads 8mm", title_it: "Barre rettificate 8mm", price: 3, original_price: 4, image: 0, specs: "diameter 8mm - length 1m",  specs_it: "spessore 8mm - lunghezza 1m", description: "Smooth road length 1m, used to compose movement axes.", description_it: "Barra rettificata lunga 1m, spessore 8mm, usata per comporre gli assi di movimento" },
+  { cat: :linear_motion, name: :timing_belt, title: "Belt GT2 1m x 6mm", title_it: "Cinghia GT2 1m x 6mm", price: 3, original_price: 4, image: 0, specs: "GT2 - pitch 2mm - length: 1m - thickness: 6mm",  specs_it: "GT2 - passo 2mm - lunghezza: 1m - spessore: 6mm", description: "Belt GT2 1 meter length, thickness 6mm, used principally for the axes movement.", description_it: "Cinghia GT2 lunga un metro e spessa 6 mm, utilizzata per far scorrere gli assi di movimento." },  
+  { cat: :linear_motion, name: :z_coupler, title: "Z-axis motor coupling M8", title_it: "Coupling M8 per motore asse z", price: 3, original_price: 4, image: 0, specs: "M8 - block screw - no holes - spring",  specs_it: "M8 - viti bloccanti - no fori nell'asse del motore - molla centrale", description: "Coupler M8 with central spring, easy to mount, no need holes in the motor axes", description_it: "Coupler M8 con molla centrale, facile da montare non c'è bisogno di forare l'asse del motore, si blocca con delle viti a brugola." },   
+  
+  
   #{ cat: :linear_motion, name: :, title: "", title_it: "", price: 0, original_price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
   
   
   #  vslot linear motion
   { cat: :vslot, name: :vslot, title: "Vslot 20x20", title_it: "Vslot 20x20",  specs: "1mt black vslot 20x20", price: 8, original_price: 13, description: "Vslot profiles", description_it: "Profili a V in alluminio anodizzato nero", image: 1 },
+  { cat: :vslot, name: :wheel, title: "Vslot wheel", title_it: "Ruote per Vslot",  specs: "", price: 0, original_price: 0, description: "", description_it: "", image: 1 },
+  { cat: :vslot, name: :wheel, title: "Vslot bearing", title_it: "Cuscinetti per Vslot",  specs: "", price: 0, original_price: 0, description: "", description_it: "", image: 1 },  
   
   # motors
   { cat: :motors, name: :small_nema17_stepper_motor, title: "NEMA17 mini stepper motor", title_it: "Motori stepper NEMA17 piccoli", price: 10, original_price: 14, image: 0, specs: "",  specs_it: "nema 17 mini stepper motor peso 285g", description: "", description_it: "mini stepper motor per estrusore ma anche per motorizzare gli assi di movimento" },
-
+  { cat: :motors, name: :nema17_stepper_motor, title: "NEMA17 stepper motor", title_it: "Motori stepper NEMA17", price: 10, original_price: 14, image: 0, specs: "",  specs_it: "Nema 17 stepper motor peso 285g", description: "Stepper motor for extruders and for movement axis", description_it: "Stepper motor per estrusore ma anche per motorizzare gli assi di movimento" },
   #{ cat: :motors, name: :, title: "", title_it: "", price: 0, original_price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
   
   
   # printed parts
-  { cat: :printed_parts, name: :printed_parts, title: "", title_it: "", price: 0, original_price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
-  
+  { cat: :printed_parts, name: :threedm1_printed_parts, title: "Complete set of plastics for 3DM1", title_it: "Parti plastiche per la 3DM1", price: 49, original_price: 10, image: 0, specs: "abs - pla - plastic parts - 0.2 layer height",  specs_it: "abs - pla - parti plastiche - 0.2 layer height", description: "Complete set of plastic parts for 3DM1 printer, ABS, PLA", description_it: "Set completo delle parti plastiche per la stampante 3DM1, materiali utilizzati Abs e Pla" },
+  { cat: :printed_parts, name: :prusa_printed_parts, title: "Complete set of plastics for PrusaI3DM", title_it: "Parti plastiche per la PrusaI3DM ", price: 49, original_price: 10, image: 0, specs: "abs - pla - plastic parts - 0.2 layer height",  specs_it: "abs - pla - parti plastiche - 0.2 layer height", description: "Complete set of plastic parts for PrusaI3DM printer, ABS, PLA", description_it: "Set completo delle parti plastiche per la stampante PrusaI3DM, materiali utilizzati Abs e Pla" },
+  { cat: :printed_parts, name: :greg175_printed_parts, title: "Greg extruder 1.75mm", title_it: "Estrusore greg 1.75mm", price: 14.99, original_price: 0, image: 0, specs: "filament 1.75mm - Abs - Pla - hole for j-head",  specs_it: "filamento 1.75mm - abs - pla - foro per j-head", description: "Greg extruder for j-head, filament hole 1.75mm", description_it: "Estrusore greg per j-head con foro per filamento da 1.75mm." },
+  { cat: :printed_parts, name: :greg3_printed_parts, title: "Greg extruder 3mm", title_it: "Estrusore greg 3mm", price: 14.99, original_price: 0, image: 0, specs: "filament 3mm - Abs - Pla - hole for j-head",  specs_it: "filamento 3mm - abs - pla - foro per j-head", description: "Greg extruder for j-head, filament hole 3mm", description_it: "Estrusore greg per j-head con foro per filamento da 3mm." },
+
+            
   # filament
-  { cat: :filament, name: :filamento , title: "", title_it: "", price: 0, original_price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
+  { cat: :filament, name: :filamento_175pla , title: "1.75mm PLA filament 1kg", title_it: "PLA 1.75mm bobina da 1kg", price: 35, original_price: 0, image: 0, specs: "pla - 190°/240° - bobina 1kg",  specs_it: "", description: "", description_it: "" },
   
   
   # cables and wires
