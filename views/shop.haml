@@ -28,7 +28,7 @@
         %h1 Prodotti in evidenza
 
         %section.products
-          - for product in PRODUCTS[0..11]
+          - for product in PRODUCTS[0..3]
             - @product = product
             = haml :"_product"
   .clear

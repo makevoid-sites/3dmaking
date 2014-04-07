@@ -104,6 +104,18 @@ class TDMaking < Sinatra::Base
   def t(en, it)
     en? ? en : it
   end
+  
+  # view helpers - translation, price ...
+  
+  def tr(label)
+    en? ? label : "#{label}_it".to_sym
+  end
+  
+  def fmt_price(price)
+    "%.2f" % price
+  end
+  
+  
 
   # partial helpers (taken from sinatrize: https://gist.github.com/makevoid/2385559)
 

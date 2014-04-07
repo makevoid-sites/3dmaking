@@ -3,27 +3,87 @@
 
   lang = en? ? "en_US" : "it_IT"
   #lang = "en_US"
+  
+.paypal_button
+  - if !defined?(product)  
+    // bottone stampante 3dm1
+  
+    :ruby
+      button_id = "KK9YT3JQY5K8A"
+      variants_label = "Versione"
+      variants = [
+        { name: "Kit", label: "Kit €499,00 EUR" },
+        { name: "Assemblata", label: "Assemblata €699,00 EUR" },
+      ]
+    
+    %form{ action: "https://www.paypal.com/cgi-bin/webscr", method: "post", target: "paypal" }
+      %input{ name: "cmd", type: "hidden", value: "_s-xclick" }/
+      %input{ name: "hosted_button_id", type: "hidden", value: button_id }/
+      %table
+        %tr
+          %td
+            %input{ name: "on0", type: "hidden", value: variants_label }
+        %tr
+          %td
+            %select{ name: "os0" }
+              - variants.each do |variant|
+                %option{ value: variant[:name] }= variant[:label]
+      %input{ name: "currency_code", type: "hidden", value: currency }/
+      %input{ border: "0", name: "submit", src: "https://www.paypalobjects.com/#{lang}/i/btn/btn_cart_LG.gif", type: "image" }/
+      %img{ alt: "", border: "0", height: "1", src: "https://www.paypalobjects.com/#{lang}/i/scr/pixel.gif", width: "1" }/
 
-  button_id = "KK9YT3JQY5K8A"
-  variants_label = "Versione"
-  variants = [
-    { name: "Kit", label: "Kit €499,00 EUR" },
-    { name: "Assemblata", label: "Assemblata €699,00 EUR" },
-  ]
+  - else
+  
+    // bottone generico
+  
+    %form{ action: "https://www.paypal.com/cgi-bin/webscr", method: "post",  target: "paypal"}
+      %input{ name: "cmd",  type: "hidden",  value: "_cart"}/
+      %input{ name: "business",  type: "hidden",  value: "makevoid@gmail.com"}/
+      %input{ name: "lc",  type: "hidden",  value: "#{en? ? "US" : "IT"}"}/
+      %input{ name: "item_name",  type: "hidden",  value: product[tr(:title)] }/
+      %input{ name: "amount",  type: "hidden",  value: fmt_price(product[:price]) }/
+      %input{ name: "currency_code",  type: "hidden",  value: "EUR"}/
+      %input{ name: "button_subtype",  type: "hidden",  value: "products"}/
+      %input{ name: "no_note",  type: "hidden",  value: "0"}/
+      %input{ name: "add",  type: "hidden",  value: "1"}/
+      %input{ name: "bn",  type: "hidden",  value: "PP-ShopCartBF:btn_cart_LG.gif:NonHostedGuest"}/
+      %input{ border: "0",  name: "submit",  src: "https://www.paypalobjects.com/#{lang}/i/btn/btn_cart_LG.gif", type: "image"}/
+      %img{ alt: "",  border: "0",  height: "1",  src: "https://www.paypalobjects.com/#{lang}/i/scr/pixel.gif", width: "1"}/
 
 
-%form{ action: "https://www.paypal.com/cgi-bin/webscr", method: "post", target: "paypal" }
-  %input{ name: "cmd", type: "hidden", value: "_s-xclick" }/
-  %input{ name: "hosted_button_id", type: "hidden", value: button_id }/
-  %table
-    %tr
-      %td
-        %input{ name: "on0", type: "hidden", value: variants_label }
-    %tr
-      %td
-        %select{ name: "os0" }
-          - variants.each do |variant|
-            %option{ value: variant[:name] }= variant[:label]
-  %input{ name: "currency_code", type: "hidden", value: currency }/
-  %input{ border: "0", name: "submit", src: "https://www.paypalobjects.com/#{lang}/i/btn/btn_cart_LG.gif", type: "image" }/
-  %img{ alt: "", border: "0", height: "1", src: "https://www.paypalobjects.com/#{lang}/i/scr/pixel.gif", width: "1" }/
+
+  // regex ruby hash
+  // ":(.+?) => " --- " $1: "
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
+  
+
+

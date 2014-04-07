@@ -5,7 +5,7 @@ JHEAD_INFOS = { specs: "0.35mm nozzle - 1.75mm filament / 0.5mm nozzle - 3mm fil
 
 PRODUCTS = [
   # 3DM1 printer - 3dm1_printer
-  { cat: :"3dm1_printer", name: :"3dm1_printer_assembled", title: "3DM1 assembled", title_it: "3DM1 assemblata", original_price: 699, image: 0, price: 205 }.merge(THREEDM1_INFOS),
+  { cat: :"3dm1_printer", name: :"3dm1_printer_assembled", title: "3DM1 assembled", title_it: "3DM1 assemblata", original_price: 205, image: 0, price: 699 }.merge(THREEDM1_INFOS),
   { cat: :"3dm1_printer", name: :"3dm1_printer_kit", title: "3D Printer - 3DM1 kit", title_it: "3DM1 kit di assemblaggio", price: 499, original_price: 205, image: 0 }.merge(THREEDM1_INFOS),
   { cat: :"3dm1_printer", name: :"3dm1_printer_plastic_parts", title: "3D Printer - 3DM1 plastic parts", title_it: "3DM1 parti stampate", price: 49, original_price: 10, image: 2 }.merge(THREEDM1_INFOS),
   
@@ -28,10 +28,6 @@ PRODUCTS = [
   
   # linear motion
   { cat: :linear_motion, name: :"3dm1_x_assembled", title: "", title_it: "", price: 0, original_price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
-  { cat: :linear_motion, name: :"3dm1_y_assembled", title: "", title_it: "", price: 0, original_price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
-  { cat: :linear_motion, name: :"3dm1_x_kit", title: "", title_it: "", price: 0, original_price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
-  { cat: :linear_motion, name: :"3dm1_y_kit", title: "", title_it: "", price: 0, original_price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
-  { cat: :linear_motion, name: :axis_kit, title: "", title_it: "", price: 0, original_price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
   { cat: :linear_motion, name: :lm8uu_linear_bearings, title: "", title_it: "Cuscinetti lineari diametro 8mm", original_price: 0.40, price: 1.50, image: 0, specs: "",  specs_it: "diametro: 8mm", description: "", description_it: "Cuscinetti lineari LM8UU 8mm usati nella maggior parte delle stampanti open source/hardware." },
   { cat: :linear_motion, name: :smooth_roads_8mm, title: "", title_it: "Barre rettificate 8mm", price: 3, original_price: 4, image: 0, specs: "",  specs_it: "spessore 8mm lunghezza 1m", description: "", description_it: "Barra rettificata lunga 1m, spessore 8mm, usata per comporre gli assi di movimento" },
   #{ cat: :linear_motion, name: :, title: "", title_it: "", price: 0, original_price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },

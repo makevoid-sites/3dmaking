@@ -11,18 +11,32 @@
       %h1= title
       .boxed
         
-        %img{ src: "/img/products/1.jpg" }
+        .left
+          %img{ src: "/img/products/1.jpg" }
         
+        - specs = @product[tr(:specs)]
+        - if specs
+          - specs = specs.split(" - ").map{ |s| s.capitalize } 
+          .box.right
+            %h1 #{t "Tech specs", "Specifiche tecniche"}:
+            .boxed
+              /%p= specs
+              %ul
+                - for spec in specs
+                  %li= spec
+    
+        .clear
         
-        %h2 SPECIFICHE TECNICHE:
-        %p= @product[:specs_it]
         
         .description
           %p= @product[:description_it]
-        
-        
-        = partial :button
-        
+
+        .price 
+          %span #{t "Price", "Prezzo"}:
+          #{fmt_price @product[:price]} €
+        = partial :button, product: @product
+        .clear
+    
      
   .left
     = haml :"_categories"

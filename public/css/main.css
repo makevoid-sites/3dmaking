@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0; }
+
 @font-face {
   font-family: Bazar;
   src: url("/fonts/bazar.ttf"); }
@@ -264,6 +268,13 @@ h2 {
 .products .right .boxed {
   margin-top: 20px; }
 
+.box.product h1 {
+  background: #bbbbbb;
+  height: 50px; }
+  .box.product h1 a {
+    color: #056839;
+    font-size: 0.8em; }
+
 .box {
   border: 1px solid #333333;
   padding: 0 0 5px;
@@ -292,7 +303,7 @@ body .products a {
   padding: 0px 2%;
   font-size: 0.9em; }
   body .products a img {
-    padding: 10px 1%;
+    margin: 10px 1%;
     width: 100%; }
   body .products a span {
     display: block;
@@ -303,17 +314,46 @@ body .products a {
 .content .product.box {
   width: 24%;
   display: inline-block; }
+  .content .product.box h1 a {
+    color: black; }
+  .content .product.box:hover h1 {
+    background: black; }
+    .content .product.box:hover h1 a {
+      color: white; }
   .content .product.box a {
     width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    color: #eeeeee; }
-    .content .product.box a:hover {
-      color: white; }
+    text-align: center; }
+  .content .product.box img {
+    width: 60%; }
 
 .product.box:hover a {
   color: white; }
+
+.products .content .right .left {
+  width: 65%; }
+.products .content .right .right {
+  width: 35%; }
+.products .content .right .boxed {
+  padding: 2%; }
+.products .content .right .box.right h1 {
+  text-transform: uppercase;
+  font-size: 0.9em; }
+.products .content .right .box.right ul {
+  margin-left: 12%; }
+.products .content .right .description {
+  padding: 20px 0; }
+.products .content .right .price {
+  float: left;
+  margin-right: 2%; }
+  .products .content .right .price span {
+    font-size: 0.8em; }
+.products .content .right form {
+  zoom: 0.9;
+  float: left; }
+
+.price {
+  font-size: 1.3em;
+  font-weight: bold; }
 
 .left {
   padding-right: 2%; }
@@ -322,6 +362,12 @@ body .products a {
 
 .left .text, .left section, .right .text, .right section {
   padding: 10px 2% 5px; }
+
+.products.box img, .products .box img {
+  border: 1px solid #666666;
+  border-radius: 6px; }
+.products.box form img, .products .box form img {
+  border: 0; }
 
 .lightbox {
   position: absolute;
