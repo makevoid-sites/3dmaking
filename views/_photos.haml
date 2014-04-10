@@ -1,16 +1,19 @@
-%h1= t "Photos of some 3D object we printed", "Foto di alcuni oggetti stampati in 3D da noi"
+.box
 
-.gallery
-  - albums.each do |album|
-    - next unless album.cover.images
-    - img = album.cover.images[5]
-    - if img
-      .album
-        %a{ href: "/albums/#{album.name_url}" }
-          %h1= album.name
-          .img_box
-            - vertical = img["width"] < img["height"]
-            %img{ src: img["source"], class: "#{"vert" if vertical}" }
-          -# :escaped
-          -#   #{album.cover.images[4]["source"]}
-          -# %img{ src: "https://graph.facebook.com/#{album.cover_photo}/picture?type=album" }
+  %h1= t "Photos of some 3D object we printed", "Foto di alcuni oggetti stampati in 3D da noi"
+  .boxed
+    .gallery
+      - albums.each do |album|
+        - next unless album.cover.images
+        - img = album.cover.images[5]
+        - if img
+          .album
+            %a{ href: "/albums/#{album.name_url}" }
+              %h1= album.name
+              .img_box
+                - vertical = img["width"] < img["height"]
+                %img{ src: img["source"], class: "#{"vert" if vertical}" }
+              -# :escaped
+              -#   #{album.cover.images[4]["source"]}
+              -# %img{ src: "https://graph.facebook.com/#{album.cover_photo}/picture?type=album" }
+    .clear

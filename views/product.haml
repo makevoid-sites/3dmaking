@@ -15,7 +15,7 @@
           %img{ src: "/img/products/1.jpg" }
         
         - specs = @product[tr(:specs)]
-        - if specs
+        - if specs && specs != ""
           - specs = specs.split(" - ").map{ |s| s.capitalize } 
           .box.right
             %h1 #{t "Tech specs", "Specifiche tecniche"}:

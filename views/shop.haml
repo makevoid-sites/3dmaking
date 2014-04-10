@@ -1,6 +1,22 @@
-- if ENV["RACK_ENV"] == "production"
-  %p
-    Presto online!
+:ruby
+  release_day = 18
+  date = Date.today 
+  day = release_day - date.day
+
+- if true #ENV["RACK_ENV"] == "production"
+  %br
+  %br
+  %br
+  %br
+  %div{ style: "padding: 0 30%" }
+    .box{ style: "text-align: center; width: 100%; margin: 0 auto; " }
+      %h1{ style: "padding-top: 25px; font-family: bazar; font-size: 1.5em" }
+        Apertura dello shop
+        %br
+        %br
+    
+      .boxed{ style: "font-size: 6em; font-family: bazar; padding-top: 25px; margin-bottom: 5px" } #{day} GIORNI
+      %p{ style: "font-size: 2em; font-family: bazar; color: #555"} OPENING: 18.04.2014 
 - else
   %section.gallery
     #slides

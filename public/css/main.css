@@ -312,8 +312,9 @@ body .products a {
     text-overflow: ellipsis; }
 
 .content .product.box {
-  width: 24%;
-  display: inline-block; }
+  width: 23%;
+  display: inline-block;
+  margin: 10px 0.8%; }
   .content .product.box h1 a {
     color: black; }
   .content .product.box:hover h1 {
