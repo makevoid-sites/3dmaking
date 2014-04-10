@@ -202,9 +202,16 @@ PRODUCTS = [
   # supplies
   { cat: :supplies, name: :switch_standard, 
     title: "Standard Switch", title_it: "Interruttore standard", 
-    price: 1, original_price: 0.1, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },{ cat: :supplies, name: :printed_parts, 
-    title: "", title_it: "", 
-    price: 0, original_price: 0, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
+    price: 1, original_price: 0.1, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
+  { cat: :supplies, name: :kapton, 
+    title: "Kapton tape 55mm/33m", title_it: "Nastro Kapton 55mm/33m", 
+    price: 12, original_price: 0, image: 0, specs: "33M - 55MM",  specs_it: "33M - 55MM", description: "", description_it: "" },
+  { cat: :supplies, name: :colla, 
+    title: "Glue tube", title_it: "Colla stick", 
+    price: 1, original_price: 0, image: 0, specs: "",  specs_it: "", description: "Glue for your printer bed.", description_it: "Colla stick per tenere la vostra stampa incollata al piatto." }, 
+  { cat: :supplies, name: :scotch_carta, 
+    title: "Paper tape", title_it: "Scotch di carta", 
+    price: 1.5, original_price: 0, image: 0, specs: "",  specs_it: "", description: "Paper tape for printer bed", description_it: "Scotch di carta per il piano di stampa." },     
   
   # offerte
   { cat: :offerte, name: :printed_parts, 
