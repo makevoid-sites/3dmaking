@@ -1,5 +1,5 @@
 (function() {
-  var bind_lightbox, lightbox, load_headroom, load_slidejs;
+  var bind_lightbox, bind_showembed, lightbox, load_headroom, load_slidejs;
 
   lightbox = function() {
     var time, _i, _len, _ref;
@@ -101,10 +101,18 @@
     });
   };
 
+  bind_showembed = function() {
+    return $("a.show_embed").on("click", function() {
+      $("embed, object").show();
+      return $(this).hide();
+    });
+  };
+
   $(function() {
     load_slidejs();
     load_headroom();
-    return bind_lightbox();
+    bind_lightbox();
+    return bind_showembed();
   });
 
 }).call(this);

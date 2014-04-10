@@ -3,7 +3,8 @@
   date = Date.today 
   day = release_day - date.day
 
-- if true #ENV["RACK_ENV"] == "production"
+- #ENV["RACK_ENV"] == "production"
+- if ENV["RACK_ENV"] == "production" 
   %br
   %br
   %br

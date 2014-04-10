@@ -370,6 +370,14 @@ body .products a {
 .products.box form img, .products .box form img {
   border: 0; }
 
+.standard {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  margin: 20px; }
+  .standard img {
+    border: 1px solid #333333; }
+
 .lightbox {
   position: absolute;
   width: 100%;

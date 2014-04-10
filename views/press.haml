@@ -15,8 +15,8 @@
       %a{ href: link } concorso di stampa 3D della Maker Faire Rome 2013
       nella categoria Qualita' e Tecniche di stampa.
 
-  %a{ href: link }
-    %img{ style: "width: 63%", src: "http://www.makerfairerome.eu/wp-content/uploads/2013/10/2595-Copia_di_IMG_3490AA-1024x682.jpg" }
+  %a.standard{ href: link }
+    %img{ style: "width: 63%", src: "/img/3dmaking_maker_faire_print_quality_contest.png" }
 
 
 %br
@@ -25,8 +25,12 @@
 
 %section
   %h1= t "Interview by Tiscali Notizie (italian)", "Intervista: Tiscali Notizie"
-  %object
-    %embed{ width: "600px", height: "400px", src: "http://video.tiscali.it/inc/TiscaliVideo.swf", flashvars: 'vURL=http://video.tiscali.it/asx/179680.asx', allowFullScreen: 'true' }
+  %a.standard.show_embed{ href: "javascript:void(0)" }
+    %img{ src: "/img/intervista_tiscali_notizie.png" }
+  
+  %object.standard{ style: "display: none" }
+    %embed.standard{ width: "600px", height: "400px", src: "http://video.tiscali.it/inc/TiscaliVideo.swf", flashvars: 'vURL=http://video.tiscali.it/asx/179680.asx', allowFullScreen: 'true' }
+    / todo: click link
 
 
 %section

@@ -79,6 +79,11 @@ bind_lightbox = ->
     lightbox()
     lightbox.show(url)
     
+bind_showembed = ->
+  $("a.show_embed").on "click", ->
+    $("embed, object").show()
+    $(this).hide()
+    
 #resize_boxes = ->
 #  box_right = $(".box.right")
 #  box_left = $(".box.left").last()
@@ -102,4 +107,5 @@ $ ->
   load_headroom()
   bind_lightbox()
   
+  bind_showembed()
   #bind_resize_boxes()
