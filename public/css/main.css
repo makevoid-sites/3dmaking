@@ -228,17 +228,20 @@ p {
   border-top: 1px solid #333333;
   margin: 120px 0 20px 0; }
 
-.home .content img {
-  margin-top: 20px;
-  margin-bottom: 20px; }
-.home .content .tagline p {
-  text-align: center;
-  font-size: 3em;
-  font-family: Bazar;
-  text-transform: uppercase;
-  color: #333333;
-  border-bottom: 1px solid #333333;
-  border-top: 1px solid #333333; }
+.home .content {
+  position: relative;
+  top: -30px; }
+  .home .content img {
+    margin-top: 50px;
+    margin-bottom: 20px; }
+  .home .content .tagline p {
+    text-align: center;
+    font-size: 3em;
+    font-family: Bazar;
+    text-transform: uppercase;
+    color: #333333;
+    border-bottom: 1px solid #333333;
+    border-top: 1px solid #333333; }
 
 .printer_3dm1 .box {
   width: 48.5%;
