@@ -17,7 +17,8 @@
 
     %meta{ content: description, property: "og:description" }/
     %meta{ content: description, name: "description" }/
-  %link{href: "/css/main.css", rel: "stylesheet" }/
+  %link{ href: "/css/main.css", rel: "stylesheet" }/  
+  %link{ href: "/css/vendor/jq_fancybox.css", rel: "stylesheet" }/
   %body{ class: body_class }
     %section.container
       %header.header
@@ -62,6 +63,7 @@
     %script{ type: "text/javascript", src: "/js/vendor/slidejs3.js" }
     %script{ type: "text/javascript", src: "/js/vendor/headroom.js" }
     %script{ type: "text/javascript", src: "/js/vendor/jimagesloaded.js" }
+    %script{ type: "text/javascript", src: "/js/vendor/jq_fancybox.js" }
     %script{ type: "text/javascript", src: "/js/vendor/underscore.js" }
     -# %script{ type: "text/javascript", src: "/js/vendor/zepto.js" }
     -# %script{ type: "text/javascript", src: "/js/vendor/flowtype.js" }

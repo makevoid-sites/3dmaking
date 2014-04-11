@@ -12,4 +12,5 @@
         -# TODO: choose photo sizes for display and lightbox, not sure wich is wich, developed offline
         - img = photo.images[4]
         - big = photo.images[1]
-        %img{ src: img["source"], :"data-big" => big["source"] }
+        %a.alb{ href: img["source"], data: { :"fancybox-group" => "group" } }
+          %img{ src: img["source"], data: { big: big["source"] } }

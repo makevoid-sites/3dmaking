@@ -1,5 +1,5 @@
 (function() {
-  var bind_lightbox, bind_showembed, lightbox, load_headroom, load_slidejs;
+  var bind_fancybox, bind_lightbox, bind_showembed, is_undefined, lightbox, load_headroom, load_slidejs;
 
   lightbox = function() {
     var time, _i, _len, _ref;
@@ -65,6 +65,9 @@
   };
 
   load_slidejs = function() {
+    if (!$("#slides").slidesjs) {
+      return;
+    }
     return $("#slides").slidesjs({
       width: 940,
       height: 528,
@@ -81,8 +84,15 @@
     });
   };
 
+  is_undefined = function(fn) {
+    return typeof fn === "undefined";
+  };
+
   load_headroom = function() {
     var elem, headroom, options;
+    if (is_undefined(Headroom)) {
+      return;
+    }
     elem = document.querySelector("header");
     options = {
       offset: 90
@@ -108,11 +118,15 @@
     });
   };
 
+  bind_fancybox = function() {
+    return $(".alb").fancybox();
+  };
+
   $(function() {
     load_slidejs();
     load_headroom();
-    bind_lightbox();
-    return bind_showembed();
+    bind_showembed();
+    return bind_fancybox();
   });
 
 }).call(this);

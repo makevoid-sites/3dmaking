@@ -48,6 +48,7 @@ lightbox.image_width = ->
 # slidejs3 gallery
 
 load_slidejs = ->
+  return unless $("#slides").slidesjs
   $("#slides").slidesjs
     width: 940,
     height: 528,
@@ -61,7 +62,11 @@ load_slidejs = ->
 
 # headroom
 
+is_undefined = (fn) ->
+  typeof(fn) == "undefined"
+
 load_headroom = ->
+  return if is_undefined(Headroom)
   elem = document.querySelector "header"
   options = {
     offset: 90
@@ -84,6 +89,9 @@ bind_showembed = ->
     $("embed, object").show()
     $(this).hide()
     
+bind_fancybox = ->
+  $(".alb").fancybox()    
+    
 #resize_boxes = ->
 #  box_right = $(".box.right")
 #  box_left = $(".box.left").last()
@@ -105,7 +113,9 @@ bind_showembed = ->
 $ ->
   load_slidejs()
   load_headroom()
-  bind_lightbox()
+  #bind_lightbox()
   
   bind_showembed()
   #bind_resize_boxes()
+  
+  bind_fancybox()
