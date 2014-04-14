@@ -340,6 +340,8 @@ body .products a {
 
 .products .content .right .left {
   width: 65%; }
+  .products .content .right .left img {
+    width: 100%; }
 .products .content .right .right {
   width: 35%; }
 .products .content .right .boxed {
