@@ -9,6 +9,10 @@
       %h1 #{ t "Products in:",  "Prodotti nella categoria:" } #{@category.humanize.upcase}
       %section.products
         %nav
+          - if products.empty?
+            - word = "prodotti"
+            - word = "offerte" if @category == "offerte"
+            Al momento non ci sono #{word} disponibili.
           - for product in products
             - @product = product
             = haml :"_product"

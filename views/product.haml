@@ -12,7 +12,7 @@
       .boxed
         
         .left
-          %img{ src: "/img/products/1.jpg" }
+          %img{ src: "/img/products/#{"%2d" % @product[:price]}.jpg" }
         
         - specs = @product[tr(:specs)]
         - if specs && specs != ""

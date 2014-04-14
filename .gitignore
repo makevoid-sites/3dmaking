@@ -2,3 +2,5 @@
 .sass-cache
 lib/3dshop/slicer
 *.pxm
+
+*.jpg
