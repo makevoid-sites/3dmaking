@@ -65,10 +65,10 @@ PRODUCTS = [
     price: 3, original_price: 1, image: 11, specs: "3.18mm IN/6mm OUT (10cm)",  specs_it: "3.18mm IN/6mm OUT (10cm)", description: "PTFE tube for Jhead", description_it: "Tubicino di PTFE per Jhead" },
   { cat: :extruders, name: :nozzle175, 
     title: "Nozzle 0.35mm for 1.75mm filament", title_it: "Nozzle 0.35mm per filamento da 1.75mm", 
-    price: 15, original_price: 0, image: 10, specs: "nozzle size 0.35mm - filament 1.75mm",  specs_it: "foro di estrusione 0.35mm - filamento 1.75mm", description: "Nozzle for j-head extruder, nozzle size 0.35mm filament 1.75mm", description_it: "Nozzle per estrusore Jhead e compatibili, con foro di uscita da 0.35mm per filamento da 1.75mm" },
+    price: 15, original_price: 10, image: 10, specs: "nozzle size 0.35mm - filament 1.75mm",  specs_it: "foro di estrusione 0.35mm - filamento 1.75mm", description: "Nozzle for j-head extruder, nozzle size 0.35mm filament 1.75mm", description_it: "Nozzle per estrusore Jhead e compatibili, con foro di uscita da 0.35mm per filamento da 1.75mm" },
   { cat: :extruders, name: :nozzle3, 
     title: "Nozzle 0.5mm for 3mm filament", title_it: "Nozzle 0.5mm per filamento da 3mm", 
-    price: 15, original_price: 0, image: 10, specs: "nozzle size 0.5mm - filament 3mm",  specs_it: "foro di estrusione 0.5mm - filamento 3mm", description: "Nozzle for j-head extruder, nozzle size 0.5mm filament 3mm", description_it: "Nozzle per estrusore Jhead e compatibili, con foro di estrusione da 0.5mm per filamento da 3mm" },
+    price: 15, original_price: 10, image: 10, specs: "nozzle size 0.5mm - filament 3mm",  specs_it: "foro di estrusione 0.5mm - filamento 3mm", description: "Nozzle for j-head extruder, nozzle size 0.5mm filament 3mm", description_it: "Nozzle per estrusore Jhead e compatibili, con foro di estrusione da 0.5mm per filamento da 3mm" },
 
   
   # linear motion
@@ -79,14 +79,14 @@ PRODUCTS = [
     title: "Linear bearing 8mm", title_it: "Cuscinetti lineari diametro 8mm", original_price: 0.40, 
     price: 1.50, image: 14, specs: "8mm diameter",  specs_it: "diametro: 8mm", description: "Linear bearing LM8UU 8mm used in the largest part of the open source/hardware 3d printers", description_it: "Cuscinetti lineari LM8UU 8mm usati nella maggior parte delle stampanti open source/hardware." },
   { cat: :linear_motion, name: :smooth_roads_8mm, 
-    title: "Smooth roads 8mm", title_it: "Barre rettificate 8mm", 
-    price: 3, original_price: 4, image: 15, specs: "diameter 8mm - length 1m",  specs_it: "spessore 8mm - lunghezza 1m", description: "Smooth road length 1m, used to compose movement axes.", description_it: "Barra rettificata lunga 1m, spessore 8mm, usata per comporre gli assi di movimento" },
+    title: "Smooth roads 8mm - 1M", title_it: "Barre rettificate 8mm - 1M", 
+    price: 6, original_price: 4, image: 15, specs: "diameter 8mm - length 1m",  specs_it: "spessore 8mm - lunghezza 1m", description: "Smooth road length 1m, used to compose movement axes.", description_it: "Barra rettificata lunga 1m, spessore 8mm, usata per comporre gli assi di movimento" },
   { cat: :linear_motion, name: :timing_belt, 
     title: "Belt GT2 1m x 6mm", title_it: "Cinghia GT2 1m x 6mm", 
-    price: 3, original_price: 4, image: 13, specs: "GT2 - pitch 2mm - length: 1m - thickness: 6mm",  specs_it: "GT2 - passo 2mm - lunghezza: 1m - spessore: 6mm", description: "Belt GT2 1 meter length, thickness 6mm, used principally for the axes movement.", description_it: "Cinghia GT2 lunga un metro e spessa 6 mm, utilizzata per far scorrere gli assi di movimento." },  
+    price: 5, original_price: 0.9, image: 13, specs: "GT2 - pitch 2mm - length: 1m - thickness: 6mm",  specs_it: "GT2 - passo 2mm - lunghezza: 1m - spessore: 6mm", description: "Belt GT2 1 meter length, thickness 6mm, used principally for the axes movement.", description_it: "Cinghia GT2 lunga un metro e spessa 6 mm, utilizzata per far scorrere gli assi di movimento." },  
   { cat: :linear_motion, name: :z_coupler, 
     title: "Z-axis motor coupling M8", title_it: "Z Coupler M8 per motore asse z", 
-    price: 3, original_price: 4, image: 16, specs: "M8 - block screw - no holes - spring",  specs_it: "M8 - viti bloccanti - no fori nell'asse del motore - molla centrale", description: "Coupler M8 with central spring, easy to mount, no need holes in the motor axes", description_it: "Coupler M8 con molla centrale, facile da montare non c'è bisogno di forare l'asse del motore, si blocca con delle viti a brugola." },   
+    price: 3, original_price: 0.6, image: 16, specs: "M8 - block screw - no holes - spring",  specs_it: "M8 - viti bloccanti - no fori nell'asse del motore - molla centrale", description: "Coupler M8 with central spring, easy to mount, no need holes in the motor axes", description_it: "Coupler M8 con molla centrale, facile da montare non c'è bisogno di forare l'asse del motore, si blocca con delle viti a brugola." },   
   
   
 
@@ -104,10 +104,10 @@ PRODUCTS = [
   # motors
   { cat: :motors, name: :small_nema17_stepper_motor, 
     title: "NEMA17 mini stepper motor", title_it: "Motori stepper NEMA17 piccoli", 
-    price: 10, original_price: 14, image: 19, specs: "",  specs_it: "nema 17 mini stepper motor peso 285g", description: "", description_it: "mini stepper motor per estrusore ma anche per motorizzare gli assi di movimento" },
+    price: 15, original_price: 10, image: 19, specs: "",  specs_it: "nema 17 mini stepper motor peso 285g", description: "", description_it: "mini stepper motor per estrusore ma anche per motorizzare gli assi di movimento" },
   { cat: :motors, name: :nema17_stepper_motor, 
     title: "NEMA17 stepper motor", title_it: "Motori stepper NEMA17", 
-    price: 10, original_price: 14, image: 20, specs: "",  specs_it: "Nema 17 stepper motor peso 285g", description: "Stepper motor for extruders and for movement axis", description_it: "Stepper motor per estrusore ma anche per motorizzare gli assi di movimento" },
+    price: 19, original_price: 15, image: 20, specs: "",  specs_it: "Nema 17 stepper motor peso 285g", description: "Stepper motor for extruders and for movement axis", description_it: "Stepper motor per estrusore ma anche per motorizzare gli assi di movimento" },
 
   
   # printed parts
