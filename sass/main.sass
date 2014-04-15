@@ -63,15 +63,15 @@ $photo_margin: 10px solid #333
 //   src: url('/fonts/myriad_pro_regular.otf')
 @font-face
   font-family: Bazar
-  src: url('/fonts/bazar.ttf')
+  src: url('/fonts/bazar.ttf') format('truetype'), url('/fonts/bazar.otf') format('opentype')
 
 @font-face
   font-family: Gafeta
-  src: url('/fonts/gafeta.woff')
+  src: url('/fonts/gafeta.woff') format('woff')
 
 @font-face
-  font-family: Voltaire-regular
-  src: url('/fonts/Voltaire-Regular.ttf')
+  font-family: Voltaire
+  src: url('/fonts/Voltaire-Regular.ttf') format('truetype'),  url('/fonts/bazar.otf') format('opentype')
 
 *
   box-sizing: border-box
@@ -119,7 +119,7 @@ header, .dark
 
 nav a
   display: block
-  font-family: voltaire
+  font-family: Voltaire
 
 h1
   margin: 0
