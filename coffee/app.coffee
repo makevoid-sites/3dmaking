@@ -66,6 +66,7 @@ load_slidejs = ->
   options.height = 483
 
   $(".printer_3dm1 #slides").slidesjs options
+  $(".shop #slides").slidesjs options
 
 
 # headroom

@@ -85,7 +85,8 @@
     };
     $(".home #slides").slidesjs(options);
     options.height = 483;
-    return $(".printer_3dm1 #slides").slidesjs(options);
+    $(".printer_3dm1 #slides").slidesjs(options);
+    return $(".shop #slides").slidesjs(options);
   };
 
   is_undefined = function(fn) {
