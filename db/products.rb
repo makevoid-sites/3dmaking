@@ -3,7 +3,7 @@ THREEDM1_INFOS = { specs: "extruder 0.35mm - max speed: 90mm/s - travel speed: 1
 
 JHEAD_INFOS = { specs: "0.35mm nozzle - 1.75mm filament / 0.5mm nozzle - 3mm filament",  specs_it: "foro di estrusione 0.35mm - filamento 1.75mm - parti plastiche - j-head " }
 
-CABLES_INFOS = { specs: "length: 70 cm - dupoint cable",  specs_it: "lunghezza: 70 cm - cavo dupoint", description: "", description_it: ""  }
+CABLES_INFOS = { specs: "length: 70 cm - dupoint cable - 1 cable",  specs_it: "lunghezza: 70 cm - cavo dupoint - quantità: 1 cavo", description: "", description_it: ""  }
 
 PRODUCTS = [
   # 3DM1 printer - 3dm1_printer
@@ -226,7 +226,7 @@ PRODUCTS = [
   # supplies
   { cat: :supplies, name: :switch_standard, 
     title: "Standard Switch", title_it: "Interruttore standard", 
-    price: 1, original_price: 0.1, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
+    price: 1, original_price: 0.1, image: 40, specs: "",  specs_it: "", description: "", description_it: "" },
   { cat: :supplies, name: :kapton, 
     title: "Kapton tape 55mm/33m", title_it: "Nastro Kapton 55mm/33m", 
     price: 12, original_price: 0, image: 29, specs: "33M - 55MM",  specs_it: "33M - 55MM", description: "", description_it: "" },
@@ -252,14 +252,14 @@ PRODUCTS = [
   # other
   { cat: :other, name: :heated_bed, 
     title: "Heated bed", title_it: "Piano riscaldato", 
-    price: 25, original_price: 0, image: 0, 
+    price: 25, original_price: 0, image: 41, 
     specs: "PCB model: MK2 - Ideal voltages: 12 / 24 V - Dimensions: 21,4 x 21,4 cm - Dimensions (print area): 20 x 20 cm",  
     specs_it: "Modello del circuito stampato (PCB): MK2 - Tensioni adatte: 12 / 24 V - Dimensioni: 21,4 x 21,4 cm - Dimensioni aread di stampa: 20 x 20 cm", 
     description: "", description_it: "" 
   }, 
   { cat: :other, name: :heated_bed_glass, 
     title: "Heated bed glass", title_it: "Vetro temperato per piano riscaldato", 
-    price: 15, original_price: 0, image: 0, 
+    price: 15, original_price: 0, image: 42, 
     specs: "material: borosilicate glass",  specs_it: "materiale: vetro temperato", 
     description: "", description_it: "" 
   }, 
