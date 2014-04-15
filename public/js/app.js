@@ -65,10 +65,11 @@
   };
 
   load_slidejs = function() {
+    var options;
     if (!$("#slides").slidesjs) {
       return;
     }
-    return $("#slides").slidesjs({
+    options = {
       width: 940,
       height: 528,
       play: {
@@ -81,7 +82,10 @@
           speed: 1000
         }
       }
-    });
+    };
+    $(".home #slides").slidesjs(options);
+    options.height = 483;
+    return $(".printer_3dm1 #slides").slidesjs(options);
   };
 
   is_undefined = function(fn) {
