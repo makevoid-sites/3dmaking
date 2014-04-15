@@ -93,13 +93,13 @@ PRODUCTS = [
   #  vslot linear motion
   { cat: :vslot, name: :vslot_profile, 
     title: "Vslot 20x20", title_it: "Vslot 20x20",  specs: "1mt black vslot 20x20", 
-    price: 8, original_price: 13, description: "Vslot profiles", description_it: "Profili a V in alluminio anodizzato nero", image: 0 },
+    price: 16, original_price: 8, description: "Vslot profiles", description_it: "Profili a V in alluminio anodizzato nero", image: 34 },
   { cat: :vslot, name: :vslot_wheel, 
     title: "Vslot wheel", title_it: "Ruote per Vslot",  specs: "", 
-    price: 0, original_price: 17, description: "", description_it: "", image: 1 },
+    price: 2, original_price: 1.2, description: "V-slot wheel. Necessary two v-slot bearings.", description_it: "Ruote per barre alluminio profilo V-slot. Montano due cuscinetti per ogni ruota.", image: 17 },
   { cat: :vslot, name: :vslot_bearing, 
     title: "Vslot bearing", title_it: "Cuscinetti per Vslot",  specs: "", 
-    price: 0, original_price: 18, description: "", description_it: "625ZZ - diametro interno: 5mm", image: 1 },  
+    price: 1, original_price: 0.4, description: "625ZZ - internal diameter: 5mm.", description_it: "625ZZ - diametro interno: 5mm", image: 18 },  
   
   # motors
   { cat: :motors, name: :small_nema17_stepper_motor, 
