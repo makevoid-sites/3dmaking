@@ -97,9 +97,9 @@
     options = {
       offset: 90
     };
+    $("header").css("width", "100%");
     headroom = new Headroom(elem, options);
-    headroom.init();
-    return $("header").css("width", "100%");
+    return headroom.init();
   };
 
   bind_lightbox = function() {

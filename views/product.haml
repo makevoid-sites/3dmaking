@@ -2,21 +2,21 @@
   title = @product[:name].to_s.split("_").join(" ")
   title = @product[:title_it] if @product[:title_it]
 
-  
+
 %a.btn{ href: "/categories/#{@product[:cat]}/products" } < #{t("back", "indietro")}
-    
+
 %section
   .right
     .box
       %h1= title
       .boxed
-        
+
         .left
-          %img{ src: "/products_imgs/#{"%02d" % @product[:image]}.jpg" }
-        
+          %img{ src: "/products_img/#{"%02d" % @product[:image]}.jpg" }
+
         - specs = @product[tr(:specs)]
         - if specs && specs != ""
-          - specs = specs.split(" - ").map{ |s| s.capitalize } 
+          - specs = specs.split(" - ").map{ |s| s.capitalize }
           .box.right
             %h1 #{t "Tech specs", "Specifiche tecniche"}:
             .boxed
@@ -24,19 +24,19 @@
               %ul
                 - for spec in specs
                   %li= spec
-    
+
         .clear
-        
-        
+
+
         .description
           %p= @product[:description_it]
 
-        .price 
+        .price
           %span #{t "Price", "Prezzo"}:
           #{fmt_price @product[:price]} €
         = partial :button, product: @product
         .clear
-    
-     
+
+
   .left
     = haml :"_categories"

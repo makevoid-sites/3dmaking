@@ -1,21 +1,21 @@
 - product = @product
 
 .box.product
-  %h1 
+  %h1
     %a{ href: "/products/#{product[:name]}", title: product[:title_it] }= product[:title_it]
   %a.product{ href: "/products/#{product[:name]}" }
     /%span= product[:title_it]
-    %img{ src: "/products_imgs/#{"%02d" % @product[:image]}.jpg" }
-    
+    %img{ src: "/products_img_thumbs/#{"%02d" % @product[:image]}.jpg" }
+
   %div{ style: "text-align: center; padding: 0 3% 10px 0; font-size: 1.25em"}
     %span{ style: "font-size: 0.8em" } #{t "Price", "Prezzo"}:
     #{fmt_price product[:price]} €
   .clear
-  
-  
-  / 
+
+
+  /
     da mettere bottone paypal
-    
+
     %input{ type: "text", style: "width: 35px; margin-left: 3%; font-size: 0.85em; text-align: center; padding: 4px 0", value: 1 }
-  
+
     %input{ type: "submit", value: "Add to cart", style: "margin-right: 3%; float: right; font-size: 2.2em" }

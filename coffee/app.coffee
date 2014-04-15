@@ -71,9 +71,9 @@ load_headroom = ->
   options = {
     offset: 90
   }
+  $("header").css("width", "100%")
   headroom = new Headroom(elem, options)
   headroom.init()
-  $("header").css("width", "100%")
   #$("header").headroom()
 
 # app code
@@ -83,15 +83,15 @@ bind_lightbox = ->
     url = $(this).data "big"
     lightbox()
     lightbox.show(url)
-    
+
 bind_showembed = ->
   $("a.show_embed").on "click", ->
     $("embed, object").show()
     $(this).hide()
-    
+
 bind_fancybox = ->
-  $(".alb").fancybox()    
-    
+  $(".alb").fancybox()
+
 #resize_boxes = ->
 #  box_right = $(".box.right")
 #  box_left = $(".box.left").last()
@@ -101,12 +101,12 @@ bind_fancybox = ->
 #  console.log max_box_height
 #  $(box_left).height(max_box_height+ 200)
 #  $(box_right).height(max_box_height+ 200)
-#    
-#    
+#
+#
 #bind_resize_boxes = ->
 #  resize_boxes()
 #  $(window).on "resize", resize_boxes
-  
+
 
 # main
 
@@ -114,8 +114,8 @@ $ ->
   load_slidejs()
   load_headroom()
   #bind_lightbox()
-  
+
   bind_showembed()
   #bind_resize_boxes()
-  
+
   bind_fancybox()
