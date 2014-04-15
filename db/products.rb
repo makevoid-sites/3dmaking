@@ -164,13 +164,13 @@ PRODUCTS = [
   # cables and wires
   { cat: :cables_and_wires, name: :wires_kit_4pin, 
     title: "Jumper Cable - 4 pin", title_it: "Cavi Jumper - 4 pin", 
-    price: 0.90, original_price: 0.10, image: 0 }.merge(CABLES_INFOS),
+    price: 0.90, original_price: 0.10, image: 35 }.merge(CABLES_INFOS),
   { cat: :cables_and_wires, name: :wires_kit_3pin, 
     title: "Jumper Cable - 3 pin", title_it: "Cavi Jumper - 3 pin",
-    price: 0.85, original_price: 0.08, image: 0 }.merge(CABLES_INFOS),
+    price: 0.85, original_price: 0.08, image: 36 }.merge(CABLES_INFOS),
   { cat: :cables_and_wires, name: :wires_kit_2pin, 
     title: "Jumper Cable - 2 pin", title_it: "Cavi Jumper - 2 pin",
-    price: 0.80, original_price: 0.07, image: 0 }.merge(CABLES_INFOS),
+    price: 0.80, original_price: 0.07, image: 37 }.merge(CABLES_INFOS),
  
   # electronics
     { cat: :electronics, name: :electronics_minitronics, 
@@ -181,7 +181,7 @@ PRODUCTS = [
     },
     { cat: :electronics, name: :electronics_azteeg_v3, 
       title: "Control board: Azteeg v3", title_it: "Scheda: Azteeg v3", 
-      price: 80, original_price: 50, image: 0, 
+      price: 80, original_price: 50, image: 38, 
       specs: "drives 5 motors - steppers drivers: included - RepRap compatible - arduino based - voltages: 12V / 24V",  specs_it: "drives 5+1 motors - steppers drivers: included onboard - RepRap compatible - arduino based - voltages: 12V / 24V", 
       description: "", description_it: "" 
     },
@@ -193,7 +193,7 @@ PRODUCTS = [
     },
     { cat: :electronics, name: :electronics_melzi, 
       title: "Control board: Melzi", title_it: "Scheda: Melzi", 
-      price: 79, original_price: 58, image: 0, 
+      price: 79, original_price: 58, image: 39, 
       specs: "drives 5 motors - steppers drivers: onboard - RepRap compatible - arduino based - voltages: 12V / 24V",  specs_it: "drives 5+1 motors - steppers drivers: included onboard - RepRap compatible - arduino based - voltages: 12V / 24V", 
       description: "", description_it: "" 
     },
