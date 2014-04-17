@@ -272,12 +272,14 @@ h2 {
 .products .right .boxed {
   margin-top: 20px; }
 
-.box.product h1 {
-  background: #bbbbbb;
-  height: 50px; }
-  .box.product h1 a {
-    color: #056839;
-    font-size: 0.8em; }
+.box.product {
+  background: #fafafa; }
+  .box.product h1 {
+    background: #dddddd;
+    height: 50px; }
+    .box.product h1 a {
+      color: #056839;
+      font-size: 0.8em; }
 
 .box {
   border: 1px solid #333333;
@@ -298,6 +300,14 @@ h2 {
     display: block; }
     .box nav a {
       display: block; }
+
+.box.categories_nav {
+  background: #fafafa; }
+
+.box.product_box {
+  background: #fafafa; }
+  .box.product_box .tech_specs_box {
+    background: white; }
 
 body .products nav {
   margin: 0; }

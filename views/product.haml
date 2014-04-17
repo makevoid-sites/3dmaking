@@ -10,7 +10,7 @@
 
 %section
   .right
-    .box
+    .box.product_box
       %h1= title
       .boxed
 
@@ -20,7 +20,7 @@
         - specs = @product[tr(:specs)]
         - if specs && specs != ""
           - specs = specs.split(" - ").map{ |s| s.capitalize }
-          .box.right
+          .box.right.tech_specs_box
             %h1 #{t "Tech specs", "Specifiche tecniche"}:
             .boxed
               /%p= specs
