@@ -5,6 +5,9 @@
 
 %a.btn{ href: "/categories/#{@product[:cat]}/products" } < #{t("back", "indietro")}
 
+.cart
+  = haml :"_button_view_cart"
+
 %section
   .right
     .box

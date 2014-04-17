@@ -3,11 +3,11 @@
 
   lang = en? ? "en_US" : "it_IT"
   #lang = "en_US"
-  
+
 .paypal_button
-  - if !defined?(product)  
+  - if !defined?(product)
     // bottone stampante 3dm1
-  
+
     :ruby
       button_id = "KK9YT3JQY5K8A"
       variants_label = "Versione"
@@ -15,7 +15,7 @@
         { name: "Kit", label: "Kit €499,00 EUR" },
         { name: "Assemblata", label: "Assemblata €699,00 EUR" },
       ]
-    
+
     %form{ action: "https://www.paypal.com/cgi-bin/webscr", method: "post", target: "paypal" }
       %input{ name: "cmd", type: "hidden", value: "_s-xclick" }/
       %input{ name: "hosted_button_id", type: "hidden", value: button_id }/
@@ -33,12 +33,16 @@
       %img{ alt: "", border: "0", height: "1", src: "https://www.paypalobjects.com/#{lang}/i/scr/pixel.gif", width: "1" }/
 
   - else
-  
+
     // bottone generico
-  
+
     %form{ action: "https://www.paypal.com/cgi-bin/webscr", method: "post",  target: "paypal"}
       %input{ name: "cmd",  type: "hidden",  value: "_cart"}/
-      %input{ name: "business",  type: "hidden",  value: "makevoid@gmail.com"}/
+      %input{ name: "business",  type: "hidden",  value: "FVRK79H994D5U"}/
+      %input{ name: "tax_rate", value: '22.000', type: "hidden" }/
+      %input{ name: "image_url", value: 'http://uploads.makevoid.com/logo_3dm_paypal.png', type: "hidden" }/
+
+      -# FVRK79H994D5U / makevoid@gmail.com
       %input{ name: "lc",  type: "hidden",  value: "#{en? ? "US" : "IT"}"}/
       %input{ name: "item_name",  type: "hidden",  value: product[tr(:title)] }/
       %input{ name: "amount",  type: "hidden",  value: fmt_price(product[:price]) }/
@@ -54,36 +58,36 @@
 
   // regex ruby hash
   // ":(.+?) => " --- " $1: "
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

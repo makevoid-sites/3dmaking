@@ -51,7 +51,7 @@ load_slidejs = ->
   return unless $("#slides").slidesjs
   options =
     width: 940,
-    height: 528 
+    height: 528
     play:
       auto: true,
       active: true,
@@ -59,8 +59,8 @@ load_slidejs = ->
     effect:
       slide:
         speed: 1000
-  
-  
+
+
   $(".home #slides").slidesjs options
 
   options.height = 483

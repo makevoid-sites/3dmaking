@@ -3,6 +3,9 @@
 
 %a.btn{ href: "/shop" } < indietro
 
+.cart
+  = haml :"_button_view_cart"
+
 %section
   .right
     .box
@@ -16,8 +19,7 @@
           - for product in products
             - @product = product
             = haml :"_product"
-            
-          
+
+
   .left
     = haml :"_categories"
-  
