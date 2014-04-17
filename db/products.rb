@@ -3,7 +3,7 @@ THREEDM1_INFOS = { specs: "extruder 0.35mm - max speed: 90mm/s - travel speed: 1
 
 JHEAD_INFOS = { specs: "0.35mm nozzle - 1.75mm filament / 0.5mm nozzle - 3mm filament",  specs_it: "foro di estrusione 0.35mm - filamento 1.75mm - parti plastiche - j-head " }
 
-CABLES_INFOS = { specs: "length: 70 cm - dupoint cable - 1 cable",  specs_it: "lunghezza: 70 cm - cavo dupoint - quantità: 1 cavo", description: "", description_it: ""  }
+CABLES_INFOS = { specs: "length: 70 cm - dupont cable - 1 cable",  specs_it: "lunghezza: 70 cm - cavo dupont - quantità: 1 cavo", description: "", description_it: ""  }
 
 PRODUCTS = [
   # 3DM1 printer - 3dm1_printer

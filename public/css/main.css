@@ -199,22 +199,11 @@ p {
   .gallery .album img.vert {
     margin-top: -50px; }
 
-@media (min-width: 1000px) {
-  .gallery .album .img_box {
-    height: 200px; } }
 .album .album img {
   cursor: pointer;
   width: 46%;
   margin: 0 2% 2% 0; }
 
-@media (min-width: 500px) {
-  .album .album img {
-    width: 29%;
-    margin: 0 2% 2% 0; } }
-@media (min-width: 1000px) {
-  .album .album img {
-    width: 21%;
-    margin: 0 2% 2% 0; } }
 .content > .album {
   margin: 20px 0 0 0; }
   .content > .album h1 {
@@ -443,3 +432,23 @@ body .products a {
 
 .cart {
   float: right; }
+
+@media (max-width: 760px) {
+  body section .content {
+    width: 85%;
+    margin: 0 auto;
+    font-size: 0.85em; } }
+@media (min-width: 1000px) {
+  .gallery .album .img_box {
+    height: 200px; } }
+@media (max-width: 1000px) {
+  .content .product.box {
+    width: 30%; } }
+@media (min-width: 500px) {
+  .album .album img {
+    width: 29%;
+    margin: 0 2% 2% 0; } }
+@media (min-width: 1000px) {
+  .album .album img {
+    width: 21%;
+    margin: 0 2% 2% 0; } }
