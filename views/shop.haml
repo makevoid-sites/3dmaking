@@ -1,10 +1,10 @@
 :ruby
   release_day = 18
-  date = Date.today 
+  date = Date.today
   day = release_day - date.day
 
 - #ENV["RACK_ENV"] == "production"
-- if ENV["RACK_ENV"] == "production" 
+- if ENV["RACK_ENV"] == "production"
   %br
   %br
   %br
@@ -15,9 +15,9 @@
         APERTURA DELLO SHOP
         %br
         %br
-    
-      .boxed{ style: "font-size: 6em; font-family: bazar; padding-top: 25px; margin-bottom: 5px" } #{day} GIORNI
-      %p{ style: "font-size: 2em; font-family: bazar; color: #555"} OPENING: 18.04.2014 
+
+      .boxed{ style: "font-size: 6em; font-family: bazar; padding-top: 25px; margin-bottom: 5px" } #{day} GIORN#{day == 1 ? "O" : "I"}
+      %p{ style: "font-size: 2em; font-family: bazar; color: #555"} OPENING: 18.04.2014
 - else
   %section.gallery
     #slides
@@ -38,7 +38,7 @@
         .text
           :textile
             Benvenuti nella sezione shop di 3d making. Qui potete trovare tutto quello di cui avete bisogno per entrare nel mondo della stampa 3D. Dai componenti meccanici, alle parti stampate, nello shop di 3DMaking potete trovare tutto il necessario per costruire o modificare la vostra stampante 3D.
-            
+
             Oltre ai componenti singoli, 3DMaking offre la possibilità di acquistare stampanti completamente assemblate come la 3DM1 e la PrusaI3DM entrambe molto semplici da utilizzare, molto precise e soprattutto opensource. Disponibili anche nella versione Kit.
 
       .box
