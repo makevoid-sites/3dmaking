@@ -49,9 +49,9 @@ lightbox.image_width = ->
 
 load_slidejs = ->
   return unless $("#slides").slidesjs
-  $("#slides").slidesjs
+  options =
     width: 940,
-    height: 528,
+    height: 528 
     play:
       auto: true,
       active: true,
@@ -59,6 +59,15 @@ load_slidejs = ->
     effect:
       slide:
         speed: 1000
+  
+  
+  $(".home #slides").slidesjs options
+
+  options.height = 483
+
+  $(".printer_3dm1 #slides").slidesjs options
+  $(".shop #slides").slidesjs options
+
 
 # headroom
 

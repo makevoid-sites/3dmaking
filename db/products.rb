@@ -3,7 +3,7 @@ THREEDM1_INFOS = { specs: "extruder 0.35mm - max speed: 90mm/s - travel speed: 1
 
 JHEAD_INFOS = { specs: "0.35mm nozzle - 1.75mm filament / 0.5mm nozzle - 3mm filament",  specs_it: "foro di estrusione 0.35mm - filamento 1.75mm - parti plastiche - j-head " }
 
-CABLES_INFOS = { specs: "length: 70 cm - dupoint cable",  specs_it: "lunghezza: 70 cm - cavo dupoint", description: "", description_it: ""  }
+CABLES_INFOS = { specs: "length: 70 cm - dupoint cable - 1 cable",  specs_it: "lunghezza: 70 cm - cavo dupoint - quantità: 1 cavo", description: "", description_it: ""  }
 
 PRODUCTS = [
   # 3DM1 printer - 3dm1_printer
@@ -93,13 +93,13 @@ PRODUCTS = [
   #  vslot linear motion
   { cat: :vslot, name: :vslot_profile, 
     title: "Vslot 20x20", title_it: "Vslot 20x20",  specs: "1mt black vslot 20x20", 
-    price: 8, original_price: 13, description: "Vslot profiles", description_it: "Profili a V in alluminio anodizzato nero", image: 0 },
+    price: 16, original_price: 8, description: "Vslot profiles", description_it: "Profili a V in alluminio anodizzato nero", image: 34 },
   { cat: :vslot, name: :vslot_wheel, 
     title: "Vslot wheel", title_it: "Ruote per Vslot",  specs: "", 
-    price: 0, original_price: 17, description: "", description_it: "", image: 1 },
+    price: 2, original_price: 1.2, description: "V-slot wheel. Necessary two v-slot bearings.", description_it: "Ruote per barre alluminio profilo V-slot. Montano due cuscinetti per ogni ruota.", image: 17 },
   { cat: :vslot, name: :vslot_bearing, 
     title: "Vslot bearing", title_it: "Cuscinetti per Vslot",  specs: "", 
-    price: 0, original_price: 18, description: "", description_it: "625ZZ - diametro interno: 5mm", image: 1 },  
+    price: 1, original_price: 0.4, description: "625ZZ - internal diameter: 5mm.", description_it: "625ZZ - diametro interno: 5mm", image: 18 },  
   
   # motors
   { cat: :motors, name: :small_nema17_stepper_motor, 
@@ -164,13 +164,13 @@ PRODUCTS = [
   # cables and wires
   { cat: :cables_and_wires, name: :wires_kit_4pin, 
     title: "Jumper Cable - 4 pin", title_it: "Cavi Jumper - 4 pin", 
-    price: 0.90, original_price: 0.10, image: 0 }.merge(CABLES_INFOS),
+    price: 0.90, original_price: 0.10, image: 35 }.merge(CABLES_INFOS),
   { cat: :cables_and_wires, name: :wires_kit_3pin, 
     title: "Jumper Cable - 3 pin", title_it: "Cavi Jumper - 3 pin",
-    price: 0.85, original_price: 0.08, image: 0 }.merge(CABLES_INFOS),
+    price: 0.85, original_price: 0.08, image: 36 }.merge(CABLES_INFOS),
   { cat: :cables_and_wires, name: :wires_kit_2pin, 
     title: "Jumper Cable - 2 pin", title_it: "Cavi Jumper - 2 pin",
-    price: 0.80, original_price: 0.07, image: 0 }.merge(CABLES_INFOS),
+    price: 0.80, original_price: 0.07, image: 37 }.merge(CABLES_INFOS),
  
   # electronics
     { cat: :electronics, name: :electronics_minitronics, 
@@ -181,7 +181,7 @@ PRODUCTS = [
     },
     { cat: :electronics, name: :electronics_azteeg_v3, 
       title: "Control board: Azteeg v3", title_it: "Scheda: Azteeg v3", 
-      price: 80, original_price: 50, image: 0, 
+      price: 80, original_price: 50, image: 38, 
       specs: "drives 5 motors - steppers drivers: included - RepRap compatible - arduino based - voltages: 12V / 24V",  specs_it: "drives 5+1 motors - steppers drivers: included onboard - RepRap compatible - arduino based - voltages: 12V / 24V", 
       description: "", description_it: "" 
     },
@@ -193,7 +193,7 @@ PRODUCTS = [
     },
     { cat: :electronics, name: :electronics_melzi, 
       title: "Control board: Melzi", title_it: "Scheda: Melzi", 
-      price: 79, original_price: 58, image: 0, 
+      price: 79, original_price: 58, image: 39, 
       specs: "drives 5 motors - steppers drivers: onboard - RepRap compatible - arduino based - voltages: 12V / 24V",  specs_it: "drives 5+1 motors - steppers drivers: included onboard - RepRap compatible - arduino based - voltages: 12V / 24V", 
       description: "", description_it: "" 
     },
@@ -226,7 +226,7 @@ PRODUCTS = [
   # supplies
   { cat: :supplies, name: :switch_standard, 
     title: "Standard Switch", title_it: "Interruttore standard", 
-    price: 1, original_price: 0.1, image: 0, specs: "",  specs_it: "", description: "", description_it: "" },
+    price: 1, original_price: 0.1, image: 40, specs: "",  specs_it: "", description: "", description_it: "" },
   { cat: :supplies, name: :kapton, 
     title: "Kapton tape 55mm/33m", title_it: "Nastro Kapton 55mm/33m", 
     price: 12, original_price: 0, image: 29, specs: "33M - 55MM",  specs_it: "33M - 55MM", description: "", description_it: "" },
@@ -252,14 +252,14 @@ PRODUCTS = [
   # other
   { cat: :other, name: :heated_bed, 
     title: "Heated bed", title_it: "Piano riscaldato", 
-    price: 25, original_price: 0, image: 0, 
+    price: 25, original_price: 0, image: 41, 
     specs: "PCB model: MK2 - Ideal voltages: 12 / 24 V - Dimensions: 21,4 x 21,4 cm - Dimensions (print area): 20 x 20 cm",  
     specs_it: "Modello del circuito stampato (PCB): MK2 - Tensioni adatte: 12 / 24 V - Dimensioni: 21,4 x 21,4 cm - Dimensioni aread di stampa: 20 x 20 cm", 
     description: "", description_it: "" 
   }, 
   { cat: :other, name: :heated_bed_glass, 
     title: "Heated bed glass", title_it: "Vetro temperato per piano riscaldato", 
-    price: 15, original_price: 0, image: 0, 
+    price: 15, original_price: 0, image: 42, 
     specs: "material: borosilicate glass",  specs_it: "materiale: vetro temperato", 
     description: "", description_it: "" 
   }, 

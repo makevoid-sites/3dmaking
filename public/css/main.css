@@ -1,4 +1,4 @@
-* {
+*, div {
   margin: 0;
   padding: 0; }
 
@@ -262,6 +262,13 @@ h2 {
   font-family: bazar;
   font-size: 120%;
   margin: -15px 0 20px 0; }
+
+.firefox.shop .left, .firefox.categories .left, .firefox.products .left {
+  width: 18%; }
+.firefox .gallery .album {
+  width: 32.3%; }
+.firefox.printer_3dm1 .box {
+  width: 47.5%; }
 
 .shop .gallery, .categories .gallery, .products .gallery {
   heigth: 20px;
