@@ -445,6 +445,9 @@ body .products a {
 .cart {
   float: right; }
 
+.firefox .products .content .right .left {
+  width: 62%; }
+
 @media (max-width: 760px) {
   body section .content {
     width: 85%;
