@@ -447,6 +447,8 @@ body .products a {
 
 .firefox .products .content .right .left {
   width: 61%; }
+.firefox .products .content .right .right {
+  width: 29%; }
 
 @media (max-width: 760px) {
   body section .content {
