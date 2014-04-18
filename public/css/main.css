@@ -340,6 +340,8 @@ body .products a {
     text-align: center; }
   .content .product.box img {
     width: 60%; }
+  .content .product.box h1 {
+    font-weight: normal; }
 
 .product.box:hover a {
   color: white; }
