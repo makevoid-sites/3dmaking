@@ -13,10 +13,6 @@
     .box.product_box
       %h1= title
       .boxed
-
-        .left
-          %img{ src: "/products_img/#{"%02d" % @product[:image]}.jpg" }
-
         - specs = @product[tr(:specs)]
         - if specs && specs != ""
           - specs = specs.split(" - ").map{ |s| s.capitalize }
@@ -28,6 +24,8 @@
                 - for spec in specs
                   %li= spec
 
+        .left
+          %img{ src: "/products_img/#{"%02d" % @product[:image]}.jpg" }
         .clear
 
 
