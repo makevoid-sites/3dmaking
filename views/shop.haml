@@ -34,6 +34,14 @@
     .right
 
       .box
+        %h1 Prodotti in evidenza
+
+        %section.products
+          - for product in PRODUCTS[0..3]
+            - @product = product
+            = haml :"_product"
+
+      .box
         %h1 3DMaking shop
         .text
           :textile
@@ -41,11 +49,4 @@
 
             Oltre ai componenti singoli, 3DMaking offre la possibilità di acquistare stampanti completamente assemblate come la 3DM1 e la PrusaI3DM entrambe molto semplici da utilizzare, molto precise e soprattutto opensource. Disponibili anche nella versione Kit.
 
-      .box
-        %h1 Prodotti in evidenza
-
-        %section.products
-          - for product in PRODUCTS[0..3]
-            - @product = product
-            = haml :"_product"
   .clear
