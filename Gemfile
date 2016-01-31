@@ -2,6 +2,7 @@ source "http://rubygems.org"
 
 gem "sinatra"
 gem "haml"
+gem "sass"
 
 # for textile
 gem "haml-contrib"

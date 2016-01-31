@@ -82,6 +82,7 @@ DEPENDENCIES
   guard-sass
   haml
   haml-contrib
+  sass
   sinatra
   thin
   voidtools
