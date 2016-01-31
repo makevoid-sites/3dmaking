@@ -2,8 +2,9 @@
   =t "Get our 3DM1 - desktop 3d printer", "STAMPANTE 3DM1"
   -#%span= t "RepRap project", ""
 
-%h2
-  = t "Order now your RepRap 3d printer".upcase, "ORDINA ADESSO LA TUA STAMPANTE 3D"
+- if false
+  %h2
+    = t "Order now your RepRap 3d printer".upcase, "ORDINA ADESSO LA TUA STAMPANTE 3D"
 
 %section.gallery
   #slides
@@ -54,27 +55,19 @@
     %br
 
 
-.box
-  %h1= t "Get it", "Acquista"
-  .boxed
-    /
-    :textile
-      Acquista ora la tua stampante 3Dm1 disponibile nelle versioni kit e assemblata direttamente via PayPal.
+- if false
+  .box
+    %h1= t "Get it", "Acquista"
+    .boxed
+      /
+      :textile
+        Acquista ora la tua stampante 3Dm1 disponibile nelle versioni kit e assemblata direttamente via PayPal.
 
-    = haml :"_button"
+      = haml :"_button"
 
-    :textile
-      Oppure contattaci
-      via mail: "print@3dmaking.it":mailto:print@3dmaking.it
-      via facebook: "3D Making":https://www.facebook.com/3dmaking  (#{t "message", "messaggio"})
+      :textile
+        Oppure contattaci
+        via mail: "print@3dmaking.it":mailto:print@3dmaking.it
+        via facebook: "3D Making":https://www.facebook.com/3dmaking  (#{t "message", "messaggio"})
 
 .clear
-
-
-
-
-
-
-
-
-

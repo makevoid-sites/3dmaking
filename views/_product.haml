@@ -6,10 +6,10 @@
   %a.product{ href: "/products/#{product[:name]}" }
     /%span= product[:title_it]
     %img{ src: "/products_img_thumbs/#{"%02d" % @product[:image]}.jpg" }
-
-  %div{ style: "text-align: center; padding: 0 3% 10px 0; font-size: 1.25em"}
-    %span{ style: "font-size: 0.8em" } #{t "Price", "Prezzo"}:
-    #{fmt_price product[:price]} €
+  - if false
+    %div{ style: "text-align: center; padding: 0 3% 10px 0; font-size: 1.25em"}
+      %span{ style: "font-size: 0.8em" } #{t "Price", "Prezzo"}:
+      #{fmt_price product[:price]} €
   .clear
 
 

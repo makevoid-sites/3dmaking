@@ -1,4 +1,19 @@
-%h1= t "Find us here", "Ci trovi qui"
+-# %h1= t "Find us here", "Ci trovi qui"
+%br
+%br
+%br
+
+%h3.center.imp
+  - if en?
+    3DMaking has moved to be Sharebot 3D Store
+    %br
+    Check the new site here:
+    %a{href: "http://www.sharebot3dstore.it"} sharebot3dstore.it
+  - else
+    Lo shop 3DMaking e' chiuso e ci siamo uniti al progetto Sharebot
+    %br
+    Visita il nuovo shop su:
+    %a{href: "http://www.sharebot3dstore.it"} sharebot3dstore.it
 
 - if false
   -# TODO: cambiare 3dmaking in fablab sesto
@@ -10,26 +25,29 @@
 
   %a.right{href: "http://goo.gl/maps/mdwqC"} open in google maps
 
-%section.mail
-  %h1 Mail:
-  %p
-    %a{ href: "mail:print@3dmaking.it" } print@3dmaking.it
+  %section.mail
+    %h1 Mail:
+    %p
+      %a{ href: "mail:print@3dmaking.it" } print@3dmaking.it
 
-%section.mail
-  %h1 Facebook:
-  %p
-    %a{ href: "http://facebook.com/3dmaking" } @3DMaking
-    =t "(send a messages)", "(invia un messaggio)"
+  %section.mail
+    %h1 Facebook:
+    %p
+      %a{ href: "http://facebook.com/3dmaking" } @3DMaking
+      =t "(send a messages)", "(invia un messaggio)"
 
+  %section.shop
+    %h1 Shop - Contattare via Pagina FB - Giuseppe
 
-%section.shop
-  %h1 Shop - Contattare via Pagina FB - Giuseppe
+%br
+%br
 
-%h1 Team
+%h1 3DMaking Team
+
 
 %section
   %h1
-    %a{ href: "https://www.facebook.com/makevoid" }  Francesco Canessa
+    %a{ href: "https://twitter.com/makevoid" }  Francesco Canessa
   %p Software developer
   %p
     %a{ href: "http://makevoid.com" } makevoid

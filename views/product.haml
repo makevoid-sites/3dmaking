@@ -32,10 +32,11 @@
         .description
           %p= @product[:description_it]
 
-        .price
-          %span #{t "Price", "Prezzo"}:
-          #{fmt_price @product[:price]} €
-        = partial :button, product: @product
+        - if false
+          .price
+            %span #{t "Price", "Prezzo"}:
+            #{fmt_price @product[:price]} €
+          = partial :button, product: @product
         .clear
 
 

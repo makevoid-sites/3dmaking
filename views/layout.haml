@@ -19,6 +19,11 @@
     %meta{ content: description, name: "description" }/
   %link{ href: "/css/main.css", rel: "stylesheet" }/
   %link{ href: "/css/vendor/jq_fancybox.css", rel: "stylesheet" }/
+  :sass
+    .center
+      text-align: center
+    .imp
+      font-size: 180%
   - klass = "#{body_class} #{"firefox" if request.env["HTTP_USER_AGENT"] =~  /firefox/i }"
   %body{ class: klass }
     %section.container
@@ -46,7 +51,8 @@
 
             %nav
               %a{ href: "/printer_3dm1" }= t "3D Printer", "Stampante 3D"
-              %a{ href: "/printing_service" }= t "Get things printed", "Stampa 3D"
+              - if false
+                %a{ href: "/printing_service" }= t "Get things printed", "Stampa 3D"
               %a{ href: "/shop" } Shop
               -#%a{ href: "/photos" }= t "Photos", "Foto"
               -#%a{ href: "/team" } Team

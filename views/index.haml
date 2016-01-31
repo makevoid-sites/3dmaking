@@ -12,16 +12,29 @@
     = t "Make ideas into objects", "Trasforma le tue idee in oggetti"
 
 %section.welcome
-  - if en?
-    :textile
-      3DMaking is a lab specialized in 3D print. Rapid prototyping, customizable objects, "3D printers manufacturing":/printer_3dm1, tech assistance hardware and software are some of our services.
-    %p
-      If you still don't have an idea of what to 3d print, you can search in
-      %a{href: "http://thingiverse.com"} thingiverse
-      and select an already made 3d model.
-  - else
-    :textile
-      3DMaking è un laboratorio specializzato nella stampa 3D. Prototipazione rapida, realizzazione di oggetti personalizzati, "produzione di stampanti 3D":/printer_3dm1, assistenza tecnica hardware e software sono alcuni dei servizi che offriamo.
+  %h3.center.imp
+    - if en?
+      3DMaking has moved to be Sharebot 3D Store
+      %br
+      Check the new site here:
+      %a{href: "http://www.sharebot3dstore.it"} sharebot3dstore.it
+    - else
+      Lo shop 3DMaking e' chiuso e ci siamo uniti al progetto Sharebot
+      %br
+      Visita il nuovo shop su:
+      %a{href: "http://www.sharebot3dstore.it"} sharebot3dstore.it
+
+  - if false # closed
+    - if en?
+      :textile
+        3DMaking is a lab specialized in 3D print. Rapid prototyping, customizable objects, "3D printers manufacturing":/printer_3dm1, tech assistance hardware and software are some of our services.
+      %p
+        If you still don't have an idea of what to 3d print, you can search in
+        %a{href: "http://thingiverse.com"} thingiverse
+        and select an already made 3d model.
+    - else
+      :textile
+        3DMaking è un laboratorio specializzato nella stampa 3D. Prototipazione rapida, realizzazione di oggetti personalizzati, "produzione di stampanti 3D":/printer_3dm1, assistenza tecnica hardware e software sono alcuni dei servizi che offriamo.
 
 
     %p
@@ -58,8 +71,9 @@
 
 %section.info
   /%img{ src: "/img/3dm1_printer/plate_view.jpg" }
-  %p
-    = t "We use and build RepRap based printers. We strongly believe in Open Source (and Open Hardware), and we offer consultancy if you want to build your first 3D printer. Come and visit us or drop us a line.", "Usiamo e costruiamo stampanti basate sul progetto RepRap. Crediamo che l'Open Source (e l'Open Hardware) sia la soluzione migliore, offriamo consulenza nell'assemblaggio della tua prima stampante 3D."
+  - if false
+    %p
+      = t "We use and build RepRap based printers. We strongly believe in Open Source (and Open Hardware), and we offer consultancy if you want to build your first 3D printer. Come and visit us or drop us a line.", "Usiamo e costruiamo stampanti basate sul progetto RepRap. Crediamo che l'Open Source (e l'Open Hardware) sia la soluzione migliore, offriamo consulenza nell'assemblaggio della tua prima stampante 3D."
 
 %br
 %hr
